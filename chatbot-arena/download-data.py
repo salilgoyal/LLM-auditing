@@ -1,5 +1,7 @@
 from huggingface_hub import login, hf_hub_download, list_repo_files
 
+login()
+
 # Define the directory where files will be saved
 save_dir = "/Users/salilgoyal/Stanford/LLM-auditing/chatbot-arena"
 
