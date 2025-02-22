@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 print('imported libs')
 
@@ -35,9 +36,10 @@ for key, df in csvs.items():
     df['MT-bench (score)'] = pd.to_numeric(df['MT-bench (score)'], errors='coerce')
     
 print('created dataframe')
-    
-# CREATE PLOT #
-###############
+ 
+####################   
+# CREATE DATAFRAME #
+####################
 
 # List to store processed data
 trends = []
@@ -69,7 +71,7 @@ trends_df_grouped = (
     trends_df.groupby(["date"])
     .agg({
         "MMLU": ["max", "median"],  # Max and median MMLU
-        "MT-bench (score)": ["mean", "median"],  # Mean and median MT-Bench
+        "MT-bench (score)": ["max", "median"],  # Max and median MT-Bench
     })
     .reset_index()
 )
@@ -78,49 +80,72 @@ trends_df_grouped = (
 trends_df_grouped["date"] = pd.to_datetime(trends_df_grouped["date"])
 
 # Flatten column names after aggregation
-trends_df_grouped.columns = ["date", "MMLU_max", "MMLU_median", "MT-bench_mean", "MT-bench_median"]
+trends_df_grouped.columns = ["date", "MMLU_max", "MMLU_median", "MT-bench_max", "MT-bench_median"]
 
-# Plot
-plt.figure(figsize=(10, 5))
+# Find the model that achieved the max MMLU/MT-Bench score for each date
+max_mmlu_models = trends_df.loc[trends_df.groupby("date")["MMLU"].idxmax(), ["date", "model", "MMLU"]]
+max_mtbench_models = trends_df.loc[trends_df.groupby("date")["MT-bench (score)"].idxmax(), ["date", "model", "MT-bench (score)"]]
 
-# Max MMLU
-plt.plot(trends_df_grouped["date"], trends_df_grouped["MMLU_max"], marker="o", linestyle="-", label="Max MMLU Score")
+# Assign a unique color to each model
+# model_colors = {model: color for model, color in zip(max_mmlu_models["model"].unique(), sns.color_palette("husl", n_colors=len(max_mmlu_models["model"].unique())))}
 
-# Median MMLU
-plt.plot(trends_df_grouped["date"], trends_df_grouped["MMLU_median"], marker="s", linestyle="--", label="Median MMLU Score")
+########
+# Plot #
+########
 
-# Mean MT-Bench
-plt.plot(trends_df_grouped["date"], trends_df_grouped["MT-bench_mean"], marker="d", linestyle="-.", label="Mean MT-Bench Score")
+# Create subplots with shared x-axis
+fig, (ax1, ax2) = plt.subplots(nrows=2, figsize=(12, 8), sharex=True, gridspec_kw={'hspace': 0.3})
 
-# Median MT-Bench
-plt.plot(trends_df_grouped["date"], trends_df_grouped["MT-bench_median"], marker="^", linestyle=":", label="Median MT-Bench Score")
+## ---------------------- PLOT 1: MMLU PERFORMANCE ----------------------
+ax1.set_title("Max MMLU Score Over Time")
+ax1.plot(trends_df_grouped["date"], trends_df_grouped["MMLU_max"], marker="o", linestyle="-", linewidth=1,
+            label="Max MMLU Score", alpha=0.8)
+ax1.set_ylabel("MMLU Score")
+ax1.grid(True)
+## ---------------------- PLOT 2: MT-BENCH PERFORMANCE ----------------------
+ax2.set_title("Max MT-Bench Score Over Time")
+ax2.plot(trends_df_grouped["date"], trends_df_grouped["MT-bench_max"], 
+            label="Max MT-Bench Score", marker="s", alpha=0.8)
+ax2.set_ylabel("MT-Bench Score")
+ax2.set_xlabel("Date")
+ax2.grid(True)
 
-# Labels and title
-plt.xlabel("Date")
-plt.ylabel("Performance Score")
-plt.title("MMLU and MT-Bench Performance Over Time")
-plt.xticks(rotation=45)
 plt.legend()
-plt.grid(True)
+# Save the plot
+plt.savefig("max_mmlu_mtbench_subplots_with_colors.png", dpi=300, bbox_inches="tight")
 
-# Save the plot as a file
-plt.savefig("performance_trends_plot.png", dpi=300, bbox_inches="tight")  # Saves as PNG
+print('saved plot')
 
-print("Saved plot")
-
-# # Plot
 # plt.figure(figsize=(10, 5))
-# plt.plot(trends_df_grouped["date"], trends_df_grouped["MMLU"], marker="o", linestyle="-", label="Max MMLU Score")
-
+# # Max MMLU
+# plt.plot(trends_df_grouped["date"], trends_df_grouped["MMLU_max"], marker="o", linestyle="-", label="Max MMLU Score")
+# # Median MMLU
+# plt.plot(trends_df_grouped["date"], trends_df_grouped["MMLU_median"], marker="s", linestyle="--", label="Median MMLU Score")
 # # Labels and title
 # plt.xlabel("Date")
-# plt.ylabel("Max MMLU Score")
-# plt.title("Max MMLU Score Over Time")
+# plt.ylabel("Performance Score")
+# plt.title("MMLU Performance Over Time")
 # plt.xticks(rotation=45)
 # plt.legend()
 # plt.grid(True)
+# # Save the plot as a file
+# plt.savefig("MMLU_trends.png", dpi=300, bbox_inches="tight")  # Saves as PNG
 
-# # Save the plot as a file (change format as needed: 'png', 'pdf', 'svg', etc.)
-# plt.savefig("max_mmlu_score_plot.png", dpi=300, bbox_inches="tight")  # Saves as PNG
+# plt.close()
 
-# print('saved plot')
+# plt.figure(figsize=(10, 5))
+# # Mean MT-Bench
+# plt.plot(trends_df_grouped["date"], trends_df_grouped["MT-bench_max"], marker="d", linestyle="-.", label="Max MT-Bench Score")
+# # Median MT-Bench
+# plt.plot(trends_df_grouped["date"], trends_df_grouped["MT-bench_median"], marker="^", linestyle=":", label="Median MT-Bench Score")
+# # Labels and title
+# plt.xlabel("Date")
+# plt.ylabel("Performance Score")
+# plt.title("MT-Bench Performance Over Time")
+# plt.xticks(rotation=45)
+# plt.legend()
+# plt.grid(True)
+# # Save the plot as a file
+# plt.savefig("MT-Bench_trends.png", dpi=300, bbox_inches="tight")  # Saves as PNG
+
+# print("Saved plots")
