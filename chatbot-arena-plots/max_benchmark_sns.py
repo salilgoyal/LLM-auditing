@@ -115,6 +115,7 @@ g = sns.FacetGrid(
     combined,
     row="metric",
     sharex=True,
+    sharey=False,
     height=4,
     aspect=3,
     hue="model",
