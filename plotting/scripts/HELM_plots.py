@@ -4,14 +4,16 @@ import matplotlib.pyplot as plt
 import os
 import seaborn as sns
 
+print('libraries loaded')
+
 ###############################
 # PROCESS DATA INTO DATAFRAME #
 ###############################
 
 dfs = []
 
-for file in os.listdir("../HELM-LITE/HELM_lite_accuracy_csvs"):
-    file_path = os.path.join("../HELM-LITE/HELM_lite_accuracy_csvs", file)
+for file in os.listdir("../../HELM-LITE/HELM_lite_accuracy_csvs"):
+    file_path = os.path.join("../../HELM-LITE/HELM_lite_accuracy_csvs", file)
     
     match = re.search(r"\((\d{4}-\d{2}-\d{2})\)", file)
     if match:
@@ -21,7 +23,9 @@ for file in os.listdir("../HELM-LITE/HELM_lite_accuracy_csvs"):
         continue
     
     df = pd.read_csv(file_path)
-    print(len(df), date_str)
+    
+    # UNCOMMENT THIS TO SEE THE NUMBER OF MODELS AT EACH DATE
+    # print(len(df), date_str)
     df['Date'] = pd.to_datetime(date_str)
     
     dfs.append(df)
@@ -29,106 +33,7 @@ for file in os.listdir("../HELM-LITE/HELM_lite_accuracy_csvs"):
 # Concatenate all the DataFrames
 all_results = pd.concat(dfs, ignore_index=True)
 
-# records = []
-
-# for file in os.listdir("../HELM-LITE/HELM_lite_accuracy_csvs"):
-    
-#     file_path = os.path.join("../HELM-LITE/HELM_lite_accuracy_csvs", file)
-    
-#     # Parse the date from the filename; e.g. "v1.7.0 (2024-08-08)-Table 1.csv"
-#     match = re.search(r"\((\d{4}-\d{2}-\d{2})\)", file_path)
-#     if not match:
-#         # If we can't parse a date, skip this file
-#         continue
-    
-#     date_str = match.group(1)  # e.g. "2024-08-08"
-#     date = pd.to_datetime(date_str)
-    
-#     # Read the CSV
-#     df = pd.read_csv(file_path)
-    
-#     # Identify the row with the maximum "Mean win rate"
-#     max_idx = df["Mean win rate"].idxmax()
-#     max_rate = df.loc[max_idx, "Mean win rate"]
-#     max_model = df.loc[max_idx, "Model"]
-    
-#     # Store the results
-#     records.append({
-#         "date": date,
-#         "max_mean_win_rate": max_rate,
-#         "model_with_max": max_model
-#     })
-
-# # Convert the collected records into a DataFrame
-# results_df = pd.DataFrame(records)
-
-# # Sort by date to ensure chronological plotting
-# results_df.sort_values(by="date", inplace=True)
-
-###############################
-#      FUNCTION TO PLOT       #
-###############################
-
-# def plot_max_over_time(df, date_col, metric_col, output_file, model_col="Model"):
-#     """
-#     Groups `df` by `date_col`, finds the row with the maximum `metric_col`
-#     for each date, and plots the time series of that maximum.
-    
-#     Parameters
-#     ----------
-#     df : pd.DataFrame
-#         The DataFrame containing your data.
-#     date_col : str
-#         The name of the column in `df` that holds date information.
-#     metric_col : str
-#         The name of the numeric column in `df` for which you want to
-#         plot the max value over time.
-#     model_col : str, optional
-#         The name of the column containing model identifiers (default "Model").
-        
-#     Returns
-#     -------
-#     pd.DataFrame
-#         A DataFrame with one row per date, containing the maximum value
-#         of `metric_col` and associated model(s).
-#     """
-#     # Ensure the date column is in datetime format (if it's not already)
-#     df[date_col] = pd.to_datetime(df[date_col])
-    
-#     # Group by date and find index of the maximum value in `metric_col`
-#     max_indices = df.groupby(date_col)[metric_col].idxmax()
-    
-#     # Extract those rows
-#     max_df = df.loc[max_indices].copy()
-    
-#     # Sort by date for chronological plotting
-#     max_df.sort_values(by=date_col, inplace=True)
-    
-#     # Plot
-#     plt.figure(figsize=(8, 5))
-#     sns.lineplot(data=max_df, x=date_col, y=metric_col, marker='o')
-#     plt.xlabel("Date")
-#     plt.ylabel(metric_col)
-#     plt.title(f"Maximum {metric_col} on HELM-LITE")
-#     plt.xticks(rotation=45)
-#     plt.tight_layout()
-    
-#     plt.savefig(output_file)
-    
-#     # Optional: display which model had the maximum for each date
-#     # print(max_df[[date_col, model_col, metric_col]])
-    
-#     return max_df
-
-# max_mean_win_rate_df = plot_max_over_time(
-#     all_results,
-#     date_col="Date",
-#     metric_col="Mean win rate",
-#     output_file="plots/HELM/mean_win_rate.png",
-#     model_col="Model"
-# )
-
-def plot_multiple_normalized(df, date_col, metric_cols, output_file, rawOrNormalized='NormalizedValue'):
+def plot_multiple_normalized(df, date_col, metric_cols, output_file, normalization='Raw'):
     """
     For each metric in `metric_cols`, this function:
       - Groups the DataFrame by `date_col` and extracts the maximum value of the metric per date.
@@ -145,8 +50,8 @@ def plot_multiple_normalized(df, date_col, metric_cols, output_file, rawOrNormal
         A list of column names (metrics) to process and plot.
     output_file : str
         The path to save the output plot.
-    rawOrNormalized : str
-        The column name to plot, either 'RawValue' or 'NormalizedValue'.
+    normalization : str
+        The column name to plot, either 'raw', 'divide_by_max', or 'zero_to_one'
         
     Returns
     -------
@@ -164,25 +69,37 @@ def plot_multiple_normalized(df, date_col, metric_cols, output_file, rawOrNormal
         # Group by date and get the maximum value for the current metric.
         max_series = df.groupby(date_col)[metric].max().reset_index()
         
-        # Normalize by dividing by the overall maximum for that metric.
+        ## ADD NORMALIZATION COLUMNS
         overall_max = max_series[metric].max()
-        max_series['NormalizedValue'] = max_series[metric] / overall_max
-        max_series['RawValue'] = max_series[metric]
+        max_series['divide_by_max'] = max_series[metric] / overall_max
+        max_series['raw'] = max_series[metric]
+        
+        # Get the first and last values of the metric timeseries.
+        first_val = max_series.iloc[0][metric]
+        last_val = max_series.iloc[-1][metric]
+        range_val = last_val - first_val
+        
+        # Compute the normalized value such that the first value is 0 and the last is 1.
+        if range_val == 0:
+            # Avoid division by zero. If the timeseries does not change, set all normalized values to 0.
+            max_series['zero_to_one'] = 0
+        else:
+            max_series['zero_to_one'] = (max_series[metric] - first_val) / range_val
         
         # Add a column to indicate which metric this row corresponds to.
         max_series['Metric'] = metric
         
         # Keep only the date, normalized value, and metric columns.
-        normalized_list.append(max_series[[date_col, rawOrNormalized, 'Metric']])
+        normalized_list.append(max_series[[date_col, normalization, 'Metric']])
     
     # Combine all metrics into one DataFrame in long format.
     combined_normalized = pd.concat(normalized_list, ignore_index=True)
     
     # Create the plot.
     plt.figure(figsize=(10, 6))
-    sns.lineplot(data=combined_normalized, x=date_col, y=rawOrNormalized, hue='Metric', marker='o')
+    sns.lineplot(data=combined_normalized, x=date_col, y=normalization, hue='Metric', marker='o')
     plt.xlabel("Date")
-    plt.ylabel(f"Metric {rawOrNormalized}")
+    plt.ylabel(f"Metric ({normalization})")
     plt.title("Maximum Metrics HELM-LITE")
     
     unique_dates = combined_normalized[date_col].unique()
@@ -200,9 +117,16 @@ metrics_to_plot = ['Mean win rate', 'NarrativeQA - F1',
        'NaturalQuestions (open) - F1', 'NaturalQuestions (closed) - F1',
        'OpenbookQA - EM', 'MMLU - EM', 'MATH - Equivalent (CoT)', 'GSM8K - EM',
        'LegalBench - EM', 'MedQA - EM', 'WMT 2014 - BLEU-4']
+
+normalization_options = ['raw', 'divide_by_max', 'zero_to_one']
+
+normalization_choice = normalization_options[2] # CHOOSE THIS!!
+
 normalized_data = plot_multiple_normalized(all_results, 
                                            date_col="Date", 
                                            metric_cols=metrics_to_plot,
-                                           output_file="plots/HELM/raw_all_cols.png",
-                                           rawOrNormalized='RawValue')
+                                           output_file=f"../plots/HELM/{normalization_choice}.png",
+                                           normalization=normalization_choice)
+
+print('plot saved')
 
