@@ -21,6 +21,7 @@ for file in os.listdir("../HELM-LITE/HELM_lite_accuracy_csvs"):
         continue
     
     df = pd.read_csv(file_path)
+    print(len(df), date_str)
     df['Date'] = pd.to_datetime(date_str)
     
     dfs.append(df)
@@ -183,7 +184,10 @@ def plot_multiple_normalized(df, date_col, metric_cols, output_file, rawOrNormal
     plt.xlabel("Date")
     plt.ylabel(f"Metric {rawOrNormalized}")
     plt.title("Maximum Metrics HELM-LITE")
-    plt.xticks(rotation=45)
+    
+    unique_dates = combined_normalized[date_col].unique()
+    plt.xticks(unique_dates, [date.strftime("%Y-%m-%d") for date in unique_dates], rotation=45)
+    # plt.xticks(rotation=45)
     plt.tight_layout()
     
     plt.savefig(output_file)
@@ -201,5 +205,4 @@ normalized_data = plot_multiple_normalized(all_results,
                                            metric_cols=metrics_to_plot,
                                            output_file="plots/HELM/raw_all_cols.png",
                                            rawOrNormalized='RawValue')
-
 
