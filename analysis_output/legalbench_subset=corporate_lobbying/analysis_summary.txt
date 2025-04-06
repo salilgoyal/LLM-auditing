@@ -3,6 +3,35 @@ Benchmark 20/28: legalbench:subset=corporate_lobbying
 
 Models analyzed:
 1. AlephAlpha_luminous-supreme
+2. 01-ai_yi-6b
+3. tiiuae_falcon-7b
+4. meta_llama-2-13b
+5. mistralai_mixtral-8x7b-32kseqlen
+6. AlephAlpha_luminous-base
+7. openai_gpt-4-0613
+8. openai_gpt-3.5-turbo-0613
+9. meta_llama-65b
+10. anthropic_claude-2.1
+11. anthropic_claude-v1.3
+12. openai_text-davinci-002
+13. meta_llama-2-7b
+14. writer_palmyra-x-v3
+15. cohere_command-light
+16. meta_llama-2-70b
+17. ai21_j2-grande
+18. AlephAlpha_luminous-extended
+19. anthropic_claude-2.0
+20. anthropic_claude-instant-1.2
+21. ai21_j2-jumbo
+22. cohere_command
+23. 01-ai_yi-34b
+24. google_text-unicorn@001
+25. writer_palmyra-x-v2
+26. mistralai_mistral-7b-v0.1
+27. google_text-bison@001
+28. tiiuae_falcon-40b
+29. openai_text-davinci-003
+30. openai_gpt-4-1106-preview
 
 === Summary Statistics ===
 
@@ -21,15 +50,15 @@ Models analyzed:
 +-------------+----------------------------------------------------+-----------------------------+
 | Agreement   | Question                                           | Model Responses (first 3)   |
 +=============+====================================================+=============================+
-| High        | Official title of bill: To protect elections for   | No |  No |  No              |
+| High        | Official title of bill: To protect elections for   | No  No  No                  |
 |             | public office by providing financial support and   |                             |
 |             | en...                                              |                             |
 +-------------+----------------------------------------------------+-----------------------------+
-| Medium      | Official title of bill: To reauthorize certain     | Yes |  No |  "Merger Sub"   |
+| Medium      | Official title of bill: To reauthorize certain     | Yes  No  "Merger Sub"       |
 |             | provisions of the Public Health Service Act        |                             |
 |             | relating ...                                       |                             |
 +-------------+----------------------------------------------------+-----------------------------+
-| Low         | Official title of bill: A bill to ensure           | |  No |  ANSYS, Inc.        |
+| Low         | Official title of bill: A bill to ensure           | No  ANSYS, Inc.             |
 |             | appropriate prioritization, spectrum planning, and |                             |
 |             | interage...                                        |                             |
 +-------------+----------------------------------------------------+-----------------------------+

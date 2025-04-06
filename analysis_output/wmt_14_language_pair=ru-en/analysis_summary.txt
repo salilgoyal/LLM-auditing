@@ -3,6 +3,35 @@ Benchmark 3/28: wmt_14:language_pair=ru-en
 
 Models analyzed:
 1. openai_gpt-4-0613
+2. AlephAlpha_luminous-supreme
+3. AlephAlpha_luminous-base
+4. writer_palmyra-x-v2
+5. meta_llama-2-70b
+6. 01-ai_yi-6b
+7. ai21_j2-grande
+8. mistralai_mixtral-8x7b-32kseqlen
+9. openai_gpt-4-1106-preview
+10. openai_text-davinci-002
+11. anthropic_claude-2.0
+12. anthropic_claude-v1.3
+13. tiiuae_falcon-7b
+14. meta_llama-2-13b
+15. mistralai_mistral-7b-v0.1
+16. ai21_j2-jumbo
+17. meta_llama-65b
+18. meta_llama-2-7b
+19. AlephAlpha_luminous-extended
+20. 01-ai_yi-34b
+21. anthropic_claude-instant-1.2
+22. openai_gpt-3.5-turbo-0613
+23. writer_palmyra-x-v3
+24. cohere_command-light
+25. google_text-bison@001
+26. google_text-unicorn@001
+27. cohere_command
+28. openai_text-davinci-003
+29. anthropic_claude-2.1
+30. tiiuae_falcon-40b
 
 === Summary Statistics ===
 
@@ -18,32 +47,22 @@ Models analyzed:
 
 === Sample Questions and Responses ===
 
-+-------------+------------------------------------------------+----------------------------------------------------+
-| Agreement   | Question                                       | Model Responses (first 3)                          |
-+=============+================================================+====================================================+
-| High        | Этот датчик, хотя это вовсе не было его        | This sensor, although it was not its original      |
-|             | первоначальным предназначением, теперь служит  | purpose, now serves as the "eye" for all digital   |
-|             | "глазом" для в...                              | cameras in the world and earned the Nobel Prize in |
-|             |                                                | Physics in 2009. |  This digital camera, although  |
-|             |                                                | it was not originally intended for this purpose,   |
-|             |                                                | now serves as a "eye" for all digital cameras in   |
-|             |                                                | the world and received the Nobel Prize in Physics  |
-|             |                                                | in 2009. |  This hotel is located in the centre of |
-|             |                                                | Düsseldorf, just a few minutes' walk from the main |
-|             |                                                | train station. It offers free Wi-Fi, a sauna and a |
-|             |                                                | fitness centre.                                    |
-+-------------+------------------------------------------------+----------------------------------------------------+
-| Medium      | Этот результат, который наблюдался среди       | This result, observed among businesses of all      |
-|             | предприятий всех размеров и крупнейших бизнес- | sizes and major business groups, shows that        |
-|             | групп, показы...                               | business insists on a "significant change" that    |
-|             |                                                | will return powers back to the UK. |  This result, |
-|             |                                                | which was observed among companies of all sizes    |
-|             |                                                | and sectors, shows that business is returning to   |
-|             |                                                | Britain in a significant way. |  This hotel, which |
-|             |                                                | is located near the airport, is a perfect place    |
-|             |                                                | for business travellers.                           |
-+-------------+------------------------------------------------+----------------------------------------------------+
-| Low         | Эта тема всегда была щекотливой.               | This topic has always been sensitive. |  This      |
-|             |                                                | topic was always interesting. |  This hotel was    |
-|             |                                                | always very clean.                                 |
-+-------------+------------------------------------------------+----------------------------------------------------+
++-------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                       | Model Responses (first 3)                                                                           |
++=============+================================================+=====================================================================================================+
+| High        | Этот датчик, хотя это вовсе не было его        | This sensor, although it was not its original purpose, now serves as the "eye" for all digital      |
+|             | первоначальным предназначением, теперь служит  | cameras in the world and earned the Nobel Prize in Physics in 2009.  This digital camera, although  |
+|             | "глазом" для в...                              | it was not originally intended for this purpose, now serves as a "eye" for all digital cameras in   |
+|             |                                                | the world and received the Nobel Prize in Physics in 2009.  This hotel is located in the centre of  |
+|             |                                                | Düsseldorf, just a few minutes' walk from the main train station. It offers free Wi-Fi, a sauna and |
+|             |                                                | a fitness centre.                                                                                   |
++-------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Medium      | Этот результат, который наблюдался среди       | This result, observed among businesses of all sizes and major business groups, shows that business  |
+|             | предприятий всех размеров и крупнейших бизнес- | insists on a "significant change" that will return powers back to the UK.  This result, which was   |
+|             | групп, показы...                               | observed among companies of all sizes and sectors, shows that business is returning to Britain in a |
+|             |                                                | significant way.  This hotel, which is located near the airport, is a perfect place for business    |
+|             |                                                | travellers.                                                                                         |
++-------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Low         | Эта тема всегда была щекотливой.               | This topic has always been sensitive.  This topic was always interesting.  This hotel was always    |
+|             |                                                | very clean.                                                                                         |
++-------------+------------------------------------------------+-----------------------------------------------------------------------------------------------------+

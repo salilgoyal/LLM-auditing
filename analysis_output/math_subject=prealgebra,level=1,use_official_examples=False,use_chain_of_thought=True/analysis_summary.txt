@@ -3,6 +3,35 @@ Benchmark 25/28: math:subject=prealgebra,level=1,use_official_examples=False,use
 
 Models analyzed:
 1. writer_palmyra-x-v3
+2. anthropic_claude-instant-1.2
+3. meta_llama-65b
+4. anthropic_claude-2.0
+5. meta_llama-2-13b
+6. tiiuae_falcon-7b
+7. openai_gpt-4-1106-preview
+8. anthropic_claude-v1.3
+9. meta_llama-2-7b
+10. mistralai_mistral-7b-v0.1
+11. google_text-unicorn@001
+12. ai21_j2-grande
+13. tiiuae_falcon-40b
+14. meta_llama-2-70b
+15. 01-ai_yi-6b
+16. openai_text-davinci-003
+17. AlephAlpha_luminous-supreme
+18. cohere_command
+19. mistralai_mixtral-8x7b-32kseqlen
+20. anthropic_claude-2.1
+21. openai_gpt-4-0613
+22. google_text-bison@001
+23. writer_palmyra-x-v2
+24. AlephAlpha_luminous-base
+25. openai_text-davinci-002
+26. openai_gpt-3.5-turbo-0613
+27. 01-ai_yi-34b
+28. ai21_j2-jumbo
+29. cohere_command-light
+30. AlephAlpha_luminous-extended
 
 === Summary Statistics ===
 
@@ -18,32 +47,21 @@ Models analyzed:
 
 === Sample Questions and Responses ===
 
-+-------------+--------------------------------------------------+----------------------------------------------------+
-| Agreement   | Question                                         | Model Responses (first 3)                          |
-+=============+==================================================+====================================================+
-| High        | What is the largest multiple of 37 which is less | The largest multiple of 37 which is less than 800  |
-|             | than 800?                                        | is $\boxed{777}$. | The largest multiple of 37     |
-|             |                                                  | which is less than 800 is 744. Since 37 × 20 = 740 |
-|             |                                                  | and 740 < 800, but 37 × 21 = 797 which is greater  |
-|             |                                                  | than 800, the largest multiple of 37 less than 800 |
-|             |                                                  | is \boxed{744}. | The largest multiple of 37 which |
-|             |                                                  | is less than 800 is $37 \times 21 = \boxed{777}$.  |
-+-------------+--------------------------------------------------+----------------------------------------------------+
-| Medium      | How many numbers are in the list $ 36, 37, 38,   | The list contains the numbers from 36 to 93,       |
-|             | \ldots, 92, 93 ?$                                | inclusive. So there are $93-36+1=\boxed{58}$       |
-|             |                                                  | numbers in the list. | There are                   |
-|             |                                                  | $93-36+1=\boxed{58}$ numbers in the given list. |  |
-|             |                                                  | There are $93-36+1=58$ numbers in the list.        |
-+-------------+--------------------------------------------------+----------------------------------------------------+
-| Low         | Evaluate $6+5-4\times 3\div (2+1).$              | The expression $6+5-4\times 3\div (2+1)$ can be    |
-|             |                                                  | evaluated as follows:  $$6+5-4\times 3\div (2+1) = |
-|             |                                                  | 6+5-4\times 3\div 3 = 6+5-4 = 7$$  Therefore, the  |
-|             |                                                  | value of the expression is $\boxed{7}$. | Using    |
-|             |                                                  | the proper order of operations, we have:           |
-|             |                                                  | \begin{align*} 6+5-4\times 3\div (2+1) &=          |
-|             |                                                  | 6+5-12\div 3\\                           &= 11-4\\ |
-|             |                                                  | &= \boxed{7} \end{align*} | Using the order of     |
-|             |                                                  | operations, we have \[6+5-4\times 3\div (2+1) =    |
-|             |                                                  | 6+5-4\times 3\div 3 = 6+5-4\times 3 = 6+5-12 =     |
-|             |                                                  | \boxed{-1}.\]                                      |
-+-------------+--------------------------------------------------+----------------------------------------------------+
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                         | Model Responses (first 3)                                                                            |
++=============+==================================================+======================================================================================================+
+| High        | What is the largest multiple of 37 which is less | The largest multiple of 37 which is less than 800 is $\boxed{777}$. The largest multiple of 37       |
+|             | than 800?                                        | which is less than 800 is 744. Since 37 × 20 = 740 and 740 < 800, but 37 × 21 = 797 which is greater |
+|             |                                                  | than 800, the largest multiple of 37 less than 800 is \boxed{744}. The largest multiple of 37 which  |
+|             |                                                  | is less than 800 is $37 \times 21 = \boxed{777}$.                                                    |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Medium      | How many numbers are in the list $ 36, 37, 38,   | The list contains the numbers from 36 to 93, inclusive. So there are $93-36+1=\boxed{58}$ numbers    |
+|             | \ldots, 92, 93 ?$                                | in the list. There are $93-36+1=\boxed{58}$ numbers in the given list. There are $93-36+1=58$        |
+|             |                                                  | numbers in the list.                                                                                 |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Low         | Evaluate $6+5-4\times 3\div (2+1).$              | The expression $6+5-4\times 3\div (2+1)$ can be evaluated as follows:  $$6+5-4\times 3\div (2+1) =   |
+|             |                                                  | 6+5-4\times 3\div 3 = 6+5-4 = 7$$  Therefore, the value of the expression is $\boxed{7}$. Using the  |
+|             |                                                  | proper order of operations, we have: \begin{align*} 6+5-4\times 3\div (2+1) &= 6+5-12\div 3\\        |
+|             |                                                  | &= 11-4\\                           &= \boxed{7} \end{align*} Using the order of operations, we have |
+|             |                                                  | \[6+5-4\times 3\div (2+1) = 6+5-4\times 3\div 3 = 6+5-4\times 3 = 6+5-12 = \boxed{-1}.\]             |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+

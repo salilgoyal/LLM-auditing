@@ -3,6 +3,35 @@ Benchmark 7/28: mmlu:subject=econometrics,method=multiple_choice_joint
 
 Models analyzed:
 1. AlephAlpha_luminous-base
+2. meta_llama-2-13b
+3. tiiuae_falcon-7b
+4. anthropic_claude-2.0
+5. anthropic_claude-v1.3
+6. ai21_j2-grande
+7. openai_gpt-3.5-turbo-0613
+8. tiiuae_falcon-40b
+9. writer_palmyra-x-v3
+10. google_text-unicorn@001
+11. AlephAlpha_luminous-extended
+12. meta_llama-65b
+13. openai_text-davinci-003
+14. meta_llama-2-70b
+15. AlephAlpha_luminous-supreme
+16. google_text-bison@001
+17. anthropic_claude-instant-1.2
+18. anthropic_claude-2.1
+19. 01-ai_yi-6b
+20. openai_gpt-4-0613
+21. mistralai_mistral-7b-v0.1
+22. meta_llama-2-7b
+23. openai_text-davinci-002
+24. writer_palmyra-x-v2
+25. ai21_j2-jumbo
+26. mistralai_mixtral-8x7b-32kseqlen
+27. openai_gpt-4-1106-preview
+28. cohere_command-light
+29. cohere_command
+30. 01-ai_yi-34b
 
 === Summary Statistics ===
 
@@ -21,15 +50,15 @@ Models analyzed:
 +-------------+----------------------------------------------------+-----------------------------+
 | Agreement   | Question                                           | Model Responses (first 3)   |
 +=============+====================================================+=============================+
-| High        | Which of the following statements are true         | C | D |  D                  |
+| High        | Which of the following statements are true         | C D  D                      |
 |             | concerning information criteria?  (i) Adjusted     |                             |
 |             | R-squared ...                                      |                             |
 +-------------+----------------------------------------------------+-----------------------------+
-| Medium      | Which of the following are advantages of the VAR   | B | C |  D                  |
+| Medium      | Which of the following are advantages of the VAR   | B C  D                      |
 |             | approach to modelling the relationship between     |                             |
 |             | vari...                                            |                             |
 +-------------+----------------------------------------------------+-----------------------------+
-| Low         | Which of the following statements are true         | A | C |  D                  |
+| Low         | Which of the following statements are true         | A C  D                      |
 |             | concerning the acf and pacf?  (i) The acf and pacf |                             |
 |             | are of...                                          |                             |
 +-------------+----------------------------------------------------+-----------------------------+

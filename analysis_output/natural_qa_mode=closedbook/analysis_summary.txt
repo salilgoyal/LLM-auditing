@@ -3,6 +3,35 @@ Benchmark 9/28: natural_qa:mode=closedbook
 
 Models analyzed:
 1. openai_text-davinci-002
+2. 01-ai_yi-6b
+3. AlephAlpha_luminous-extended
+4. mistralai_mistral-7b-v0.1
+5. openai_gpt-4-0613
+6. openai_gpt-4-1106-preview
+7. google_text-bison@001
+8. meta_llama-2-70b
+9. cohere_command
+10. cohere_command-light
+11. tiiuae_falcon-7b
+12. meta_llama-2-13b
+13. AlephAlpha_luminous-base
+14. anthropic_claude-2.1
+15. writer_palmyra-x-v3
+16. AlephAlpha_luminous-supreme
+17. google_text-unicorn@001
+18. meta_llama-65b
+19. anthropic_claude-v1.3
+20. ai21_j2-jumbo
+21. openai_text-davinci-003
+22. mistralai_mixtral-8x7b-32kseqlen
+23. 01-ai_yi-34b
+24. meta_llama-2-7b
+25. tiiuae_falcon-40b
+26. anthropic_claude-2.0
+27. writer_palmyra-x-v2
+28. ai21_j2-grande
+29. anthropic_claude-instant-1.2
+30. openai_gpt-3.5-turbo-0613
 
 === Summary Statistics ===
 
@@ -18,17 +47,14 @@ Models analyzed:
 
 === Sample Questions and Responses ===
 
-+-------------+--------------------------------------------------+---------------------------------------------------+
-| Agreement   | Question                                         | Model Responses (first 3)                         |
-+=============+==================================================+===================================================+
-| High        | Cat in the hat knows a lot about space movie?    | The Cat in the Hat Knows a Lot About Space (2017) |
-|             |                                                  | |  2019 |  The Cat in the Hat Knows a Lot About   |
-|             |                                                  | Space                                             |
-+-------------+--------------------------------------------------+---------------------------------------------------+
-| Medium      | Who is responsible for establishing local        | The Ministry of Industry and Information          |
-|             | licensing forum?                                 | Technology |  Local government |  The state       |
-|             |                                                  | government                                        |
-+-------------+--------------------------------------------------+---------------------------------------------------+
-| Low         | When were birth certificates first issued in the | 1837 |  1907 |  1906                              |
-|             | united states?                                   |                                                   |
-+-------------+--------------------------------------------------+---------------------------------------------------+
++-------------+--------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                         | Model Responses (first 3)                                                                           |
++=============+==================================================+=====================================================================================================+
+| High        | Cat in the hat knows a lot about space movie?    | The Cat in the Hat Knows a Lot About Space (2017)  2019  The Cat in the Hat Knows a Lot About Space |
++-------------+--------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Medium      | Who is responsible for establishing local        | The Ministry of Industry and Information Technology  Local government  The state government         |
+|             | licensing forum?                                 |                                                                                                     |
++-------------+--------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Low         | When were birth certificates first issued in the | 1837  1907  1906                                                                                    |
+|             | united states?                                   |                                                                                                     |
++-------------+--------------------------------------------------+-----------------------------------------------------------------------------------------------------+

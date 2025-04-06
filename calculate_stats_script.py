@@ -53,9 +53,10 @@ def calculate_ranked_results(metrics):
             
             if benchmark not in benchmark_to_dfs:
                 benchmark_to_dfs[benchmark] = []
-                benchmark_to_model[benchmark] = model
+                benchmark_to_model[benchmark] = []
             benchmark_to_dfs[benchmark].append(df_1)
-
+            benchmark_to_model[benchmark].append(model)
+            
     ########################################################
     # Rank questions by metric
     ########################################################
@@ -103,10 +104,10 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
     
     # Set up the plotting style
     plt.style.use('default')  # Use default style instead of seaborn
-    fig = plt.figure(figsize=(20, 15))  # Increased figure size
+    fig = plt.figure(figsize=(20, 18))  # Increased figure height for new plot
     
     # 1. Response Length Distribution Plot
-    plt.subplot(2, 2, 1)
+    plt.subplot(3, 2, 1)  # Changed to 3x2 grid
     data_for_box = []
     labels = []
     for level in ['High', 'Medium', 'Low']:
@@ -123,7 +124,7 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
     plt.xlabel('Agreement Level', fontsize=10)
     
     # 2. Metric Scores Distribution
-    plt.subplot(2, 2, 2)
+    plt.subplot(3, 2, 2)
     for level in ['High', 'Medium', 'Low']:
         level_df = benchmark_df[benchmark_df['agreement_level'] == level]
         scores = level_df[metric_cols].mean(axis=1)
@@ -135,7 +136,7 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
     plt.legend()
     
     # 3. Question Length vs Agreement
-    plt.subplot(2, 2, 3)
+    plt.subplot(3, 2, 3)
     question_lengths = benchmark_df['input.text'].apply(len)
     plt.scatter(question_lengths, benchmark_df['std'], alpha=0.5, s=50)
     plt.title('Question Length vs Agreement Level', fontsize=12, pad=20)
@@ -143,7 +144,7 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
     plt.ylabel('Standard Deviation\n(lower = higher agreement)', fontsize=10)
     
     # 4. Agreement Level Distribution
-    plt.subplot(2, 2, 4)
+    plt.subplot(3, 2, 4)
     counts = benchmark_df['agreement_level'].value_counts()
     plt.bar(range(len(counts)), counts.values)
     plt.xticks(range(len(counts)), counts.index, rotation=0)
@@ -151,9 +152,24 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
     plt.xlabel('Agreement Level', fontsize=10)
     plt.ylabel('Count', fontsize=10)
     
+    # 5. Response Length vs Agreement Level (new plot)
+    plt.subplot(3, 2, 5)
+    # Calculate average response length for each row
+    avg_response_lengths = []
+    for _, row in benchmark_df.iterrows():
+        lengths = []
+        for col in pred_cols:
+            lengths.append(len(str(row[col]).split()))
+        avg_response_lengths.append(np.mean(lengths))
+    
+    plt.scatter(avg_response_lengths, benchmark_df['std'], alpha=0.5, s=50)
+    plt.title('Response Length vs Agreement Level', fontsize=12, pad=20)
+    plt.xlabel('Average Response Length (words)', fontsize=10)
+    plt.ylabel('Standard Deviation\n(lower = higher agreement)', fontsize=10)
+    
     # Add a title to the figure with benchmark and model information
-    if benchmark_name and model_names:
-        plt.suptitle(f"Analysis for {benchmark_name}\nModels: {', '.join(model_names)}", 
+    if benchmark_name:
+        plt.suptitle(f"Analysis for {benchmark_name}", 
                     fontsize=14, y=0.98)
     
     # Adjust layout to prevent overlap
@@ -210,7 +226,7 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
             sample_row = level_df.loc[median_idx]
             
             responses = [sample_row[col] for col in pred_cols[:3]]
-            response_text = ' | '.join(str(r) for r in responses)
+            response_text = '\n'.join(str(r) for r in responses)
             
             sample_data.append([
                 level,
@@ -221,7 +237,7 @@ def visualize_response_trends(benchmark_df, metric_name, n_groups=3, benchmark_n
         f.write(tabulate(sample_data,
                         headers=['Agreement', 'Question', 'Model Responses (first 3)'],
                         tablefmt='grid',
-                        maxcolwidths=[10, 50, 50]))
+                        maxcolwidths=[10, 50, 100]))
     
     # Save the full analysis data to CSV
     benchmark_df.to_csv(os.path.join(benchmark_dir, 'full_analysis_data.csv'))
@@ -239,7 +255,7 @@ def load_or_calculate_results(metrics):
         with open(BENCHMARK_MODEL_FILE, 'rb') as f:
             benchmark_to_model = pickle.load(f)
     else:
-        print("Calculating results...")
+        print("Calculating results because nothing cached found...")
         ranked_results, benchmark_to_model = calculate_ranked_results(metrics)
     return ranked_results, benchmark_to_model
 
@@ -270,8 +286,8 @@ for i, (benchmark, ranked_df) in enumerate(ranked_results.items(), 1):
     # Get the model name from our stored mapping
     model_names = []
     if benchmark in benchmark_to_model and benchmark_to_model[benchmark]:
-        model_names = [benchmark_to_model[benchmark]]
-        print(f"Model identified: {model_names}")
+        model_names = benchmark_to_model[benchmark]  # Already a list of model names
+        # print(f"Models identified: {model_names}")
     
     metric_name = None
     for possible_metric in metrics:

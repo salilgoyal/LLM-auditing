@@ -3,6 +3,35 @@ Benchmark 1/28: legalbench:subset=international_citizenship_questions
 
 Models analyzed:
 1. tiiuae_falcon-7b
+2. meta_llama-2-13b
+3. ai21_j2-jumbo
+4. anthropic_claude-instant-1.2
+5. writer_palmyra-x-v2
+6. cohere_command-light
+7. meta_llama-65b
+8. openai_gpt-4-0613
+9. mistralai_mixtral-8x7b-32kseqlen
+10. anthropic_claude-v1.3
+11. 01-ai_yi-6b
+12. openai_text-davinci-003
+13. anthropic_claude-2.1
+14. mistralai_mistral-7b-v0.1
+15. ai21_j2-grande
+16. openai_gpt-4-1106-preview
+17. google_text-unicorn@001
+18. meta_llama-2-70b
+19. AlephAlpha_luminous-base
+20. cohere_command
+21. openai_gpt-3.5-turbo-0613
+22. writer_palmyra-x-v3
+23. meta_llama-2-7b
+24. google_text-bison@001
+25. AlephAlpha_luminous-supreme
+26. AlephAlpha_luminous-extended
+27. tiiuae_falcon-40b
+28. 01-ai_yi-34b
+29. openai_text-davinci-002
+30. anthropic_claude-2.0
 
 === Summary Statistics ===
 
@@ -21,15 +50,15 @@ Models analyzed:
 +-------------+----------------------------------------------------+-----------------------------+
 | Agreement   | Question                                           | Model Responses (first 3)   |
 +=============+====================================================+=============================+
-| High        | Question: Consider the country of Tunisia. Does    | Yes | No |  Yes             |
+| High        | Question: Consider the country of Tunisia. Does    | Yes No  Yes                 |
 |             | the country provide for the acquisition of         |                             |
 |             | citizensh...                                       |                             |
 +-------------+----------------------------------------------------+-----------------------------+
-| Medium      | Question: Consider the country of East Timor. Does | No | No |  No               |
+| Medium      | Question: Consider the country of East Timor. Does | No No  No                   |
 |             | the country require renunciation or loss of        |                             |
 |             | other...                                           |                             |
 +-------------+----------------------------------------------------+-----------------------------+
-| Low         | Question: Consider the country of Palau. Does the  | No | No |  Yes              |
+| Low         | Question: Consider the country of Palau. Does the  | No No  Yes                  |
 |             | country require knowledge of a national language,  |                             |
 |             | ...                                                |                             |
 +-------------+----------------------------------------------------+-----------------------------+
