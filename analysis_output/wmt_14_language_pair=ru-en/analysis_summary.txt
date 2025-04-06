@@ -1,0 +1,49 @@
+Benchmark 3/28: wmt_14:language_pair=ru-en
+================================================================================
+
+Models analyzed:
+1. openai_gpt-4-0613
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+==============+====================+===============+
+| High        |           334 |         19.7 |              0.035 | 0.000 - 0.072 |
++-------------+---------------+--------------+--------------------+---------------+
+| Medium      |           333 |         23.1 |              0.134 | 0.073 - 0.139 |
++-------------+---------------+--------------+--------------------+---------------+
+| Low         |           333 |         19.3 |              0.281 | 0.139 - 0.490 |
++-------------+---------------+--------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+------------------------------------------------+----------------------------------------------------+
+| Agreement   | Question                                       | Model Responses (first 3)                          |
++=============+================================================+====================================================+
+| High        | Этот датчик, хотя это вовсе не было его        | This sensor, although it was not its original      |
+|             | первоначальным предназначением, теперь служит  | purpose, now serves as the "eye" for all digital   |
+|             | "глазом" для в...                              | cameras in the world and earned the Nobel Prize in |
+|             |                                                | Physics in 2009. |  This digital camera, although  |
+|             |                                                | it was not originally intended for this purpose,   |
+|             |                                                | now serves as a "eye" for all digital cameras in   |
+|             |                                                | the world and received the Nobel Prize in Physics  |
+|             |                                                | in 2009. |  This hotel is located in the centre of |
+|             |                                                | Düsseldorf, just a few minutes' walk from the main |
+|             |                                                | train station. It offers free Wi-Fi, a sauna and a |
+|             |                                                | fitness centre.                                    |
++-------------+------------------------------------------------+----------------------------------------------------+
+| Medium      | Этот результат, который наблюдался среди       | This result, observed among businesses of all      |
+|             | предприятий всех размеров и крупнейших бизнес- | sizes and major business groups, shows that        |
+|             | групп, показы...                               | business insists on a "significant change" that    |
+|             |                                                | will return powers back to the UK. |  This result, |
+|             |                                                | which was observed among companies of all sizes    |
+|             |                                                | and sectors, shows that business is returning to   |
+|             |                                                | Britain in a significant way. |  This hotel, which |
+|             |                                                | is located near the airport, is a perfect place    |
+|             |                                                | for business travellers.                           |
++-------------+------------------------------------------------+----------------------------------------------------+
+| Low         | Эта тема всегда была щекотливой.               | This topic has always been sensitive. |  This      |
+|             |                                                | topic was always interesting. |  This hotel was    |
+|             |                                                | always very clean.                                 |
++-------------+------------------------------------------------+----------------------------------------------------+

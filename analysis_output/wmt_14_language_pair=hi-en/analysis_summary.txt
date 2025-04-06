@@ -1,0 +1,56 @@
+Benchmark 11/28: wmt_14:language_pair=hi-en
+================================================================================
+
+Models analyzed:
+1. AlephAlpha_luminous-supreme
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+==============+====================+===============+
+| High        |           333 |         20.9 |              0.017 | 0.000 - 0.060 |
++-------------+---------------+--------------+--------------------+---------------+
+| Medium      |           333 |         24.3 |              0.073 | 0.061 - 0.127 |
++-------------+---------------+--------------+--------------------+---------------+
+| Low         |           334 |         23.8 |              0.183 | 0.127 - 0.504 |
++-------------+---------------+--------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+----------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                          |
++=============+====================================================+====================================================+
+| High        | रात 8 बजे शुरू हुए इस म्यूजिकल नाइट में रहमान अपने सिग्नेचर सांग्स की  | Today is the 8th day of Shukla Paksha in the       |
+|             | प्रस्तुति दी।                                           | month of Magh. The Sun is in the sign of Aquarius. |
+|             |                                                    | | The music night started at 8 p.m. in this        |
+|             |                                                    | musical night, Rahman presented his signature      |
+|             |                                                    | songs. |  The 8th of November is a very important  |
+|             |                                                    | day for me. I have been waiting for this day for a |
+|             |                                                    | long time. I have been waiting for this day for a  |
+|             |                                                    | long time. Hindi: त्रयोदशी के बारे में हम सबसे बड़ी साम�       |
++-------------+----------------------------------------------------+----------------------------------------------------+
+| Medium      | ब्रिटिश सरकार द्वारा HS2 रेल परियोजना से स्कॉटलैंड के लाभों में वृद्धि के लिए | The Board of Secondary Education, Haryana has      |
+|             | अध्ययन की घोषणा की गई ...                               | announced the result of HS2 examination. The       |
+|             |                                                    | result has been declared on the official website   |
+|             |                                                    | of the board. | The British government has         |
+|             |                                                    | announced a study on the benefits of the HS2 rail  |
+|             |                                                    | project for Scotland. |  The British government    |
+|             |                                                    | has decided to build a high-speed rail line        |
+|             |                                                    | between London and Birmingham with the help of     |
+|             |                                                    | HS2. Hindi: सामाजिक समाज के लिए अध्ययन के लिए होते हैं।         |
+|             |                                                    | English:                                           |
++-------------+----------------------------------------------------+----------------------------------------------------+
+| Low         | गनीमत रही कि समय रहते आग पर काबू पा लिया गया।                | Ganimeta rahi ki samay rahte aag par kaboo paalai  |
+|             |                                                    | gaya. | It was a miracle that the fire was put out |
+|             |                                                    | in time. |  The day of the month of the month of   |
+|             |                                                    | the month of the month of the month of the month   |
+|             |                                                    | of the month of the month of the month of the      |
+|             |                                                    | month of the month of the month of the month of    |
+|             |                                                    | the month of the month of the month of the month   |
+|             |                                                    | of the month of the month of the month of the      |
+|             |                                                    | month of the month of the month of the month of    |
+|             |                                                    | the month of the month of the month of the month   |
+|             |                                                    | of the month of the month of the month of the      |
+|             |                                                    | month of the                                       |
++-------------+----------------------------------------------------+----------------------------------------------------+

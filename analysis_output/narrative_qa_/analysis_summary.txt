@@ -1,0 +1,44 @@
+Benchmark 28/28: narrative_qa:
+================================================================================
+
+Models analyzed:
+1. openai_text-davinci-002
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+----------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.f1_score | Std Range     |
++=============+===============+==============+======================+===============+
+| High        |           157 |          5.8 |                0.765 | 0.000 - 0.152 |
++-------------+---------------+--------------+----------------------+---------------+
+| Medium      |           156 |          6.5 |                0.706 | 0.152 - 0.239 |
++-------------+---------------+--------------+----------------------+---------------+
+| Low         |           157 |          5.5 |                0.674 | 0.239 - 0.504 |
++-------------+---------------+--------------+----------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+---------------------------------------------------+---------------------------------------------------+
+| Agreement   | Question                                          | Model Responses (first 3)                         |
++=============+===================================================+===================================================+
+| High        | Sara Johnson, a promising dancer in high school,  | Derek attends Sara's audition to offer her        |
+|             | hopes to be admitted to study at Juilliard School | encouragement and moral support. | Derek arrives  |
+|             | a...                                              | at Sara's Juilliard audition to offer her         |
+|             |                                                   | encouragement and moral support. After her        |
+|             |                                                   | audition, where she is accepted, Sara rekindles   |
+|             |                                                   | her relationship with Derek. |  Derek and Sara    |
+|             |                                                   | meet at the Joffrey Ballet                        |
++-------------+---------------------------------------------------+---------------------------------------------------+
+| Medium      | Froudacity is split into four books, each         | James Anthony Froude | Thomas |  Thomas           |
+|             | addressing specific topics that Froude brings.    |                                                   |
+|             | Thomas begi...                                    |                                                   |
++-------------+---------------------------------------------------+---------------------------------------------------+
+| Low         | The story is set just after the Union of Scotland | He told their fortunes, and he gave her a rose,   |
+|             | and England (1707), in the Liddesdale hills of    | with strict injunctions to bring it to him in her |
+|             | the...                                            | hour of adversity. | Elshender the Recluse told   |
+|             |                                                   | their fortunes, and he gave her a rose, with      |
+|             |                                                   | strict injunctions to bring it to him in her hour |
+|             |                                                   | of adversity. |  He gave them a rose, and told    |
+|             |                                                   | them to bring it to him in their hour of          |
+|             |                                                   | adversity.                                        |
++-------------+---------------------------------------------------+---------------------------------------------------+

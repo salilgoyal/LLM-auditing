@@ -1,0 +1,64 @@
+Benchmark 23/28: math:subject=number_theory,level=1,use_official_examples=False,use_chain_of_thought=True
+================================================================================
+
+Models analyzed:
+1. 01-ai_yi-34b
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.math_equiv_chain_of_thought | Std Range     |
++=============+===============+==============+=========================================+===============+
+| High        |            11 |         50.9 |                                   0.133 | 0.183 - 0.407 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Medium      |             9 |         56.9 |                                   0.281 | 0.430 - 0.479 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Low         |            10 |         34.2 |                                   0.477 | 0.490 - 0.507 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+----------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                          |
++=============+====================================================+====================================================+
+| High        | Let's call a prime number a $\textit{reversible    | The smallest reversible prime greater than 17 is   |
+|             | prime}$ if the number formed by reversing its      | 23, since 23 is prime and 32 is also prime.  | The |
+|             | digits...                                          | smallest reversible prime greater than 17 is 37.   |
+|             |                                                    | |  Let $n=17+10k$, where $k$ is an integer. Then,  |
+|             |                                                    | $17$ and $10k$ are both prime, and $n$ is a        |
+|             |                                                    | reversible prime. We are given that $n$ is smaller |
+|             |                                                    | than 21, so $k$ must be smaller than               |
+|             |                                                    | $\frac{21-17}{10}=\frac{4}{10}=0.4$. Therefore,    |
+|             |                                                    | $n=\boxed{17+10\times0.4=12}$.                     |
++-------------+----------------------------------------------------+----------------------------------------------------+
+| Medium      | Express as a common fraction: $\frac{.             | $\frac{. \overline{7} }{. \overline{8} }=\frac{79  |
+|             | \overline{7} }{. \overline{8} }$                   | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 99999999999999999999999999999999999999999999999999 |
+|             |                                                    | 9999999999999999999999999999 | $\frac{.            |
+|             |                                                    | \overline{7} }{. \overline{8} }=\frac{7}{8}$.  |   |
+|             |                                                    | We can rewrite $\frac{\overline{7}}{\overline{8}}$ |
+|             |                                                    | as a common fraction by first expressing           |
+|             |                                                    | $\overline{7}$ and $\overline{8}$ as fractions. We |
+|             |                                                    | have                                               |
+|             |                                                    | $\frac{\overline{7}}{\overline{8}}=\frac{7}{8}$.   |
+|             |                                                    | To write this as a common fraction, we can rewrite |
+|             |                                                    | $8$ as $2^3$ since $8=2\cdot2\cdot2$. Thus, $\frac |
+|             |                                                    | {7}{8}=\frac{7}{2^3}=\frac{7\cdot2^2}{2^3}=\frac{7 |
+|             |                                                    | \cdot2}{2^2}=\frac{7\cdot2}{2}=\boxed{\frac{7}{2}} |
+|             |                                                    | $. The answer is \frac{7}{2}                       |
++-------------+----------------------------------------------------+----------------------------------------------------+
+| Low         | For each positive integer $n$, let $n!$ denote the | Since $9!=1\cdot 2\cdot 3\cdot 4\cdot 5\cdot       |
+|             | product $1\cdot 2\cdot 3\cdot\,\cdots\,\cdot       | 6\cdot 7\cdot 8\cdot 9$, the units digit of $9!$   |
+|             | (n-1...                                            | is 9. Thus, $9!\equiv 9\pmod{10}$, so the          |
+|             |                                                    | remainder when $9!$ is divided by $10$ is          |
+|             |                                                    | $\boxed{9}$.  | $9!=362880$. Since $362880\equiv   |
+|             |                                                    | 0\pmod{10}$, the remainder is $\boxed{0}$.  |  We  |
+|             |                                                    | have $9!=(9\cdot 8\cdot 7\cdot 6\cdot 5\cdot       |
+|             |                                                    | 4\cdot 3\cdot 2\cdot 1)=362880$. The remainder     |
+|             |                                                    | when $9!$ is divided by $10$ is $\boxed{2880}$.    |
++-------------+----------------------------------------------------+----------------------------------------------------+
