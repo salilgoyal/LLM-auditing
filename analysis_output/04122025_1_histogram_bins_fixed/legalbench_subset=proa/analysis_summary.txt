@@ -1,0 +1,64 @@
+Benchmark 17/28: legalbench:subset=proa
+================================================================================
+
+Models analyzed:
+1. AlephAlpha_luminous-supreme
+2. anthropic_claude-2.1
+3. meta_llama-2-70b
+4. writer_palmyra-x-v3
+5. 01-ai_yi-6b
+6. AlephAlpha_luminous-base
+7. openai_gpt-4-0613
+8. google_text-bison@001
+9. cohere_command
+10. mistralai_mixtral-8x7b-32kseqlen
+11. google_text-unicorn@001
+12. cohere_command-light
+13. openai_text-davinci-003
+14. meta_llama-2-13b
+15. openai_gpt-3.5-turbo-0613
+16. tiiuae_falcon-7b
+17. 01-ai_yi-34b
+18. anthropic_claude-instant-1.2
+19. mistralai_mistral-7b-v0.1
+20. AlephAlpha_luminous-extended
+21. ai21_j2-jumbo
+22. ai21_j2-grande
+23. meta_llama-2-7b
+24. writer_palmyra-x-v2
+25. openai_gpt-4-1106-preview
+26. anthropic_claude-v1.3
+27. anthropic_claude-2.0
+28. tiiuae_falcon-40b
+29. openai_text-davinci-002
+30. meta_llama-65b
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+-------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.quasi_exact_match | Std Range     |
++=============+===============+==============+===============================+===============+
+| High        |            35 |            1 |                         0.962 | 0.000 - 0.254 |
++-------------+---------------+--------------+-------------------------------+---------------+
+| Medium      |            34 |            1 |                         0.867 | 0.305 - 0.407 |
++-------------+---------------+--------------+-------------------------------+---------------+
+| Low         |            26 |            1 |                         0.632 | 0.430 - 0.509 |
++-------------+---------------+--------------+-------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-----------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)   |
++=============+====================================================+=============================+
+| High        | Statute: No employer may discharge any employee by | Yes Yes Yes                 |
+|             | reason of the fact that earnings have been         |                             |
+|             | subjec...                                          |                             |
++-------------+----------------------------------------------------+-----------------------------+
+| Medium      | Statute: A buyer who has a claim against an escrow | Yes Yes Yes                 |
+|             | account required by may bring a civil action       |                             |
+|             | agai...                                            |                             |
++-------------+----------------------------------------------------+-----------------------------+
+| Low         | Statute: The Attorney General shall enforce this   | No No No                    |
+|             | provision of the Act by an action for mandamus,    |                             |
+|             | inj...                                             |                             |
++-------------+----------------------------------------------------+-----------------------------+

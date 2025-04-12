@@ -1,0 +1,73 @@
+Benchmark 13/28: wmt_14:language_pair=cs-en
+================================================================================
+
+Models analyzed:
+1. meta_llama-2-70b
+2. ai21_j2-grande
+3. ai21_j2-jumbo
+4. AlephAlpha_luminous-base
+5. google_text-unicorn@001
+6. openai_gpt-4-0613
+7. anthropic_claude-instant-1.2
+8. meta_llama-65b
+9. openai_gpt-3.5-turbo-0613
+10. AlephAlpha_luminous-supreme
+11. anthropic_claude-2.0
+12. google_text-bison@001
+13. meta_llama-2-13b
+14. tiiuae_falcon-7b
+15. writer_palmyra-x-v2
+16. openai_text-davinci-003
+17. cohere_command-light
+18. mistralai_mistral-7b-v0.1
+19. meta_llama-2-7b
+20. AlephAlpha_luminous-extended
+21. openai_gpt-4-1106-preview
+22. tiiuae_falcon-40b
+23. mistralai_mixtral-8x7b-32kseqlen
+24. openai_text-davinci-002
+25. writer_palmyra-x-v3
+26. 01-ai_yi-34b
+27. anthropic_claude-2.1
+28. 01-ai_yi-6b
+29. anthropic_claude-v1.3
+30. cohere_command
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+==============+====================+===============+
+| High        |           334 |         19.2 |              0.033 | 0.000 - 0.066 |
++-------------+---------------+--------------+--------------------+---------------+
+| Medium      |           333 |         24.3 |              0.132 | 0.067 - 0.128 |
++-------------+---------------+--------------+--------------------+---------------+
+| Low         |           333 |         19.1 |              0.288 | 0.128 - 0.466 |
++-------------+---------------+--------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                         | Model Responses (first 3)                                                                            |
++=============+==================================================+======================================================================================================+
+| High        | Unaids, program Organizace spojených národů pro  | Unaids, the United Nations program for the eradication of AIDS, estimates that there are             |
+|             | potírání AIDS, odhaduje, že na celém světě žije  | approximately 34 million people worldwide who are infected with the HIV virus.  The United Nations   |
+|             | zhru...                                          | AIDS Program (UNAids) estimates that approximately 34 million people worldwide are living with HIV.  |
+|             |                                                  | Unaids, the AIDS program of the United Nations Organization, estimates that there are approximately  |
+|             |                                                  | 34 million people living worldwide who are infected with the HIV virus.                              |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Medium      | Pouze několik set podporovatelů se sešlo před    | Only a few hundred supporters gathered outside the courthouse to celebrate the president, and unlike |
+|             | budovou soudu, aby oslavilo prezidenta, a na     | the presidential pomp of the Mubarak era, traffic was only briefly halted to allow the motorcade to  |
+|             | rozdíl od...                                     | pass through the usually busy road connecting downtown to the southern suburbs.  Only a few          |
+|             |                                                  | supporters gathered in front of the courthouse before the inauguration ceremony to celebrate the     |
+|             |                                                  | president, and unlike Mubarak's era, traffic was briefly stopped to allow the presidential motorcade |
+|             |                                                  | to pass through, allowing the convoy to take its usual route connecting the center with the southern |
+|             |                                                  | suburbs.  Only a few supporters of the candidate gathered in front of the courthouse to celebrate    |
+|             |                                                  | the president, and in contrast to the president's inauguration, the traffic was only briefly stopped |
+|             |                                                  | so that the cannon could fire the usual noisy way connecting the city center with the suburbs in the |
+|             |                                                  | south.                                                                                               |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Low         | O pomoc poprosila nizozemského krále Willema-    | One of the detained activists, Faiza Oulahsen, asked the Dutch King Willem-Alexander for help.       |
+|             | Alexandra jedna ze zadržovaných aktivistek Faiza | Faiza Oulahsen, one of the detained activists, requested assistance from the Dutch king Willem-      |
+|             | Oulahs...                                        | Alexander.  One activist, Faiza Oulahsen, asked the Dutch king Willem-Alexander for help.            |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+

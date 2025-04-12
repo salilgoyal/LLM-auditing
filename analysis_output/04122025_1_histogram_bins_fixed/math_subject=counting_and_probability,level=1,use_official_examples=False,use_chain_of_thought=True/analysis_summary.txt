@@ -1,0 +1,80 @@
+Benchmark 8/28: math:subject=counting_and_probability,level=1,use_official_examples=False,use_chain_of_thought=True
+================================================================================
+
+Models analyzed:
+1. anthropic_claude-2.1
+2. cohere_command
+3. 01-ai_yi-34b
+4. AlephAlpha_luminous-supreme
+5. AlephAlpha_luminous-extended
+6. meta_llama-2-70b
+7. anthropic_claude-v1.3
+8. openai_text-davinci-003
+9. openai_gpt-4-1106-preview
+10. AlephAlpha_luminous-base
+11. cohere_command-light
+12. writer_palmyra-x-v2
+13. meta_llama-2-13b
+14. tiiuae_falcon-7b
+15. meta_llama-2-7b
+16. mistralai_mistral-7b-v0.1
+17. google_text-unicorn@001
+18. openai_gpt-4-0613
+19. ai21_j2-jumbo
+20. tiiuae_falcon-40b
+21. openai_gpt-3.5-turbo-0613
+22. meta_llama-65b
+23. google_text-bison@001
+24. anthropic_claude-2.0
+25. 01-ai_yi-6b
+26. ai21_j2-grande
+27. anthropic_claude-instant-1.2
+28. writer_palmyra-x-v3
+29. openai_text-davinci-002
+30. mistralai_mixtral-8x7b-32kseqlen
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.math_equiv_chain_of_thought | Std Range     |
++=============+===============+==============+=========================================+===============+
+| High        |            14 |         46.1 |                                   0.179 | 0.254 - 0.407 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Medium      |            12 |         34.9 |                                   0.356 | 0.430 - 0.466 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Low         |            13 |         33.1 |                                   0.487 | 0.479 - 0.509 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                         | Model Responses (first 3)                                                                            |
++=============+==================================================+======================================================================================================+
+| High        | How many prime numbers have squares between 100  | The prime numbers whose squares are between 100 and 300 are 11 and 13.   To see this, first we list  |
+|             | and 300?                                         | the squares of integers between 10 and 17, since 10^2 = 100 and 17^2 = 289: * 11^2 = 121   * 12^2 =  |
+|             |                                                  | 144 * 13^2 = 169 * 14^2 = 196  * 15^2 = 225 * 16^2 = 256  Of these numbers, only 11 and 13 are       |
+|             |                                                  | prime.   Therefore, there are $\boxed{2}$ prime numbers whose squares are between 100 and 300.  The  |
+|             |                                                  | prime numbers that have squares between 100 and 300 are: $\boxed{3, 5, 7, 11, 13, 17, 19, 23, 29}$.  |
+|             |                                                  | There are 8 prime numbers.   The prime numbers between 10 and 30 are 11, 13, 17, 19, 23, 29. The     |
+|             |                                                  | squares of these numbers are 121, 169, 289, 361, 529, 841. The only square between 100 and 300 is    |
+|             |                                                  | 289. Therefore, there is only one prime number with a square between 100 and 300.                    |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Medium      | What is the value of $\frac{5!\cdot2!}{3!}$      | \begin{align*} \frac{5!\cdot2!}{3!} &=                                                               |
+|             |                                                  | \frac{(5\times4\times3\times2\times1)\cdot(2\times1)}{(3\times2\times1)} \\ &= \frac{120\cdot2}{6}   |
+|             |                                                  | \\ &= 40 \end{align*} Therefore, the value of $\frac{5!\cdot2!}{3!}$ is $\boxed{40}$.  We can cancel |
+|             |                                                  | out the factorials to get $\frac{5!\cdot 2!}{3!}=\frac{5\cdot 4}{3}=10$. Alternatively, we can write |
+|             |                                                  | $5!$ as $(5\cdot 4)(3\cdot 2\cdot 1)$ and then divide to get the same answer.   Therefore, the value |
+|             |                                                  | of $\frac{5!\cdot 2!}{3!}$ is $\boxed{10}$.   Would you like help with another problem?   We can     |
+|             |                                                  | cancel the $3!$ in the numerator and denominator to obtain                                           |
+|             |                                                  | $\frac{5!}{3!}=\frac{(5\cdot4)(3\cdot2\cdot1)}{(3\cdot2\cdot1)}=\frac{5\cdot4}{1}=\boxed{20}$.       |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Low         | Sarah wants to order a pizza with 2 different    | Sarah has 9 toppings to choose from. She wants to choose 2 of those toppings for her pizza. The      |
+|             | toppings. She has 9 different toppings to choose | number of ways to choose 2 items from 9 items is the number of combinations, given by the binomial   |
+|             | from....                                         | coefficient $\binom{n}{k}$ where $n$ is the total number of items and $k$ is the number we choose.   |
+|             |                                                  | Here, $n = 9$ and $k = 2$. Therefore, the number of different 2-topping pizzas Sarah can order with  |
+|             |                                                  | 9 toppings to choose from is $\binom{9}{2} = \boxed{36}$.  Sarah has $9\times 8=\boxed{72}$ ways to  |
+|             |                                                  | choose the two toppings since she has $9$ options for the first topping and $8$ options left for the |
+|             |                                                  | second. If we assume that the order of the toppings does not matter, we then have                    |
+|             |                                                  | $\frac{72}{2}=\boxed{36}$ ways to choose two toppings.   Would you like help with any other          |
+|             |                                                  | problems?   Sarah can choose 2 toppings in $\dbinom{9}{2}=\boxed{36}$ ways.                          |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+

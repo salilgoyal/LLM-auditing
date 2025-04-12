@@ -1,0 +1,80 @@
+Benchmark 4/28: gsm:
+================================================================================
+
+Models analyzed:
+1. google_text-bison@001
+2. writer_palmyra-x-v2
+3. cohere_command
+4. anthropic_claude-2.1
+5. tiiuae_falcon-40b
+6. anthropic_claude-instant-1.2
+7. openai_gpt-3.5-turbo-0613
+8. mistralai_mixtral-8x7b-32kseqlen
+9. meta_llama-2-7b
+10. cohere_command-light
+11. openai_text-davinci-003
+12. google_text-unicorn@001
+13. ai21_j2-jumbo
+14. tiiuae_falcon-7b
+15. meta_llama-2-13b
+16. 01-ai_yi-34b
+17. anthropic_claude-v1.3
+18. meta_llama-65b
+19. 01-ai_yi-6b
+20. writer_palmyra-x-v3
+21. anthropic_claude-2.0
+22. AlephAlpha_luminous-extended
+23. mistralai_mistral-7b-v0.1
+24. ai21_j2-grande
+25. openai_gpt-4-0613
+26. meta_llama-2-70b
+27. openai_text-davinci-002
+28. AlephAlpha_luminous-base
+29. AlephAlpha_luminous-supreme
+30. openai_gpt-4-1106-preview
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+--------------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.final_number_exact_match | Std Range     |
++=============+===============+==============+======================================+===============+
+| High        |           341 |         61.3 |                                0.386 | 0.000 - 0.450 |
++-------------+---------------+--------------+--------------------------------------+---------------+
+| Medium      |           356 |         58.1 |                                0.512 | 0.450 - 0.498 |
++-------------+---------------+--------------+--------------------------------------+---------------+
+| Low         |           303 |         58.1 |                                0.499 | 0.498 - 0.509 |
++-------------+---------------+--------------+--------------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                                                                            |
++=============+====================================================+======================================================================================================+
+| High        | Grandma walks 3 miles every day on her favorite    | Grandma walks 2 miles on the beach at a rate of 2 miles / 40 minutes = <<2/40=0.05>>0.05 miles /     |
+|             | walking trail, which includes 2 miles of walking   | minute. Grandma walks 1 mile on the sidewalk at a rate of 2 * 0.05 miles / minute =                  |
+|             | on ...                                             | <<2*0.05=0.1>>0.1 miles / minute. Grandma walks 3 miles at a rate of 0.05 miles / minute + 0.1 miles |
+|             |                                                    | / minute = <<0.05+0.1=0.15>>0.15 miles / minute. It takes Grandma 3 miles / 0.15 miles / minute =    |
+|             |                                                    | <<3/0.15=20>>20 minutes to complete the entire 3-mile walk. The answer is 20.  Let's call Grandma's  |
+|             |                                                    | speed on the beach "b" miles per hour. Then her speed on the sidewalk is "2b" miles per hour.  Her   |
+|             |                                                    | rate on the beach is 2 miles / 40 minutes = <<2/40 = 1/20>> 1/20 mile per minute. Her rate on the    |
+|             |                                                    | sidewalk is 1/2 this rate or 1/20 * 1/2 = <<1/20*1/2 = 1/40>> 1/40 mile per minute. Adding these     |
+|             |                                                    | rates gives a total rate of 1/20 + 1/40 = <<1/20 + 1/40 = 9/40>> 9/40 mile per minute. Completing    |
+|             |                                                    | the 3-mile walk will therefore take her 3 miles / 9/40 mile per minute = <<3/(9/40) = 40/9>> 40/9    |
+|             |                                                    | minutes or <<40/9=4.44>> 4.44 minutes. The answer is 4.44.                                           |
++-------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Medium      | Teddy finished half of a 500 piece puzzle, and     | Teddy finished half of a 500 piece puzzle, which is 500/2=<<500/2=250>>250 pieces. He then started   |
+|             | then started and finished another 500 piece puzzle | and finished another 500 piece puzzle, which is 500 pieces. So, in total, Teddy placed 250 + 500 =   |
+|             | wi...                                              | <<250+500=750>>750 pieces. The answer is 750.  Teddy placed 500/2=<<500/2=250>>250 pieces of the     |
+|             |                                                    | first puzzle and 500 pieces of the second puzzle, for a total of 250 + 500 = <<250+500=750>>750      |
+|             |                                                    | pieces. The answer is 750.  In the first puzzle, Teddy placed 500/2=<<500/2=250>>250 pieces. In the  |
+|             |                                                    | second puzzle, he placed 500 pieces. So in total, he placed 250+500=<<250+500=750>>750 pieces. The   |
+|             |                                                    | answer is 750.                                                                                       |
++-------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Low         | Alice has 6 more books than Steven. Clara has two  | Steven has 20/2=<<20/2=10>>10 books. Alice has 10 + 6=<<10+6=16>>16 books. Clara has 20 -            |
+|             | times as many books as Steven. If Clara has 20     | 16=<<20-16=4>>4 more books than Alice. The answer is 4.  Let's say Steven has x books. Then Alice    |
+|             | boo...                                             | has x + 6 books. Clara has 2x books. We know that 2x = 20, so x = 10. Therefore, Alice has 10 + 6 =  |
+|             |                                                    | 16 books. Clara has 20 books. So Clara has 20 - 16 = 4 more books than Alice. The answer is 4.       |
+|             |                                                    | Since Clara has two times more books than Steven, she has 20 books * 2 = <<20*2=40>>40 books. Alice  |
+|             |                                                    | has 6 more books than Steven, meaning she has 40 books + 6 books = <<40+6=46>>46 books. Clara has 40 |
+|             |                                                    | books - 46 books = <<40-46=-6>> - 6 books more than Alice. The answer is -6.                         |
++-------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,70 @@
+Benchmark 24/28: wmt_14:language_pair=de-en
+================================================================================
+
+Models analyzed:
+1. mistralai_mistral-7b-v0.1
+2. anthropic_claude-2.0
+3. writer_palmyra-x-v3
+4. openai_gpt-4-0613
+5. openai_gpt-4-1106-preview
+6. anthropic_claude-instant-1.2
+7. anthropic_claude-v1.3
+8. ai21_j2-jumbo
+9. cohere_command
+10. openai_text-davinci-002
+11. AlephAlpha_luminous-supreme
+12. meta_llama-2-13b
+13. tiiuae_falcon-7b
+14. writer_palmyra-x-v2
+15. ai21_j2-grande
+16. google_text-bison@001
+17. 01-ai_yi-6b
+18. anthropic_claude-2.1
+19. AlephAlpha_luminous-extended
+20. AlephAlpha_luminous-base
+21. openai_text-davinci-003
+22. 01-ai_yi-34b
+23. meta_llama-2-7b
+24. openai_gpt-3.5-turbo-0613
+25. meta_llama-65b
+26. tiiuae_falcon-40b
+27. cohere_command-light
+28. meta_llama-2-70b
+29. google_text-unicorn@001
+30. mistralai_mixtral-8x7b-32kseqlen
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+==============+====================+===============+
+| High        |           333 |         19.8 |              0.039 | 0.000 - 0.054 |
++-------------+---------------+--------------+--------------------+---------------+
+| Medium      |           333 |         24.7 |              0.158 | 0.054 - 0.109 |
++-------------+---------------+--------------+--------------------+---------------+
+| Low         |           334 |         18.3 |              0.29  | 0.109 - 0.507 |
++-------------+---------------+--------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                          | Model Responses (first 3)                                                                           |
++=============+===================================================+=====================================================================================================+
+| High        | Damals fing ich als Betreuer im Jedlička-Institut | Back then I started as a mentor at the Jedlička Institute, where I met many young people who were   |
+|             | an, wo ich vielen jungen Leuten begegnete, die    | interested in getting involved with something. Back then I started as a supervisor at the Jedlička  |
+|             | dar...                                            | Institute, where I met many young people who were interested in engaging intensely with something.  |
+|             |                                                   | At that time I started as a supervisor at the Jedlička Institute, where I met many young people who |
+|             |                                                   | were interested in getting involved in something in depth.                                          |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Medium      | Eine Vignette sei eine "Flatrate fürs Vielfahren  | A vignette is a "flat rate for driving and therefore ecologically counterproductive", explained the |
+|             | und damit ökologisch kontraproduktiv", erklärte   | SPD negotiator for the topic of traffic, Florian Pronold, in a letter to his faction. A vignette is |
+|             | der...                                            | a "flat rate for frequent driving and thus ecologically counterproductive," explained Florian       |
+|             |                                                   | Pronold, the SPD's chief negotiator on transportation issues, in a letter to his parliamentary      |
+|             |                                                   | group.  A vignette is a "flat rate for frequent driving and therefore ecologically                  |
+|             |                                                   | counterproductive", explained the SPD negotiator for the topic of transport, Florian Pronold, in a  |
+|             |                                                   | letter to his parliamentary group.                                                                  |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+| Low         | Die Bürger Pfullendorfs müssen sich auf höhere    | The citizens of Pfullendorf will have to get used to higher electricity costs. The citizens of      |
+|             | Stromkosten einstellen.                           | Pfullendorf have to expect higher electricity costs.  The citizens of Pfullendorf have to prepare   |
+|             |                                                   | for higher electricity costs.                                                                       |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+

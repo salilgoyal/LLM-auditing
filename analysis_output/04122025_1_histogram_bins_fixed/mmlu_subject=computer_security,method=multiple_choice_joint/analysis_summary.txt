@@ -1,0 +1,59 @@
+Benchmark 21/28: mmlu:subject=computer_security,method=multiple_choice_joint
+================================================================================
+
+Models analyzed:
+1. meta_llama-65b
+2. anthropic_claude-2.1
+3. anthropic_claude-v1.3
+4. openai_gpt-4-0613
+5. 01-ai_yi-6b
+6. cohere_command-light
+7. ai21_j2-grande
+8. openai_gpt-3.5-turbo-0613
+9. openai_text-davinci-002
+10. writer_palmyra-x-v2
+11. meta_llama-2-7b
+12. AlephAlpha_luminous-extended
+13. 01-ai_yi-34b
+14. mistralai_mixtral-8x7b-32kseqlen
+15. openai_gpt-4-1106-preview
+16. anthropic_claude-instant-1.2
+17. AlephAlpha_luminous-base
+18. cohere_command
+19. meta_llama-2-70b
+20. anthropic_claude-2.0
+21. mistralai_mistral-7b-v0.1
+22. google_text-bison@001
+23. ai21_j2-jumbo
+24. writer_palmyra-x-v3
+25. google_text-unicorn@001
+26. tiiuae_falcon-40b
+27. meta_llama-2-13b
+28. tiiuae_falcon-7b
+29. openai_text-davinci-003
+30. AlephAlpha_luminous-supreme
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+-------------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.exact_match | Std Range     |
++=============+===============+==============+=========================+===============+
+| High        |            43 |            1 |                   0.818 | 0.000 - 0.346 |
++-------------+---------------+--------------+-------------------------+---------------+
+| Medium      |            31 |            1 |                   0.714 | 0.346 - 0.450 |
++-------------+---------------+--------------+-------------------------+---------------+
+| Low         |            37 |            1 |                   0.516 | 0.450 - 0.509 |
++-------------+---------------+--------------+-------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-----------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)   |
++=============+====================================================+=============================+
+| High        | A hash function guarantees the integrity of a      | C C C                       |
+|             | message. It guarantees that the message has not be |                             |
++-------------+----------------------------------------------------+-----------------------------+
+| Medium      | A packet filter firewall filters at the            | D D D                       |
++-------------+----------------------------------------------------+-----------------------------+
+| Low         | Which of the following is a remote Trojan?         | A C C                       |
++-------------+----------------------------------------------------+-----------------------------+

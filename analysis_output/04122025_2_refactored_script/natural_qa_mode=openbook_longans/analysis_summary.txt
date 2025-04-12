@@ -1,0 +1,64 @@
+Benchmark 2/28: natural_qa:mode=openbook_longans
+================================================================================
+
+Models analyzed:
+1. writer_palmyra-x-v2
+2. ai21_j2-jumbo
+3. cohere_command
+4. AlephAlpha_luminous-base
+5. anthropic_claude-2.0
+6. mistralai_mistral-7b-v0.1
+7. google_text-unicorn@001
+8. meta_llama-2-7b
+9. tiiuae_falcon-40b
+10. openai_text-davinci-003
+11. openai_gpt-4-1106-preview
+12. anthropic_claude-instant-1.2
+13. google_text-bison@001
+14. mistralai_mixtral-8x7b-32kseqlen
+15. openai_text-davinci-002
+16. meta_llama-65b
+17. anthropic_claude-2.1
+18. AlephAlpha_luminous-supreme
+19. writer_palmyra-x-v3
+20. meta_llama-2-13b
+21. tiiuae_falcon-7b
+22. AlephAlpha_luminous-extended
+23. anthropic_claude-v1.3
+24. meta_llama-2-70b
+25. openai_gpt-4-0613
+26. ai21_j2-grande
+27. 01-ai_yi-6b
+28. cohere_command-light
+29. 01-ai_yi-34b
+30. openai_gpt-3.5-turbo-0613
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+----------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.f1_score | Std Range     |
++=============+===============+==============+======================+===============+
+| High        |           333 |          2.9 |                0.851 | 0.000 - 0.170 |
++-------------+---------------+--------------+----------------------+---------------+
+| Medium      |           333 |          6.5 |                0.656 | 0.171 - 0.301 |
++-------------+---------------+--------------+----------------------+---------------+
+| Low         |           334 |          7.4 |                0.562 | 0.302 - 0.509 |
++-------------+---------------+--------------+----------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+------------------------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                                        |
++=============+====================================================+==================================================================+
+| High        | Passage: "Tell Me Something Good" is a song by     | Rufus and Chaka Khan  Rufus and Chaka Khan  Rufus and Chaka Khan |
+|             | Rufus and Chaka Khan, written by Stevie Wonder and |                                                                  |
+|             | re...                                              |                                                                  |
++-------------+----------------------------------------------------+------------------------------------------------------------------+
+| Medium      | Passage:   No. overall No. in season Title         | May 22, 2018  2018  February 6, 2018 (2018-02-06)                |
+|             | Directed by Written by Original air date Prod.     |                                                                  |
+|             | code U.S. ...                                      |                                                                  |
++-------------+----------------------------------------------------+------------------------------------------------------------------+
+| Low         | Passage: The Miracles recorded the song first and  | The Miracles  Miracles  The Miracles                             |
+|             | included their version on their 1968 album,        |                                                                  |
+|             | Specia...                                          |                                                                  |
++-------------+----------------------------------------------------+------------------------------------------------------------------+

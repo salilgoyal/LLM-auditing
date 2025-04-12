@@ -1,0 +1,65 @@
+Benchmark 15/28: math:subject=algebra,level=1,use_official_examples=False,use_chain_of_thought=True
+================================================================================
+
+Models analyzed:
+1. mistralai_mistral-7b-v0.1
+2. 01-ai_yi-34b
+3. mistralai_mixtral-8x7b-32kseqlen
+4. anthropic_claude-instant-1.2
+5. anthropic_claude-v1.3
+6. cohere_command-light
+7. AlephAlpha_luminous-supreme
+8. openai_text-davinci-002
+9. openai_gpt-4-1106-preview
+10. AlephAlpha_luminous-base
+11. writer_palmyra-x-v3
+12. 01-ai_yi-6b
+13. openai_gpt-4-0613
+14. anthropic_claude-2.1
+15. meta_llama-2-7b
+16. cohere_command
+17. openai_text-davinci-003
+18. google_text-bison@001
+19. tiiuae_falcon-7b
+20. meta_llama-2-13b
+21. ai21_j2-grande
+22. google_text-unicorn@001
+23. tiiuae_falcon-40b
+24. meta_llama-2-70b
+25. meta_llama-65b
+26. anthropic_claude-2.0
+27. openai_gpt-3.5-turbo-0613
+28. ai21_j2-jumbo
+29. AlephAlpha_luminous-extended
+30. writer_palmyra-x-v2
+
+=== Summary Statistics ===
+
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Length |   Avg stats.math_equiv_chain_of_thought | Std Range     |
++=============+===============+==============+=========================================+===============+
+| High        |            45 |         37.3 |                                   0.399 | 0.000 - 0.479 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Medium      |            53 |         38   |                                   0.491 | 0.490 - 0.504 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+| Low         |            37 |         40.9 |                                   0.502 | 0.507 - 0.509 |
++-------------+---------------+--------------+-----------------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                         | Model Responses (first 3)                                                                            |
++=============+==================================================+======================================================================================================+
+| High        | If $a * b = a^b + b^a$, for all positive integer | We have $2 * 6 = 2^6 + 6^2 = 64 + 36 = \boxed{100}$.   We have $2 * 6 = 2^6 + 6^2 = 64 + 36 =        |
+|             | values of $a$ and $b$, then what is the value of | \boxed{100}$.  We have $2 * 6 = 2^6 + 6^2 = 64 + 36 = \boxed{100}$.                                  |
+|             | $2...                                            |                                                                                                      |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Medium      | Evaluate $(\sqrt[3]{13})^6$.                     | We have $(\sqrt[3]{13})^6 = 13^2 = \boxed{169}$.   We have $(\sqrt[3]{13})^6 = 13^{2} =              |
+|             |                                                  | \boxed{169}$.  We can rewrite the expression as $(\sqrt[3]{13})^6 = (13^{\frac{1}{3}})^6 =           |
+|             |                                                  | 13^{\frac{1}{3} \cdot 6} = 13^{\frac{6}{3}} = 13^{\boxed{2}}$.                                       |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+
+| Low         | Evaluate $\log_327$.                             | We can write $27$ as $3^3$. Therefore, we can write our equation as $\log_327 = \log_33^3 = 3\log_33 |
+|             |                                                  | = 3\cdot1 = \boxed{3}$.   We know that $\log_327$ is the exponent to which we must raise $3$ to get  |
+|             |                                                  | $27$. So, we have $3^x = 27$. Solving, we get that $x = \boxed{3}$.  We can rewrite this as          |
+|             |                                                  | $\log_33^3$. Therefore, the answer is $\boxed{3}$.                                                   |
++-------------+--------------------------------------------------+------------------------------------------------------------------------------------------------------+

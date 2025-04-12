@@ -2,8 +2,7 @@ import pandas as pd
 import json
 from functools import reduce
 
-def read_helm_list(version='v1.11.0/', instance='natural_qa:mode=closedbook,model=meta_llama-3.3-70b-instruct-turbo/'):
-    runs = '/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/runs/'
+def read_helm_list(version='v1.11.0/', runs='/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/runs/', instance='natural_qa:mode=closedbook,model=meta_llama-3.3-70b-instruct-turbo/'): 
     version = version
     instance = instance
     path = runs + version + instance
