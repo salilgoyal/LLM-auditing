@@ -1,0 +1,65 @@
+Benchmark 22/28: mmlu:subject=abstract_algebra,method=multiple_choice_joint
+================================================================================
+
+Models analyzed:
+1. anthropic_claude-2.0
+2. ai21_j2-jumbo
+3. ai21_j2-grande
+4. mistralai_mixtral-8x7b-32kseqlen
+5. 01-ai_yi-34b
+6. meta_llama-2-70b
+7. openai_text-davinci-002
+8. AlephAlpha_luminous-extended
+9. google_text-bison@001
+10. meta_llama-2-13b
+11. tiiuae_falcon-7b
+12. meta_llama-65b
+13. meta_llama-2-7b
+14. AlephAlpha_luminous-supreme
+15. openai_gpt-4-0613
+16. 01-ai_yi-6b
+17. openai_gpt-3.5-turbo-0613
+18. writer_palmyra-x-v3
+19. openai_text-davinci-003
+20. mistralai_mistral-7b-v0.1
+21. AlephAlpha_luminous-base
+22. tiiuae_falcon-40b
+23. anthropic_claude-instant-1.2
+24. anthropic_claude-2.1
+25. openai_gpt-4-1106-preview
+26. google_text-unicorn@001
+27. cohere_command
+28. writer_palmyra-x-v2
+29. anthropic_claude-v1.3
+30. cohere_command-light
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
++=============+===============+=======================+=========================+===============+
+| High        |             0 |                   nan |                 nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Medium      |             3 |                     1 |                   0.056 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Low         |           107 |                     1 |                   0.352 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+------------------------------------+-------------------------------------------------+
+| Agreement   | Question                                           | References                         | Model Responses (first 3)                       |
++=============+====================================================+====================================+=================================================+
+| High        | No examples in this category                       | N/A                                | N/A                                             |
++-------------+----------------------------------------------------+------------------------------------+-------------------------------------------------+
+| Medium      | Statement 1 | If H is a subgroup of G and a        | Reference 1: True, True            | Sample response 1 (stats.exact_match=0.000): A  |
+|             | belongs to G then aH is a subgroup of G if and     | Reference 2: False, False          | Sample response 2 (stats.exact_match=0.000):  B |
+|             | only if a is in H. Statement 2 | If H is a         | Reference 3: True, False (correct) | Sample response 3 (stats.exact_match=0.000):  B |
+|             | subgroup of G and a and b belong to G then aH = bH | Reference 4: False, True           |                                                 |
+|             | if and only if ab is in H.                         |                                    |                                                 |
++-------------+----------------------------------------------------+------------------------------------+-------------------------------------------------+
+| Low         | Statement 1 | For any two groups G and G', there   | Reference 1: True, True            | Sample response 1 (stats.exact_match=1.000): C  |
+|             | exists a homomorphism of G into G'. Statement 2 |  | Reference 2: False, False          | Sample response 2 (stats.exact_match=0.000):  B |
+|             | Every homomorphism is a one-to-one map.            | Reference 3: True, False (correct) | Sample response 3 (stats.exact_match=0.000):  B |
+|             |                                                    | Reference 4: False, True           |                                                 |
++-------------+----------------------------------------------------+------------------------------------+-------------------------------------------------+

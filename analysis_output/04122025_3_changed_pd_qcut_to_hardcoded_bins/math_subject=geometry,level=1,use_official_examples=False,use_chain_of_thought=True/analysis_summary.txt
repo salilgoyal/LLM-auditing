@@ -1,0 +1,70 @@
+Benchmark 10/28: math:subject=geometry,level=1,use_official_examples=False,use_chain_of_thought=True
+================================================================================
+
+Models analyzed:
+1. writer_palmyra-x-v2
+2. meta_llama-2-7b
+3. tiiuae_falcon-7b
+4. meta_llama-2-13b
+5. openai_gpt-4-0613
+6. google_text-unicorn@001
+7. anthropic_claude-v1.3
+8. cohere_command-light
+9. 01-ai_yi-34b
+10. openai_text-davinci-003
+11. mistralai_mixtral-8x7b-32kseqlen
+12. openai_gpt-3.5-turbo-0613
+13. cohere_command
+14. ai21_j2-jumbo
+15. AlephAlpha_luminous-base
+16. meta_llama-2-70b
+17. anthropic_claude-2.1
+18. anthropic_claude-instant-1.2
+19. ai21_j2-grande
+20. AlephAlpha_luminous-extended
+21. google_text-bison@001
+22. openai_text-davinci-002
+23. AlephAlpha_luminous-supreme
+24. writer_palmyra-x-v3
+25. meta_llama-65b
+26. anthropic_claude-2.0
+27. mistralai_mistral-7b-v0.1
+28. 01-ai_yi-6b
+29. tiiuae_falcon-40b
+30. openai_gpt-4-1106-preview
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.math_equiv_chain_of_thought | Std Range     |
++=============+===============+=======================+=========================================+===============+
+| High        |             0 |                 nan   |                                 nan     | nan - nan     |
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+| Medium      |             4 |                  44.6 |                                   0.05  | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+| Low         |            32 |                  42.8 |                                   0.361 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                                                                                                                                                                                                                                               |
++=============+====================================================+=========================================================================================================================================================================================================================================================================+
+| High        | No examples in this category                       | N/A                                                                                                                                                                                                                                                                     |
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Medium      | In $\triangle ABC$, what is the value of $x + y$?  | Sample response 1 (stats.math_equiv_chain_of_thought=0.000):  Since the sum of the interior angles of a triangle is $180^\circ$, we have $$104 + x + y = 180.$$                                                                                                         |
+|             | [asy] import olympiad; size(7cm);  pair a =        |                                                                                                                                                                                                                                                                         |
+|             | dir(76); pair b = (-1, 0); pair c = (1, 0); pair o | Solving for $x+y$, we get $$x+y = 180 - 104 = \boxed{76}.$$                                                                                                                                                                                                             |
+|             | = (0, 0);  draw(a--b--c--cycle); draw(a--o);       | Sample response 2 (stats.math_equiv_chain_of_thought=0.000): Let $x$ be the angle at $B$ and $y$ be the angle at $C$.  Since $\triangle ABC$ is isosceles, $\angle B = \angle C$.  Therefore, $x = y$.                                                                  |
+|             | label("$A$", a, N); label("$B$", b, SW);           |                                                                                                                                                                                                                                                                         |
+|             | label("$C$", c, SE); label("$104^\circ$", o, 1.8 * | Sample response 3 (stats.math_equiv_chain_of_thought=1.000):  $x^\circ + y^\circ = \boxed{90^\circ}$.                                                                                                                                                                   |
+|             | NW + 0.4 * E); label("$x^\circ$", b, 3 * E + NE +  |                                                                                                                                                                                                                                                                         |
+|             | NE); label("$y^\circ$", c, 2 * W + 2 * NW);        |                                                                                                                                                                                                                                                                         |
+|             | add(pathticks(b--o, s=3)); add(pathticks(c--o,     |                                                                                                                                                                                                                                                                         |
+|             | s=3)); add(pathticks(a--o, s=3));  [/asy]          |                                                                                                                                                                                                                                                                         |
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Low         | Compute $\tan 180^\circ$.                          | Sample response 1 (stats.math_equiv_chain_of_thought=1.000):  Since the tangent function is periodic with period $\pi$, we have $$\tan 180^\circ = \tan (180^\circ - \pi) = \tan 0^\circ = \boxed{0}.$$                                                                 |
+|             |                                                    | Sample response 2 (stats.math_equiv_chain_of_thought=1.000): $\tan 180^\circ = \frac{1}{0} = \boxed{0}$.                                                                                                                                                                |
+|             |                                                    |                                                                                                                                                                                                                                                                         |
+|             |                                                    | Sample response 3 (stats.math_equiv_chain_of_thought=0.000):  $\tan 180^\circ = \frac{\text{opposite}}{\text{adjacent}} = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{\text{opposite}}{\text{opposite}} = \boxed{1}$. |
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

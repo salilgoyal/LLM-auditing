@@ -1,0 +1,305 @@
+Benchmark 20/28: legalbench:subset=corporate_lobbying
+================================================================================
+
+Models analyzed:
+1. AlephAlpha_luminous-supreme
+2. 01-ai_yi-6b
+3. tiiuae_falcon-7b
+4. meta_llama-2-13b
+5. mistralai_mixtral-8x7b-32kseqlen
+6. AlephAlpha_luminous-base
+7. openai_gpt-4-0613
+8. openai_gpt-3.5-turbo-0613
+9. meta_llama-65b
+10. anthropic_claude-2.1
+11. anthropic_claude-v1.3
+12. openai_text-davinci-002
+13. meta_llama-2-7b
+14. writer_palmyra-x-v3
+15. cohere_command-light
+16. meta_llama-2-70b
+17. ai21_j2-grande
+18. AlephAlpha_luminous-extended
+19. anthropic_claude-2.0
+20. anthropic_claude-instant-1.2
+21. ai21_j2-jumbo
+22. cohere_command
+23. 01-ai_yi-34b
+24. google_text-unicorn@001
+25. writer_palmyra-x-v2
+26. mistralai_mistral-7b-v0.1
+27. google_text-bison@001
+28. tiiuae_falcon-40b
+29. openai_text-davinci-003
+30. openai_gpt-4-1106-preview
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
++=============+===============+=======================+===============================+===============+
+| High        |             0 |                 nan   |                       nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Medium      |            16 |                   1.3 |                         0.767 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Low         |           474 |                   2.1 |                         0.607 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+--------------------------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                                          |
++=============+====================================================+====================================================================+
+| High        | No examples in this category                       | N/A                                                                |
++-------------+----------------------------------------------------+--------------------------------------------------------------------+
+| Medium      | Official title of bill: A bill to provide          | Sample response 1 (stats.quasi_exact_match=1.000):  No             |
+|             | assistance for United States nationals taken       | Sample response 2 (stats.quasi_exact_match=1.000):  No             |
+|             | hostage or unlawfully or wrongfully detained       | Sample response 3 (stats.quasi_exact_match=1.000):  No             |
+|             | abroad, and for other purposes. Official summary   |                                                                    |
+|             | of bill: Robert Levinson Hostage Recovery and      |                                                                    |
+|             | Hostage-Taking Accountability Act  This bill       |                                                                    |
+|             | establishes various entities and procedures to     |                                                                    |
+|             | address the wrongful detainment of U.S. nationals  |                                                                    |
+|             | abroad.The President shall appoint a Special       |                                                                    |
+|             | Presidential Envoy for Hostage Affairs. The        |                                                                    |
+|             | envoy's duties shall include leading diplomatic    |                                                                    |
+|             | engagement on U.S. hostage policy and coordinating |                                                                    |
+|             | diplomatic engagements in support of hostage       |                                                                    |
+|             | recovery efforts.  The President shall establish   |                                                                    |
+|             | an interagency Hostage Recovery Fusion Cell, which |                                                                    |
+|             | shall assess and track all hostage cases of U.S.   |                                                                    |
+|             | nationals and coordinate agency efforts to safely  |                                                                    |
+|             | recover hostages. The President shall also         |                                                                    |
+|             | establish the Hostage Recovery Group, which shall  |                                                                    |
+|             | make recommendations regarding hostage recovery    |                                                                    |
+|             | options and coordinate the development and         |                                                                    |
+|             | implementation of U.S. hostage recovery policies.  |                                                                    |
+|             | The President is authorized to impose visa- and    |                                                                    |
+|             | property-blocking sanctions against any foreign    |                                                                    |
+|             | person responsible for or complicit in the         |                                                                    |
+|             | unlawful or wrongful detention of a U.S. national  |                                                                    |
+|             | abroad.  The Department of State shall review      |                                                                    |
+|             | cases where U.S. nationals are detained abroad and |                                                                    |
+|             | refer instances of wrongful or unlawful detainment |                                                                    |
+|             | to the Special Presidential Envoy for Hostage      |                                                                    |
+|             | Affairs. Company name: Tetra Tech, Inc. Company    |                                                                    |
+|             | business description: Tetra Tech, Inc. is a        |                                                                    |
+|             | leading global provider of consulting and          |                                                                    |
+|             | engineering services that focuses on water,        |                                                                    |
+|             | environment, infrastructure, resource management,  |                                                                    |
+|             | energy, and international development. We are a    |                                                                    |
+|             | global company that is Leading with Science® to    |                                                                    |
+|             | provide innovative solutions for our public and    |                                                                    |
+|             | private clients. We typically begin at the         |                                                                    |
+|             | earliest stage of a project by identifying         |                                                                    |
+|             | technical solutions and developing execution plans |                                                                    |
+|             | tailored to our clients' needs and resources.      |                                                                    |
+|             | Record\("ENR"), the leading trade journal for our  |                                                                    |
+|             | industry, has ranked us the number one water       |                                                                    |
+|             | services firm for the past 16 years, most recently |                                                                    |
+|             | in its May 2019  In 2019, we were also ranked      |                                                                    |
+|             | number one in water treatment/desalination, water  |                                                                    |
+|             | treatment and supply, environmental management,    |                                                                    |
+|             | environmental science, consulting/studies, solid   |                                                                    |
+|             | waste, hydro plants, and wind power. ENR ranks us  |                                                                    |
+|             | among the largest 10 firms in numerous other       |                                                                    |
+|             | service lines, including engineering/design,       |                                                                    |
+|             | chemical and soil remediation, site assessment and |                                                                    |
+|             | compliance, dams and reservoirs, power,            |                                                                    |
+|             | transmission and distribution plants, and          |                                                                    |
+|             | hazardous waste.  Our reputation for high-end      |                                                                    |
+|             | consulting and engineering services and our        |                                                                    |
+|             | ability to develop solutions for water and         |                                                                    |
+|             | environmental management has supported our growth  |                                                                    |
+|             | for more than 50 years. 's lives worldwide through |                                                                    |
+|             | broad consulting, engineering, and technology      |                                                                    |
+|             | service offerings. We are Leading with Science     |                                                                    |
+|             | throughout our operations, with domain experts     |                                                                    |
+|             | across multiple disciplines supported by advanced  |                                                                    |
+|             | analytics, artificial intelligence ("AI"), machine |                                                                    |
+|             | learning, and digital technology. Our ability to   |                                                                    |
+|             | provide innovation and first-of-kind solutions is  |                                                                    |
+|             | enhanced by partnerships with our forward-thinking |                                                                    |
+|             | clients. We are diverse and inclusive, embracing   |                                                                    |
+|             | the breadth of experience across our talent force  |                                                                    |
+|             | worldwide with a culture of innovation and         |                                                                    |
+|             | entrepreneurship. In supporting our clients, we    |                                                                    |
+|             | seek to add value and provide long-term            |                                                                    |
+|             | sustainable consulting, engineering, and           |                                                                    |
+|             | technology solutions.  By combining ingenuity and  |                                                                    |
+|             | practical experience, our mission is to be the     |                                                                    |
+|             | world's leading consulting and engineering firm    |                                                                    |
+|             | solving global challenges in water and the         |                                                                    |
+|             | environment that make a positive difference in     |                                                                    |
+|             | people needs and deliver smart, cost-effective     |                                                                    |
+|             | solutions that meet their needs.  We develop and   |                                                                    |
+|             | implement sustainable solutions that are           |                                                                    |
+|             | innovative, efficient and practical.  We bring     |                                                                    |
+|             | superior technical capability, disciplined project |                                                                    |
+|             | management, and excellence in safety and quality   |                                                                    |
+|             | to all of our services.  Opportunity means new     |                                                                    |
+|             | technical challenges that provide advancement      |                                                                    |
+|             | within our company, encourage an inclusive and     |                                                                    |
+|             | diverse workforce, and ensure a safe workplace.    |                                                                    |
+|             | Our client-focused project management is supported |                                                                    |
+|             | by strong fiscal management and financial tools.   |                                                                    |
+|             | We use a disciplined approach to monitoring,       |                                                                    |
+|             | managing, and improving 3 our return on investment |                                                                    |
+|             | in each of our business areas through our efforts  |                                                                    |
+|             | to negotiate appropriate contract terms, manage    |                                                                    |
+|             | our contract performance to minimize schedule      |                                                                    |
+|             | delays and cost overruns, and promptly bill and    |                                                                    |
+|             | collect accounts receivable.  We believe that      |                                                                    |
+|             | proximity to our clients is also instrumental to   |                                                                    |
+|             | integrating global experience and resources with   |                                                                    |
+|             | an understanding of our local clients' needs. Over |                                                                    |
+|             | the past year, we worked in more than 100          |                                                                    |
+|             | countries, helping our clients address complex     |                                                                    |
+|             | water, environment, energy and related             |                                                                    |
+|             | infrastructure needs.  Institutional knowledge is  |                                                                    |
+|             | often a significant factor in winning competitive  |                                                                    |
+|             | proposals and providing cost-effective solutions   |                                                                    |
+|             | tailored to our clients'  These might be a new     |                                                                    |
+|             | water reuse technology, a unique solution to       |                                                                    |
+|             | addressing new regulatory requirements, a new      |                                                                    |
+|             | monitoring approach for assessing infrastructure   |                                                                    |
+|             | assets or a computer model for real time           |                                                                    |
+|             | management of water resources.  We combine         |                                                                    |
+|             | interdisciplinary capabilities, technical          |                                                                    |
+|             | resources, and institutional knowledge to          |                                                                    |
+|             | implement complex projects that are at the leading |                                                                    |
+|             | edge of policy and technology development.  We use |                                                                    |
+|             | this suite of technologies and analytical tools to |                                                                    |
+|             | provide value engineering and cost efficiencies    |                                                                    |
+|             | for our clients, while enhancing the effectiveness |                                                                    |
+|             | and responsiveness of our solutions.               |                                                                    |
++-------------+----------------------------------------------------+--------------------------------------------------------------------+
+| Low         | Official title of bill: To amend the Internal      | Sample response 1 (stats.quasi_exact_match=0.000):  Yes            |
+|             | Revenue Code of 1986 to provide for the proper tax | Sample response 2 (stats.quasi_exact_match=1.000):  No             |
+|             | treatment of personal service income earned in     | Sample response 3 (stats.quasi_exact_match=0.000):  Public Storage |
+|             | pass-thru entities. Official summary of bill:      |                                                                    |
+|             | Carried Interest Fairness Act of 2019  This bill   |                                                                    |
+|             | modifies the tax treatment of carried interest,    |                                                                    |
+|             | which is compensation that is typically received   |                                                                    |
+|             | by a partner of a private equity or hedge fund and |                                                                    |
+|             | is based on a share of the fund's profits. (Under  |                                                                    |
+|             | current law, carried interest is taxed as          |                                                                    |
+|             | investment income rather than at ordinary income   |                                                                    |
+|             | tax rates.)  This bill includes provisions that    |                                                                    |
+|             | set forth a special rule for the inclusion in      |                                                                    |
+|             | gross income of partnership interests transferred  |                                                                    |
+|             | in connection with the performance of services,    |                                                                    |
+|             | treat as ordinary income the net capital gain with |                                                                    |
+|             | respect to an investment services partnership      |                                                                    |
+|             | interest except to the extent such gain is         |                                                                    |
+|             | attributable to a partner's qualified capital      |                                                                    |
+|             | interest, exempt income from investment services   |                                                                    |
+|             | partnership interests from treatment as qualifying |                                                                    |
+|             | income of a publicly traded partnership, exempt    |                                                                    |
+|             | certain family partnerships from the application   |                                                                    |
+|             | of this bill, increase the penalty for             |                                                                    |
+|             | underpayments of tax resulting from failure to     |                                                                    |
+|             | treat income from an investment services           |                                                                    |
+|             | partnership interest as ordinary income, and       |                                                                    |
+|             | include income and loss from an investment         |                                                                    |
+|             | services partnership interest for purposes of      |                                                                    |
+|             | determining net earnings from self-employment and  |                                                                    |
+|             | applicable self-employment taxes. The bill defines |                                                                    |
+|             | "investment services partnership interest" as any  |                                                                    |
+|             | interest in a partnership held by a person who     |                                                                    |
+|             | provides services to a partnership by (1) advising |                                                                    |
+|             | the partnership about investing in, purchasing, or |                                                                    |
+|             | selling specified assets; (2) managing, acquiring, |                                                                    |
+|             | or disposing of specified assets; or (3) arranging |                                                                    |
+|             | financing with respect to acquiring specified      |                                                                    |
+|             | assets. Company name: Public Storage Company       |                                                                    |
+|             | business description: We acquire, develop, own and |                                                                    |
+|             | operate self-storage facilities , which offer      |                                                                    |
+|             | storage spaces for lease on a month-to-month       |                                                                    |
+|             | basis, for personal and business use. We are the   |                                                                    |
+|             | largest owner and operator of self-storage         |                                                                    |
+|             | facilities in the U.S. We have direct and indirect |                                                                    |
+|             | equity interests in 2,429 self-storage facilities  |                                                                    |
+|             | that we consolidate (an aggregate of 162 million   |                                                                    |
+|             | net rentable square feet of space) located in 38   |                                                                    |
+|             | states within the U.S. operating under the "Public |                                                                    |
+|             | Storage" brand name.  Ancillary Operations : We    |                                                                    |
+|             | reinsure policies against losses to goods stored   |                                                                    |
+|             | by customers in our self-storage facilities and    |                                                                    |
+|             | sell merchandise, primarily locks and cardboard    |                                                                    |
+|             | boxes, at our self-storage facilities.  Inc.       |                                                                    |
+|             | ("PSB"), a publicly held REIT that owns, operates, |                                                                    |
+|             | acquires and develops commercial properties,       |                                                                    |
+|             | primarily multi-tenant flex, office, and           |                                                                    |
+|             | industrial parks. At December 31, 201 8 , PSB owns |                                                                    |
+|             | and operates 28. 2 million rentable square feet of |                                                                    |
+|             | commercial space.  : We have a 35 % equity inter   |                                                                    |
+|             | est in Shurgard Self Storage SA ("Shurgard         |                                                                    |
+|             | Europe"), a publicly held company trading under    |                                                                    |
+|             | Euronext Brussels under the "SHUR" symbol , which  |                                                                    |
+|             | owns 232 self-storage facilities (13 million net   |                                                                    |
+|             | rentable square feet) located in seven countries   |                                                                    |
+|             | in Western Europe operated under the "Shurgard"    |                                                                    |
+|             | brand name. We believe Shurgard Europe is the      |                                                                    |
+|             | largest owner and operator of self-storage         |                                                                    |
+|             | facilities in Western Europe.  We also manage 33   |                                                                    |
+|             | self-storage facilities for third parties . We are |                                                                    |
+|             | seeking to expand our third-party management       |                                                                    |
+|             | operations to further increase our economies of    |                                                                    |
+|             | scale and leverage our brand; however, there is no |                                                                    |
+|             | 5 assurance that we will be able to do so. We also |                                                                    |
+|             | own 0.8 million net rentable square feet of        |                                                                    |
+|             | commercial space which is managed primarily by PSB |                                                                    |
+|             | .  For all periods presented herein, we have       |                                                                    |
+|             | elected to be treated as a REIT, as defined in the |                                                                    |
+|             | Internal Revenue Code of 1986, as amended (the     |                                                                    |
+|             | "Code") . and we expect to continue to elect and   |                                                                    |
+|             | qualify as a REIT.  We believe that our customers  |                                                                    |
+|             | genera lly store their goods within a three to f   |                                                                    |
+|             | ive mile radius of their home or business . Our    |                                                                    |
+|             | facilities compete with nearby self-storage        |                                                                    |
+|             | facilities owned by other operators using          |                                                                    |
+|             | marketing channels similar to ours , including     |                                                                    |
+|             | Internet advertising, signage, and banners and     |                                                                    |
+|             | offer services similar to ours . A s a result,     |                                                                    |
+|             | competition is significant and affects the         |                                                                    |
+|             | occupancy levels, rental rates, rental income and  |                                                                    |
+|             | operating expenses of our facilities.  In the last |                                                                    |
+|             | three years, there has been a marked increase in   |                                                                    |
+|             | development of new self-storage facilities in many |                                                                    |
+|             | of the markets we operate in, due to the favorable |                                                                    |
+|             | economics of development which we have also taken  |                                                                    |
+|             | advantage of. These newly developed facilities     |                                                                    |
+|             | compete with many of the facilities we own,        |                                                                    |
+|             | negatively impacting our occupancies, rental       |                                                                    |
+|             | rates, and rental growth. This increase in supply  |                                                                    |
+|             | has been most notable in Atlanta, Austin,          |                                                                    |
+|             | Charlotte, Chicago, Dallas, Denver, Houston, New   |                                                                    |
+|             | York, and Portland.  Ownership and operation of    |                                                                    |
+|             | self-storage facilities is highly fragmented. As   |                                                                    |
+|             | the largest owner of self-storage facilities, we   |                                                                    |
+|             | believe that we own approximately 7 % of the self- |                                                                    |
+|             | storage square footage in the U.S. and that        |                                                                    |
+|             | collectively the five largest self-storage owners  |                                                                    |
+|             | in the U.S. own approximately 15 %, with the       |                                                                    |
+|             | remaining 8 5 % owned by numerous regional and     |                                                                    |
+|             | local operators.  We believe that we have          |                                                                    |
+|             | significant market share and concentration in      |                                                                    |
+|             | major metropolitan centers, with approximately 71  |                                                                    |
+|             | % of our 201 8 same-store revenues generated in    |                                                                    |
+|             | the 20 Metropolitan Statistical Areas (each, an    |                                                                    |
+|             | "MSA", as defined by the U.S. Census Bureau) with  |                                                                    |
+|             | the highest population levels. Industry            |                                                                    |
+|             | fragmentation also provides opportunities for us   |                                                                    |
+|             | to acquire additional facilities; however, we      |                                                                    |
+|             | compete with a wide variety of institutions and    |                                                                    |
+|             | other investors who also view self-storage         |                                                                    |
+|             | facilities as attractive investments. The amount   |                                                                    |
+|             | of capital available for real estate investments   |                                                                    |
+|             | greatly influences the competition for ownership   |                                                                    |
+|             | interests in facilities and, by extension, the     |                                                                    |
+|             | yields that we can achieve on newly acquired       |                                                                    |
+|             | investments.  a s well as analyze customer data    |                                                                    |
+|             | and quickly change each of our individual          |                                                                    |
+|             | properties                                         |                                                                    |
++-------------+----------------------------------------------------+--------------------------------------------------------------------+

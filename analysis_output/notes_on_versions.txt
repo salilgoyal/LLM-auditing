@@ -1,0 +1,20 @@
+
+04092025 through 04122025_2
+
+Uses pd.qcut to create 3 categories of agreement levels for queries in a given benchmark
+# Create agreement groups based on std
+benchmark_df['agreement_level'] = pd.qcut(benchmark_df['std'], n_groups, labels=['High', 'Medium', 'Low'])
+
+04092025 through 04122025_3
+
+all analyses are only done for version v1.0.0
+
+ 04122025_3
+
+ - changed pd.qcut to hardcoded bins: std 0-0.15 = high agreement, 0.15-0.3 = medium agreement, >0.3 = Low
+
+04122025_4
+
+- changed the format of the `analysis_summary.txt` files so that for all questions they also display the correct answer
+    (or all the mutiple-choice answers along with which one is the correct one)
+- in the top right histogram also added the standard dev ranges for each of 3 categories (which are still hardcoded)

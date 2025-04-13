@@ -1,0 +1,68 @@
+Benchmark 1/28: legalbench:subset=international_citizenship_questions
+================================================================================
+
+Models analyzed:
+1. tiiuae_falcon-7b
+2. meta_llama-2-13b
+3. ai21_j2-jumbo
+4. anthropic_claude-instant-1.2
+5. writer_palmyra-x-v2
+6. cohere_command-light
+7. meta_llama-65b
+8. openai_gpt-4-0613
+9. mistralai_mixtral-8x7b-32kseqlen
+10. anthropic_claude-v1.3
+11. 01-ai_yi-6b
+12. openai_text-davinci-003
+13. anthropic_claude-2.1
+14. mistralai_mistral-7b-v0.1
+15. ai21_j2-grande
+16. openai_gpt-4-1106-preview
+17. google_text-unicorn@001
+18. meta_llama-2-70b
+19. AlephAlpha_luminous-base
+20. cohere_command
+21. openai_gpt-3.5-turbo-0613
+22. writer_palmyra-x-v3
+23. meta_llama-2-7b
+24. google_text-bison@001
+25. AlephAlpha_luminous-supreme
+26. AlephAlpha_luminous-extended
+27. tiiuae_falcon-40b
+28. 01-ai_yi-34b
+29. openai_text-davinci-002
+30. anthropic_claude-2.0
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
++=============+===============+=======================+===============================+===============+
+| High        |             0 |                 nan   |                       nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Medium      |            80 |                   1.7 |                         0.506 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Low         |           891 |                   1.4 |                         0.532 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
+| Agreement   | Question                                           | References                 | Model Responses (first 3)                               |
++=============+====================================================+============================+=========================================================+
+| High        | No examples in this category                       | N/A                        | N/A                                                     |
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
+| Medium      | Question: Consider the country of South Korea.     | Reference 1: Yes (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  Yes |
+|             | Does the country permit a parent to confer his or  |                            | Sample response 2 (stats.quasi_exact_match=1.000): Yes  |
+|             | her citizenship on a child born in the territory   |                            | Sample response 3 (stats.quasi_exact_match=1.000):  Yes |
+|             | of the country of citizenship and, if so, under    |                            |                                                         |
+|             | which conditions?                                  |                            |                                                         |
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
+| Low         | Question: Consider the country of Zambia. Does the | Reference 1: No (correct)  | Sample response 1 (stats.quasi_exact_match=1.000):  No  |
+|             | country provide for involuntary loss of            |                            | Sample response 2 (stats.quasi_exact_match=1.000): No   |
+|             | citizenship by a person who acquired citizenship   |                            | Sample response 3 (stats.quasi_exact_match=0.000):  Yes |
+|             | as a foundling, on the basis of apparent status as |                            |                                                         |
+|             | a citizen, or as a presumptively stateless person  |                            |                                                         |
+|             | if possession of a foreign citizenship is          |                            |                                                         |
+|             | established and, if so, under which conditions?    |                            |                                                         |
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+

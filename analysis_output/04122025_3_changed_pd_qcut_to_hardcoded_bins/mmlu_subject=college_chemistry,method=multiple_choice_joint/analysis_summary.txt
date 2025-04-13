@@ -1,0 +1,62 @@
+Benchmark 26/28: mmlu:subject=college_chemistry,method=multiple_choice_joint
+================================================================================
+
+Models analyzed:
+1. openai_gpt-4-1106-preview
+2. meta_llama-65b
+3. mistralai_mistral-7b-v0.1
+4. ai21_j2-jumbo
+5. openai_gpt-4-0613
+6. cohere_command-light
+7. anthropic_claude-instant-1.2
+8. AlephAlpha_luminous-base
+9. google_text-bison@001
+10. openai_text-davinci-003
+11. meta_llama-2-7b
+12. anthropic_claude-2.1
+13. ai21_j2-grande
+14. writer_palmyra-x-v3
+15. google_text-unicorn@001
+16. AlephAlpha_luminous-supreme
+17. 01-ai_yi-6b
+18. cohere_command
+19. meta_llama-2-13b
+20. tiiuae_falcon-7b
+21. openai_gpt-3.5-turbo-0613
+22. meta_llama-2-70b
+23. AlephAlpha_luminous-extended
+24. anthropic_claude-v1.3
+25. anthropic_claude-2.0
+26. tiiuae_falcon-40b
+27. writer_palmyra-x-v2
+28. mistralai_mixtral-8x7b-32kseqlen
+29. 01-ai_yi-34b
+30. openai_text-davinci-002
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
++=============+===============+=======================+=========================+===============+
+| High        |             0 |                   nan |                 nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Medium      |            21 |                     1 |                   0.221 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Low         |            85 |                     1 |                   0.485 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                       |
++=============+====================================================+=================================================+
+| High        | No examples in this category                       | N/A                                             |
++-------------+----------------------------------------------------+-------------------------------------------------+
+| Medium      | Which nuclide has an NMR frequency of 115.5 MHz in | Sample response 1 (stats.exact_match=0.000): To |
+|             | a 20.0 T magnetic field?                           | Sample response 2 (stats.exact_match=0.000): C  |
+|             |                                                    | Sample response 3 (stats.exact_match=1.000): A  |
++-------------+----------------------------------------------------+-------------------------------------------------+
+| Low         | Of the following ions, which has the smallest      | Sample response 1 (stats.exact_match=1.000): C  |
+|             | radius?                                            | Sample response 2 (stats.exact_match=1.000): C  |
+|             |                                                    | Sample response 3 (stats.exact_match=1.000): C  |
++-------------+----------------------------------------------------+-------------------------------------------------+

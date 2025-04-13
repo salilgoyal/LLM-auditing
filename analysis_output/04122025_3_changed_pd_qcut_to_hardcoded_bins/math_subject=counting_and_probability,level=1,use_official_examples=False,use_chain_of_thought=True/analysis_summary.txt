@@ -1,0 +1,80 @@
+Benchmark 8/28: math:subject=counting_and_probability,level=1,use_official_examples=False,use_chain_of_thought=True
+================================================================================
+
+Models analyzed:
+1. anthropic_claude-2.1
+2. cohere_command
+3. 01-ai_yi-34b
+4. AlephAlpha_luminous-supreme
+5. AlephAlpha_luminous-extended
+6. meta_llama-2-70b
+7. anthropic_claude-v1.3
+8. openai_text-davinci-003
+9. openai_gpt-4-1106-preview
+10. AlephAlpha_luminous-base
+11. cohere_command-light
+12. writer_palmyra-x-v2
+13. meta_llama-2-13b
+14. tiiuae_falcon-7b
+15. meta_llama-2-7b
+16. mistralai_mistral-7b-v0.1
+17. google_text-unicorn@001
+18. openai_gpt-4-0613
+19. ai21_j2-jumbo
+20. tiiuae_falcon-40b
+21. openai_gpt-3.5-turbo-0613
+22. meta_llama-65b
+23. google_text-bison@001
+24. anthropic_claude-2.0
+25. 01-ai_yi-6b
+26. ai21_j2-grande
+27. anthropic_claude-instant-1.2
+28. writer_palmyra-x-v3
+29. openai_text-davinci-002
+30. mistralai_mixtral-8x7b-32kseqlen
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.math_equiv_chain_of_thought | Std Range     |
++=============+===============+=======================+=========================================+===============+
+| High        |             0 |                 nan   |                                 nan     | nan - nan     |
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+| Medium      |             3 |                  58.7 |                                   0.067 | 0.254 - 0.254 |
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+| Low         |            36 |                  36.6 |                                   0.358 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-----------------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                   | Model Responses (first 3)                                                                                                                                                                                                                                                                                                                                                   |
++=============+============================================+=============================================================================================================================================================================================================================================================================================================================================================================+
+| High        | No examples in this category               | N/A                                                                                                                                                                                                                                                                                                                                                                         |
++-------------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Medium      | How many three-digit positive integers are | Sample response 1 (stats.math_equiv_chain_of_thought=0.000): To be a multiple of 11, a number must have a ones digit that is 0 or a multiple of 11. The ones digit of a three-digit number ranges from 0 to 9. There are two possibilities for the ones digit that are multiples of 11: 0 and 9.                                                                            |
+|             | multiples of 11?                           |                                                                                                                                                                                                                                                                                                                                                                             |
+|             |                                            | The hundreds digit of a three-digit number can take any value from 1 to 9.                                                                                                                                                                                                                                                                                                  |
+|             |                                            |                                                                                                                                                                                                                                                                                                                                                                             |
+|             |                                            | The tens digit can take any value from 0 to 9 no matter what the hundreds digit and ones digits are.                                                                                                                                                                                                                                                                        |
+|             |                                            |                                                                                                                                                                                                                                                                                                                                                                             |
+|             |                                            | So there are:                                                                                                                                                                                                                                                                                                                                                               |
+|             |                                            |                                                                                                                                                                                                                                                                                                                                                                             |
+|             |                                            | 9 choices for the hundreds digit                                                                                                                                                                                                                                                                                                                                            |
+|             |                                            | 10 choices for the tens digit                                                                                                                                                                                                                                                                                                                                               |
+|             |                                            | 2 choices for the ones digit                                                                                                                                                                                                                                                                                                                                                |
+|             |                                            |                                                                                                                                                                                                                                                                                                                                                                             |
+|             |                                            | By the multiplication principle, the total number of three-digit multiples of 11 is $9\times10\times2 = \boxed{180}$.                                                                                                                                                                                                                                                       |
+|             |                                            | Sample response 2 (stats.math_equiv_chain_of_thought=0.000):  Any multiple of 11 is of the form $11k$, $11k+1$, $11k+2$, ..., $11k+10$ for some integer $k$. Therefore, the number of three-digit multiples of 11 is $\boxed{10}$. Would you like to know more about combinatorics and number theory?                                                                       |
+|             |                                            | Sample response 3 (stats.math_equiv_chain_of_thought=0.000):  The three-digit positive integers are $100, 101, 102, \ldots, 999$. The multiples of 11 are $11, 22, 33, \ldots, 990$. The multiples of 11 that are three-digit positive integers are $110, 220, 330, \ldots, 990$. There are $990-110+1=\boxed{881}$ three-digit positive integers that are multiples of 11. |
++-------------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Low         | Compute $\dbinom{1001}{2}$.                | Sample response 1 (stats.math_equiv_chain_of_thought=0.000): \begin{align*}                                                                                                                                                                                                                                                                                                 |
+|             |                                            | \dbinom{1001}{2} &= \dfrac{1001!}{2!(1001-2)!} \\                                                                                                                                                                                                                                                                                                                           |
+|             |                                            | &= \dfrac{1001!}{2!999!} \\                                                                                                                                                                                                                                                                                                                                                 |
+|             |                                            | &= \dfrac{1001\cdot 1000}{2\cdot 1} \\                                                                                                                                                                                                                                                                                                                                      |
+|             |                                            | &= 1000 \cdot 500 \\                                                                                                                                                                                                                                                                                                                                                        |
+|             |                                            | &= \boxed{500,000}                                                                                                                                                                                                                                                                                                                                                          |
+|             |                                            | \end{align*}                                                                                                                                                                                                                                                                                                                                                                |
+|             |                                            | Sample response 2 (stats.math_equiv_chain_of_thought=0.000):  We have $\dbinom{1001}{2}=\dfrac{1001\times 1000}{2}=\dfrac{1,002,000}{2}=501,001$. Therefore, the answer is $\boxed{501,001}$.                                                                                                                                                                               |
+|             |                                            | Sample response 3 (stats.math_equiv_chain_of_thought=1.000):  $$\dbinom{1001}{2} = \dfrac{1001!}{2!999!} = \dfrac{1001\times 1000}{2\times 1} = \boxed{500500}.$$                                                                                                                                                                                                           |
++-------------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

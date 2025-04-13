@@ -1,0 +1,65 @@
+Benchmark 3/28: wmt_14:language_pair=ru-en
+================================================================================
+
+Models analyzed:
+1. openai_gpt-4-0613
+2. AlephAlpha_luminous-supreme
+3. AlephAlpha_luminous-base
+4. writer_palmyra-x-v2
+5. meta_llama-2-70b
+6. 01-ai_yi-6b
+7. ai21_j2-grande
+8. mistralai_mixtral-8x7b-32kseqlen
+9. openai_gpt-4-1106-preview
+10. openai_text-davinci-002
+11. anthropic_claude-2.0
+12. anthropic_claude-v1.3
+13. tiiuae_falcon-7b
+14. meta_llama-2-13b
+15. mistralai_mistral-7b-v0.1
+16. ai21_j2-jumbo
+17. meta_llama-65b
+18. meta_llama-2-7b
+19. AlephAlpha_luminous-extended
+20. 01-ai_yi-34b
+21. anthropic_claude-instant-1.2
+22. openai_gpt-3.5-turbo-0613
+23. writer_palmyra-x-v3
+24. cohere_command-light
+25. google_text-bison@001
+26. google_text-unicorn@001
+27. cohere_command
+28. openai_text-davinci-003
+29. anthropic_claude-2.1
+30. tiiuae_falcon-40b
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+=======================+====================+===============+
+| High        |           634 |                  22.9 |              0.102 | 0.004 - 0.150 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Medium      |           253 |                  19.7 |              0.269 | 0.150 - 0.299 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Low         |            36 |                  10.2 |              0.468 | 0.301 - 0.490 |
++-------------+---------------+-----------------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                          | Model Responses (first 3)                                                                                                                                                                                                                           |
++=============+===================================================+=====================================================================================================================================================================================================================================================+
+| High        | "С начала расследования в 2010 году, подчеркивает | Sample response 1 (stats.bleu_4=0.194): "Since the beginning of the investigation in 2010, he emphasizes, the Ministry of Transport alone would have saved a billion dollars on contracts", if some had restrained their instincts to take a share. |
+|             | он, одно только Министерство транспорта сохранило | Sample response 2 (stats.bleu_4=0.152):  "At the beginning of the investigation in 2010, he points out that only the Ministry of Transport saved a billion dollars on contracts if some companies held on to their positions."                      |
+|             | бы миллиард долларов на контрактах", если бы      | Sample response 3 (stats.bleu_4=0.030):  "The company has been working on the project since 2010, but only the Ministry of Transport has approved the design", if not all the documents were approved.                                              |
+|             | некоторые сдерживали свои инстинкты брать долю.   |                                                                                                                                                                                                                                                     |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Medium      | Украинские пограничники и таможенники             | Sample response 1 (stats.bleu_4=0.402): Ukrainian border guards and customs officers confirm: the queue is created by the Russian side, which did not warn in advance about the innovations.                                                        |
+|             | подтверждают: очередь создает российская сторона, | Sample response 2 (stats.bleu_4=0.159):  Ukrainian border guards and customs officers confirm: the Russian side created a situation that was not previously prepared for.                                                                           |
+|             | которая заранее не предупредила о нововведениях.  | Sample response 3 (stats.bleu_4=0.000):  The hotel is located in the centre of the city, close to the main railway station and the city's main shopping street.                                                                                     |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Low         | Они знают свое дело лучше, чем кто-либо еще.      | Sample response 1 (stats.bleu_4=1.000): They know their business better than anyone else.                                                                                                                                                           |
+|             |                                                   | Sample response 2 (stats.bleu_4=1.000):  They know their business better than anyone else.                                                                                                                                                          |
+|             |                                                   | Sample response 3 (stats.bleu_4=0.000):  They know what they want, but not what they need.                                                                                                                                                          |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

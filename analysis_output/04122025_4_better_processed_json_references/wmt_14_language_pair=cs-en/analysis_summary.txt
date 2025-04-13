@@ -1,0 +1,66 @@
+Benchmark 13/28: wmt_14:language_pair=cs-en
+================================================================================
+
+Models analyzed:
+1. meta_llama-2-70b
+2. ai21_j2-grande
+3. ai21_j2-jumbo
+4. AlephAlpha_luminous-base
+5. google_text-unicorn@001
+6. openai_gpt-4-0613
+7. anthropic_claude-instant-1.2
+8. meta_llama-65b
+9. openai_gpt-3.5-turbo-0613
+10. AlephAlpha_luminous-supreme
+11. anthropic_claude-2.0
+12. google_text-bison@001
+13. meta_llama-2-13b
+14. tiiuae_falcon-7b
+15. writer_palmyra-x-v2
+16. openai_text-davinci-003
+17. cohere_command-light
+18. mistralai_mistral-7b-v0.1
+19. meta_llama-2-7b
+20. AlephAlpha_luminous-extended
+21. openai_gpt-4-1106-preview
+22. tiiuae_falcon-40b
+23. mistralai_mixtral-8x7b-32kseqlen
+24. openai_text-davinci-002
+25. writer_palmyra-x-v3
+26. 01-ai_yi-34b
+27. anthropic_claude-2.1
+28. 01-ai_yi-6b
+29. anthropic_claude-v1.3
+30. cohere_command
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+=======================+====================+===============+
+| High        |           645 |                  23.8 |              0.109 | 0.005 - 0.150 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Medium      |           228 |                  18.5 |              0.289 | 0.150 - 0.294 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Low         |            31 |                  10.8 |              0.467 | 0.301 - 0.466 |
++-------------+---------------+-----------------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                           | References                                                                                                                                                                                                                          | Model Responses (first 3)                                                                                                                                                                                                                                                       |
++=============+====================================================+=====================================================================================================================================================================================================================================+=================================================================================================================================================================================================================================================================================+
+| High        | Dále 35 procent společností z tohoto počtu se      | Reference 1: In addition, 35 per cent of companies out of this number plan to take the necessary measures in the next few days. (correct)                                                                                           | Sample response 1 (stats.bleu_4=0.239): In addition, 35 percent of the companies in this number are planning to take the necessary measures in the near future.                                                                                                                 |
+|             | chystá k přijetí nezbytných opatření v nejbližší   |                                                                                                                                                                                                                                     | Sample response 2 (stats.bleu_4=0.047):  Furthermore, 35 percent of these companies plan to take necessary measures in the near future.                                                                                                                                         |
+|             | době.                                              |                                                                                                                                                                                                                                     | Sample response 3 (stats.bleu_4=0.000):  Furthermore, 35 percent of companies from this number are planning to adopt essential measures in the near future.                                                                                                                     |
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Medium      | A především, na jižním křídle Izraele změnil       | Reference 1: Above all, on Israel's southern flank, the rise of the Muslim Brotherhood under President Muhammad Morsi in Egypt, by far the most populous and pivotal of Arab countries, has changed the region's balance. (correct) | Sample response 1 (stats.bleu_4=0.379): And above all, the rise of the Muslim Brotherhood under the leadership of President Mohammed Morsi in Egypt, by far the most populous and pivotal Arab country, has changed the balance in the region.                                  |
+|             | vzestup Muslimského bratrstva pod vedením          |                                                                                                                                                                                                                                     | Sample response 2 (stats.bleu_4=0.135):  Most of all, the rise of the Muslim Brotherhood under the leadership of President Muhammad Mursi in Egypt, the largest and most populous Arab country, has significantly altered the balance of power in the region.                   |
+|             | prezidenta Muhammada Mursího v Egyptě, zdaleka     |                                                                                                                                                                                                                                     | Sample response 3 (stats.bleu_4=0.262):  And above all, on the southern edge of Israel, the rise of the Muslim Brotherhood under the leadership of President Muhammad Mursi in Egypt, by far the most populous and sensitive Arab country, has upset the balance in the region. |
+|             | nejlidnatější a stěžejní arabské země, rovnováhu v |                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                 |
+|             | regionu.                                           |                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                 |
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Low         | "Byl to vlastně do budoucna nejdůležitější krok,"  | Reference 1: "It was actually the most important step for the future," says Ivana. (correct)                                                                                                                                        | Sample response 1 (stats.bleu_4=0.692): "It was actually the most important step into the future," says Ivana.                                                                                                                                                                  |
+|             | tvrdí Ivana.                                       |                                                                                                                                                                                                                                     | Sample response 2 (stats.bleu_4=0.615):  "This was actually the most important step for the future," Ivan claims.                                                                                                                                                               |
+|             |                                                    |                                                                                                                                                                                                                                     | Sample response 3 (stats.bleu_4=0.538):  "This was actually the most important step into the future," says Ivana.                                                                                                                                                               |
++-------------+----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

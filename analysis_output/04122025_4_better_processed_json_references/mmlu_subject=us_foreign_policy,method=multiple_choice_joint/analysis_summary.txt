@@ -1,0 +1,64 @@
+Benchmark 12/28: mmlu:subject=us_foreign_policy,method=multiple_choice_joint
+================================================================================
+
+Models analyzed:
+1. meta_llama-2-7b
+2. meta_llama-65b
+3. mistralai_mistral-7b-v0.1
+4. anthropic_claude-2.1
+5. AlephAlpha_luminous-base
+6. mistralai_mixtral-8x7b-32kseqlen
+7. openai_gpt-4-1106-preview
+8. tiiuae_falcon-40b
+9. AlephAlpha_luminous-extended
+10. cohere_command-light
+11. google_text-bison@001
+12. ai21_j2-grande
+13. openai_text-davinci-002
+14. writer_palmyra-x-v3
+15. cohere_command
+16. 01-ai_yi-34b
+17. anthropic_claude-2.0
+18. tiiuae_falcon-7b
+19. meta_llama-2-13b
+20. openai_gpt-4-0613
+21. anthropic_claude-instant-1.2
+22. anthropic_claude-v1.3
+23. meta_llama-2-70b
+24. google_text-unicorn@001
+25. 01-ai_yi-6b
+26. AlephAlpha_luminous-supreme
+27. writer_palmyra-x-v2
+28. openai_text-davinci-003
+29. ai21_j2-jumbo
+30. openai_gpt-3.5-turbo-0613
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
++=============+===============+=======================+=========================+===============+
+| High        |             0 |                   nan |                 nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Medium      |            20 |                     1 |                   0.897 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Low         |            91 |                     1 |                   0.774 | 0.305 - 0.507 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+------------------------------------------------+--------------------------------------+------------------------------------------------+
+| Agreement   | Question                                       | References                           | Model Responses (first 3)                      |
++=============+================================================+======================================+================================================+
+| High        | No examples in this category                   | N/A                                  | N/A                                            |
++-------------+------------------------------------------------+--------------------------------------+------------------------------------------------+
+| Medium      | Who was the first American president to visit  | Reference 1: Richard Nixon (correct) | Sample response 1 (stats.exact_match=1.000): A |
+|             | communist China?                               | Reference 2: George H. W. Bush       | Sample response 2 (stats.exact_match=1.000): A |
+|             |                                                | Reference 3: Jimmy Carter            | Sample response 3 (stats.exact_match=1.000): A |
+|             |                                                | Reference 4: Ronald Reagan           |                                                |
++-------------+------------------------------------------------+--------------------------------------+------------------------------------------------+
+| Low         | Who is considered the “father” of containment? | Reference 1: George Kennan (correct) | Sample response 1 (stats.exact_match=1.000): A |
+|             |                                                | Reference 2: John Foster Dulles      | Sample response 2 (stats.exact_match=1.000): A |
+|             |                                                | Reference 3: Henry Kissinger         | Sample response 3 (stats.exact_match=1.000): A |
+|             |                                                | Reference 4: Dwight Eisenhower       |                                                |
++-------------+------------------------------------------------+--------------------------------------+------------------------------------------------+

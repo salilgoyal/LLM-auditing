@@ -13,7 +13,7 @@ versions = [f'v1.{str(i)}.0/' for i in range(14)]
 runs = '/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_output/runs/'
 
 analysis_dir = 'analysis_output'
-output_dir = os.path.join(analysis_dir, '04092025_analysis_plots')
+output_dir = os.path.join(analysis_dir, '04122025_4_better_processed_json_references')
 os.makedirs(output_dir, exist_ok=True)
 
 RANKED_RESULTS_FILE = os.path.join(analysis_dir, 'ranked_results.pkl')

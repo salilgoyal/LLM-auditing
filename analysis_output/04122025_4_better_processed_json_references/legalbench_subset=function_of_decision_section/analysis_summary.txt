@@ -1,0 +1,98 @@
+Benchmark 16/28: legalbench:subset=function_of_decision_section
+================================================================================
+
+Models analyzed:
+1. ai21_j2-grande
+2. tiiuae_falcon-40b
+3. writer_palmyra-x-v3
+4. meta_llama-2-7b
+5. anthropic_claude-2.1
+6. AlephAlpha_luminous-extended
+7. anthropic_claude-v1.3
+8. mistralai_mistral-7b-v0.1
+9. meta_llama-65b
+10. openai_text-davinci-002
+11. mistralai_mixtral-8x7b-32kseqlen
+12. openai_gpt-4-1106-preview
+13. ai21_j2-jumbo
+14. AlephAlpha_luminous-base
+15. 01-ai_yi-34b
+16. cohere_command-light
+17. meta_llama-2-70b
+18. anthropic_claude-2.0
+19. writer_palmyra-x-v2
+20. openai_gpt-3.5-turbo-0613
+21. google_text-bison@001
+22. google_text-unicorn@001
+23. AlephAlpha_luminous-supreme
+24. cohere_command
+25. anthropic_claude-instant-1.2
+26. tiiuae_falcon-7b
+27. meta_llama-2-13b
+28. 01-ai_yi-6b
+29. openai_text-davinci-003
+30. openai_gpt-4-0613
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
++=============+===============+=======================+===============================+===============+
+| High        |             0 |                 nan   |                       nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Medium      |            67 |                   1.2 |                         0.061 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Low         |           246 |                   1.3 |                         0.494 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
+| Agreement   | Question                                           | References                                | Model Responses (first 3)                                    |
++=============+====================================================+===========================================+==============================================================+
+| High        | No examples in this category                       | N/A                                       | N/A                                                          |
++-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
+| Medium      | Text: We have previously stated that Donna         | Reference 1: Procedural History (correct) | Sample response 1 (stats.quasi_exact_match=0.000):  Facts    |
+|             | “assisted her husband [Stephen] in most aspects of |                                           | Sample response 2 (stats.quasi_exact_match=0.000):  Facts    |
+|             | the [money laundering] operation.”5 Id. at 7. She  |                                           | Sample response 3 (stats.quasi_exact_match=0.000):  Facts    |
+|             | “relayed his instructions to the others [involved  |                                           |                                                              |
+|             | in the conspiracy].” Id. Stephen and Donna wired   |                                           |                                                              |
+|             | over $136 million out of the jointly owned Trend   |                                           |                                                              |
+|             | account to an assortment of foreign banks.6        |                                           |                                                              |
+|             | Defendants' Forfeiture Order, 823 F. Supp. at 999; |                                           |                                                              |
+|             | see also Stephen's Direct Appeal, 58 F.3d at       |                                           |                                                              |
+|             | 762-63. Donna also “helped count money, [ ]        |                                           |                                                              |
+|             | personally authorized the wire transfer of more    |                                           |                                                              |
+|             | than $38 million from the Trend account to foreign |                                           |                                                              |
+|             | bank accounts,” Appellants' Direct Appeal, 63 F.3d |                                           |                                                              |
+|             | at 11, and “caused phony invoices to be issued,”   |                                           |                                                              |
+|             | Defendants' Forfeiture Order, 823 F. Supp. at 998. |                                           |                                                              |
++-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
+| Low         | Text: A foreign state's extradition request does   | Reference 1: Analysis (correct)           | Sample response 1 (stats.quasi_exact_match=0.000):  Facts    |
+|             | not fit in that selective company. Extradition     |                                           | Sample response 2 (stats.quasi_exact_match=0.000):  Rule     |
+|             | operates upon norms of “international comity.” See |                                           | Sample response 3 (stats.quasi_exact_match=1.000):  Analysis |
+|             | Casey v. Dep't of State, 980 F.2d 1472, 1477 (D.C. |                                           |                                                              |
+|             | Cir. 1992). Extradition treaties implementing      |                                           |                                                              |
+|             | those norms have produced “a global network of     |                                           |                                                              |
+|             | bilateral executive cooperation that aims to       |                                           |                                                              |
+|             | prevent border crossing from becoming a form of    |                                           |                                                              |
+|             | criminal absolution.” Blaxland v. Commonwealth     |                                           |                                                              |
+|             | Dir. of Pub. Prosecutions, 323 F.3d 1198, 1208     |                                           |                                                              |
+|             | (9th Cir. 2003). Conditioning a foreign state's    |                                           |                                                              |
+|             | exercise of treaty rights on submitting to the     |                                           |                                                              |
+|             | jurisdiction of United States courts could imperil |                                           |                                                              |
+|             | the spirit of cooperation and comity underpinning  |                                           |                                                              |
+|             | that regime. In that context, there is good reason |                                           |                                                              |
+|             | to doubt that a foreign state's effort to exercise |                                           |                                                              |
+|             | its agreed-upon treaty rights exhibits an intent   |                                           |                                                              |
+|             | to relinquish its immunity from suit. And were we  |                                           |                                                              |
+|             | to find that a foreign state's extradition request |                                           |                                                              |
+|             | implies a waiver of immunity in United States      |                                           |                                                              |
+|             | courts, we might expect that, as a reciprocal      |                                           |                                                              |
+|             | matter, the United States would subject itself to  |                                           |                                                              |
+|             | suit in foreign proceedings whenever it requests   |                                           |                                                              |
+|             | extradition assistance. See id. at 1208 n.6. We    |                                           |                                                              |
+|             | know of no sound basis for putting the parties to  |                                           |                                                              |
+|             | an extradition treaty to that choice as a matter   |                                           |                                                              |
+|             | of course.                                         |                                           |                                                              |
++-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+

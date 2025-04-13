@@ -1,0 +1,65 @@
+Benchmark 24/28: wmt_14:language_pair=de-en
+================================================================================
+
+Models analyzed:
+1. mistralai_mistral-7b-v0.1
+2. anthropic_claude-2.0
+3. writer_palmyra-x-v3
+4. openai_gpt-4-0613
+5. openai_gpt-4-1106-preview
+6. anthropic_claude-instant-1.2
+7. anthropic_claude-v1.3
+8. ai21_j2-jumbo
+9. cohere_command
+10. openai_text-davinci-002
+11. AlephAlpha_luminous-supreme
+12. meta_llama-2-13b
+13. tiiuae_falcon-7b
+14. writer_palmyra-x-v2
+15. ai21_j2-grande
+16. google_text-bison@001
+17. 01-ai_yi-6b
+18. anthropic_claude-2.1
+19. AlephAlpha_luminous-extended
+20. AlephAlpha_luminous-base
+21. openai_text-davinci-003
+22. 01-ai_yi-34b
+23. meta_llama-2-7b
+24. openai_gpt-3.5-turbo-0613
+25. meta_llama-65b
+26. tiiuae_falcon-40b
+27. cohere_command-light
+28. meta_llama-2-70b
+29. google_text-unicorn@001
+30. mistralai_mixtral-8x7b-32kseqlen
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+=======================+====================+===============+
+| High        |           723 |                  23.6 |              0.143 | 0.006 - 0.150 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Medium      |           148 |                  16.4 |              0.34  | 0.150 - 0.285 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Low         |            17 |                  10.7 |              0.534 | 0.305 - 0.507 |
++-------------+---------------+-----------------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                           | References                                                                                                                                                                        | Model Responses (first 3)                                                                                                                                                                        |
++=============+====================================================+===================================================================================================================================================================================+==================================================================================================================================================================================================+
+| High        | Tschechien verfügt im Zusammenhang mit             | Reference 1: The Czech Republic has sound control bodies and a good standard of legislation when it comes to public contracts, but it lags behind in their application. (correct) | Sample response 1 (stats.bleu_4=0.121): The Czech Republic has good control institutions and appropriate laws in connection with public contracts, but falls back in their application.          |
+|             | öffentlichen Aufträgen über gute Kontrollinstanzen |                                                                                                                                                                                   | Sample response 2 (stats.bleu_4=0.161): The Czech Republic has good control bodies and adequate laws in connection with public procurement, but lags behind in their application.                |
+|             | und adäquate Gesetze, fällt jedoch in deren        |                                                                                                                                                                                   | Sample response 3 (stats.bleu_4=0.120):  The Czech Republic has good control bodies and adequate laws in place in relation to public procurement, but it is falling behind in their application. |
+|             | Anwendung zurück.                                  |                                                                                                                                                                                   |                                                                                                                                                                                                  |
++-------------+----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Medium      | „Deutschland muss aufwachen“, erklärt Oliver Grün, | Reference 1: "Germany must wake up," says Oliver Grün, president of BITMi, which represents small and medium sized German IT companies. (correct)                                 | Sample response 1 (stats.bleu_4=0.227): „Germany must wake up“, explains Oliver Grün, President of BITMi, which represents small and medium-sized IT companies in Germany.                       |
+|             | Präsident des BITMi, der kleine und mittlere IT-   |                                                                                                                                                                                   | Sample response 2 (stats.bleu_4=0.545): "Germany must wake up," declares Oliver Grün, president of BITMi, which represents small and medium-sized IT companies in Germany.                       |
+|             | Firmen in Deutschland vertritt.                    |                                                                                                                                                                                   | Sample response 3 (stats.bleu_4=0.565):  "Germany needs to wake up," says Oliver Grün, president of BITMi, which represents small and medium-sized IT companies in Germany.                      |
++-------------+----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Low         | USA: Schüsse am Flughafen von Los Angeles          | Reference 1: USA: Shots fired at Los Angeles Airport (correct)                                                                                                                    | Sample response 1 (stats.bleu_4=0.217): USA: Shots at Los Angeles Airport                                                                                                                        |
+|             |                                                    |                                                                                                                                                                                   | Sample response 2 (stats.bleu_4=0.800): USA: Shots fired at Los Angeles airport                                                                                                                  |
+|             |                                                    |                                                                                                                                                                                   | Sample response 3 (stats.bleu_4=0.800):  USA: Shots fired at Los Angeles airport                                                                                                                 |
++-------------+----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

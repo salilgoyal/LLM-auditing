@@ -1,0 +1,64 @@
+Benchmark 19/28: wmt_14:language_pair=fr-en
+================================================================================
+
+Models analyzed:
+1. meta_llama-2-13b
+2. tiiuae_falcon-7b
+3. openai_text-davinci-003
+4. anthropic_claude-instant-1.2
+5. AlephAlpha_luminous-supreme
+6. google_text-unicorn@001
+7. writer_palmyra-x-v3
+8. 01-ai_yi-34b
+9. tiiuae_falcon-40b
+10. AlephAlpha_luminous-base
+11. mistralai_mistral-7b-v0.1
+12. anthropic_claude-2.0
+13. cohere_command
+14. 01-ai_yi-6b
+15. google_text-bison@001
+16. meta_llama-2-70b
+17. openai_gpt-4-1106-preview
+18. writer_palmyra-x-v2
+19. ai21_j2-jumbo
+20. meta_llama-2-7b
+21. openai_gpt-3.5-turbo-0613
+22. ai21_j2-grande
+23. openai_gpt-4-0613
+24. cohere_command-light
+25. openai_text-davinci-002
+26. mistralai_mixtral-8x7b-32kseqlen
+27. AlephAlpha_luminous-extended
+28. anthropic_claude-2.1
+29. anthropic_claude-v1.3
+30. meta_llama-65b
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+--------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.bleu_4 | Std Range     |
++=============+===============+=======================+====================+===============+
+| High        |           703 |                  23.7 |              0.167 | 0.003 - 0.150 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Medium      |           168 |                  16.5 |              0.373 | 0.150 - 0.300 |
++-------------+---------------+-----------------------+--------------------+---------------+
+| Low         |            19 |                   7.8 |              0.465 | 0.300 - 0.498 |
++-------------+---------------+-----------------------+--------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| Agreement   | Question                                          | References                                                                                          | Model Responses (first 3)                                                                                                         |
++=============+===================================================+=====================================================================================================+===================================================================================================================================+
+| High        | Dans le Sud de l'Azerbaïdjan, de nombreuses       | Reference 1: In Southern Azerbaijan, many people reach biblical ages. (correct)                     | Sample response 1 (stats.bleu_4=0.133): In the South of Azerbaijan, many people reach ages worthy of the patriarchs of the Bible. |
+|             | personnes atteignent des âges dignes des          |                                                                                                     | Sample response 2 (stats.bleu_4=0.143):  In the South of Azerbaijan, many people reach the age of patriarchs of the Bible.        |
+|             | patriarches de la Bible.                          |                                                                                                     | Sample response 3 (stats.bleu_4=0.333):  In Southern Azerbaijan, many people reach ages worthy of the Bible's patriarchs.         |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| Medium      | On dit: il y a la culture spirituelle, la culture | Reference 1: People say: spiritual culture, consumer culture. (correct)                             | Sample response 1 (stats.bleu_4=0.375): We say: there is spiritual culture, consumer culture.                                     |
+|             | de consommation.                                  |                                                                                                     | Sample response 2 (stats.bleu_4=0.000):  We say: there is spiritual culture, and there is consumer culture.                       |
+|             |                                                   |                                                                                                     | Sample response 3 (stats.bleu_4=0.000):  It is said: there is spiritual culture, and consumer culture.                            |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+
+| Low         | Mais les transmissions sont plus fortes lorsque   | Reference 1: But transmissions are stronger when devices are downloading or sending data. (correct) | Sample response 1 (stats.bleu_4=0.600): But transmissions are stronger when the devices are downloading or sending data.          |
+|             | les appareils téléchargent ou envoient des        |                                                                                                     | Sample response 2 (stats.bleu_4=0.000):  But the signals are stronger when the devices download or send data.                     |
+|             | données.                                          |                                                                                                     | Sample response 3 (stats.bleu_4=1.000):  But transmissions are stronger when devices are downloading or sending data.             |
++-------------+---------------------------------------------------+-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+

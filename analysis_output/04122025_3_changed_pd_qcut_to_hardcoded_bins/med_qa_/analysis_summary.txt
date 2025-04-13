@@ -1,0 +1,74 @@
+Benchmark 18/28: med_qa:
+================================================================================
+
+Models analyzed:
+1. meta_llama-65b
+2. 01-ai_yi-34b
+3. google_text-bison@001
+4. tiiuae_falcon-7b
+5. meta_llama-2-13b
+6. anthropic_claude-2.0
+7. 01-ai_yi-6b
+8. ai21_j2-grande
+9. anthropic_claude-instant-1.2
+10. google_text-unicorn@001
+11. meta_llama-2-70b
+12. AlephAlpha_luminous-base
+13. writer_palmyra-x-v2
+14. openai_text-davinci-003
+15. openai_gpt-3.5-turbo-0613
+16. openai_gpt-4-0613
+17. tiiuae_falcon-40b
+18. mistralai_mixtral-8x7b-32kseqlen
+19. ai21_j2-jumbo
+20. cohere_command
+21. anthropic_claude-2.1
+22. mistralai_mistral-7b-v0.1
+23. openai_gpt-4-1106-preview
+24. anthropic_claude-v1.3
+25. AlephAlpha_luminous-extended
+26. AlephAlpha_luminous-supreme
+27. cohere_command-light
+28. openai_text-davinci-002
+29. writer_palmyra-x-v3
+30. meta_llama-2-7b
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
++=============+===============+=======================+===============================+===============+
+| High        |             0 |                   nan |                       nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Medium      |            46 |                     1 |                         0.247 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Low         |           945 |                     1 |                         0.528 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-------------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                             |
++=============+====================================================+=======================================================+
+| High        | No examples in this category                       | N/A                                                   |
++-------------+----------------------------------------------------+-------------------------------------------------------+
+| Medium      | A 25-year-old woman presents to her physician with | Sample response 1 (stats.quasi_exact_match=0.000): B  |
+|             | complaints of cyclic vomiting for 3 days. The      | Sample response 2 (stats.quasi_exact_match=0.000):  B |
+|             | vomitus is watery and contains undigested food     | Sample response 3 (stats.quasi_exact_match=0.000): B  |
+|             | particles. She also complains of feeling tired and |                                                       |
+|             | having the “sniffles”. She has not felt like       |                                                       |
+|             | eating or drinking since her symptoms started, and |                                                       |
+|             | she has not taken any medications. Her concern now |                                                       |
+|             | is that she immediately gets dizzy when she stands |                                                       |
+|             | up. Vitals signs include: pulse 120/min,           |                                                       |
+|             | respiratory rate 9/min, and blood pressure 100/70  |                                                       |
+|             | mm Hg. Her eyes are sunken, and her tongue appears |                                                       |
+|             | dry. Which set of lab values would best correspond |                                                       |
+|             | to this patient’s condition?                       |                                                       |
++-------------+----------------------------------------------------+-------------------------------------------------------+
+| Low         | The patient is given prophylactic labetalol and    | Sample response 1 (stats.quasi_exact_match=1.000): A  |
+|             | magnesium sulfate. Examination shows absent deep   | Sample response 2 (stats.quasi_exact_match=1.000):  A |
+|             | tendon reflexes bilaterally. Which of the          | Sample response 3 (stats.quasi_exact_match=1.000): A  |
+|             | following is the most appropriate next step in the |                                                       |
+|             | management of this patient?                        |                                                       |
++-------------+----------------------------------------------------+-------------------------------------------------------+

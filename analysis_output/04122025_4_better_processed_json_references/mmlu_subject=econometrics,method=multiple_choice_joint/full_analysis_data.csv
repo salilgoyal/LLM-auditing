@@ -1,0 +1,529 @@
+,instance_id,input.text,references,predicted_text_0,stats.exact_match_0,predicted_text_1,stats.exact_match_1,predicted_text_2,stats.exact_match_2,predicted_text_3,stats.exact_match_3,predicted_text_4,stats.exact_match_4,predicted_text_5,stats.exact_match_5,predicted_text_6,stats.exact_match_6,predicted_text_7,stats.exact_match_7,predicted_text_8,stats.exact_match_8,predicted_text_9,stats.exact_match_9,predicted_text_10,stats.exact_match_10,predicted_text_11,stats.exact_match_11,predicted_text_12,stats.exact_match_12,predicted_text_13,stats.exact_match_13,predicted_text_14,stats.exact_match_14,predicted_text_15,stats.exact_match_15,predicted_text_16,stats.exact_match_16,predicted_text_17,stats.exact_match_17,predicted_text_18,stats.exact_match_18,predicted_text_19,stats.exact_match_19,predicted_text_20,stats.exact_match_20,predicted_text_21,stats.exact_match_21,predicted_text_22,stats.exact_match_22,predicted_text_23,stats.exact_match_23,predicted_text_24,stats.exact_match_24,predicted_text_25,stats.exact_match_25,predicted_text_26,stats.exact_match_26,predicted_text_27,stats.exact_match_27,predicted_text_28,stats.exact_match_28,predicted_text_29,stats.exact_match_29,std,agreement_level
+74,id52,For an autoregressive process to be considered stationary,The roots of the characteristic equation must all lie inside the unit circleSALILSPLITCHECKThe roots of the characteristic equation must all lie on the unit circleSALILSPLITCHECKThe roots of the characteristic equation must all lie outside the unit circle (correct)SALILSPLITCHECKThe roots of the characteristic equation must all be less than one in absolute value, D,0.0,B,0.0, A,0.0,A,0.0,A,0.0, A,0.0,A,0.0, B,0.0, A,0.0, A,0.0, D,0.0,A,0.0, A,0.0,D,0.0, A,0.0,D,0.0,D,0.0,A,0.0, D,0.0,A,0.0,D,0.0,B,0.0, A,0.0, A,0.0, A,0.0,A,0.0,A,0.0, B,0.0, A,0.0, A,0.0,0.0,
+113,id88,"Which of the following statements are true concerning the Box-Jenkins approach to diagnostic testing for ARMA models?
+
+(i) The tests will show whether the identified model is either too large or too small
+
+(ii) The tests involve checking the model residuals for autocorrelation, heteroscedasticity, and non-normality
+
+(iii) If the model suggested at the identification stage is appropriate, the acf and pacf for the residuals should show no additional structure
+
+(iv) If the model suggested at the identification stage is appropriate, the coefficients on the additional variables under the overfitting approach will be statistically insignificant","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", B,0.0,C,0.0, D,0.0,C,0.0,C,0.0, C,0.0,C,0.0, D,0.0, D,0.0, D,0.0, B,0.0,C,0.0, C,0.0,D,0.0, B,0.0,B,0.0,C,0.0,C,0.0, D,0.0,D,0.0,C,0.0,D,0.0, C,0.0, C,0.0, D,0.0,C,0.0,D,0.0, D,0.0, D,0.0, D,0.0,0.0,
+60,id39,"If OLS is used in the presence of autocorrelation, which of the following will be likely consequences?
+
+i) Coefficient estimates may be misleading
+
+
+ii) Hypothesis tests could reach the wrong conclusions
+
+
+iii) Forecasts made from the model could be biased
+
+
+iv) Standard errors may inappropriate","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", B,0.0,C,0.0, D,0.0,D,0.0,D,0.0, C,0.0,D,0.0, D,0.0, D,0.0, D,0.0, C,0.0,D,0.0, D,0.0,D,0.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0,D,0.0,C,0.0,D,0.0, D,0.0, D,0.0, D,0.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,0.0,
+112,id87,"A white noise process will have
+
+(i) A zero mean
+
+(ii) A constant variance
+
+(iii) Autocovariances that are constant
+
+(iv) Autocovariances that are zero except at lag zero","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", B,0.0,C,0.0, D,0.0,D,0.0,A,1.0, D,0.0,D,0.0, D,0.0, D,0.0, D,0.0, D,0.0,D,0.0, D,0.0,D,0.0, C,0.0,D,0.0,D,0.0,D,0.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,0.18257418583505525,Medium
+49,id28,"Which of the following may be consequences of one or more of the CLRM assumptions being violated?
+
+i) The coefficient estimates are not optimal
+
+
+ii) The standard error estimates are not optimal
+
+
+iii) The distributions assumed for the test statistics are inappropriate
+
+
+iv) Conclusions regarding the strength of relationships between the dependent
+
+and independent variables may be invalid.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv) (correct)", C,0.0,D,1.0, D,1.0,D,1.0,D,1.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, D,1.0,D,1.0, D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,0.18257418583505525,Medium
+31,id128,"Which of the following are advantages of the use of panel data over pure cross-sectional or pure time-series modelling?
+
+(i) The use of panel data can increase the number of degrees of freedom and therefore the power of tests
+
+(ii) The use of panel data allows the average value of the dependent variable to vary either cross-sectionally or over time or both
+
+(iii) The use of panel data enables the researcher allows the estimated relationship between the independent and dependent variables to vary either cross-sectionally or over time or both","(i) onlySALILSPLITCHECK(i) and (ii) only (correct)SALILSPLITCHECK(ii) onlySALILSPLITCHECK(i), (ii), and (iii)", D,0.0,D,0.0, C,0.0,D,0.0,D,0.0, D,0.0,D,0.0, D,0.0, D,0.0, D,0.0, C,0.0,D,0.0, D,0.0,D,0.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0,D,0.0,B,1.0,D,0.0, D,0.0, D,0.0, D,0.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,0.18257418583505533,Medium
+106,id81,"Consider an identical situation to that of question 21, except that now a 2-sided alternative is used. What would now be the appropriate conclusion?",H0 is rejected (correct)SALILSPLITCHECKH0 is not rejectedSALILSPLITCHECKH1 is rejectedSALILSPLITCHECKThere is insufficient information given in the question to reach a conclusion, B,0.0,D,0.0, B,0.0,B,0.0,B,0.0, B,0.0,D,0.0, D,0.0, B,0.0, B,0.0, D,0.0,D,0.0, B,0.0,B,0.0, B,0.0,B,0.0,D,0.0,B,0.0, A,1.0,D,0.0,B,0.0,B,0.0, B,0.0, B,0.0, A,1.0,B,0.0,B,0.0, B,0.0, B,0.0, B,0.0,0.2537081317024625,Medium
+32,id129,"If the Engle-Granger test is applied to the residuals of a potentially cointegrating regression, what would be the interpretation of the null hypothesis?",The variables are cointegratedSALILSPLITCHECKThe variables are not cointegrated (correct)SALILSPLITCHECKBoth variables are stationarySALILSPLITCHECKBoth variables are non-stationary, B,1.0,B,1.0, B,1.0,B,1.0,B,1.0, B,1.0,B,1.0, B,1.0, B,1.0, B,1.0, A,0.0,B,1.0, B,1.0,B,1.0, C,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,0.2537081317024625,Medium
+101,id77,"If an estimator is said to be consistent, it is implied that","On average, the estimated coefficient values will equal the true valuesSALILSPLITCHECKThe OLS estimator is unbiased and no other unbiased estimator has a smaller varianceSALILSPLITCHECKThe estimates will converge upon the true values as the sample size increases (correct)SALILSPLITCHECKThe coefficient estimates will be as close to their true values as possible for small and large samples.", D,0.0,C,1.0, B,0.0,C,1.0,C,1.0, C,1.0,C,1.0, C,1.0, C,1.0, C,1.0, C,1.0,C,1.0, C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,C,1.0, C,1.0, C,1.0, C,1.0,C,1.0,C,1.0, C,1.0, C,1.0, C,1.0,0.2537081317024625,Medium
+98,id74,"What is the meaning of the term ""heteroscedasticity""?",The variance of the errors is not constant (correct)SALILSPLITCHECKThe variance of the dependent variable is not constantSALILSPLITCHECKThe errors are not linearly independent of one anotherSALILSPLITCHECKThe errors have non-zero mean, C,0.0,A,1.0, B,0.0,A,1.0,A,1.0, A,1.0,A,1.0, A,1.0, A,1.0, A,1.0, A,1.0,A,1.0, A,1.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, A,1.0, A,1.0, A,1.0,A,1.0,A,1.0, A,1.0, A,1.0, A,1.0,0.2537081317024625,Medium
+84,id61,"An ARMA(p,q) (p, q are integers bigger than zero) model will have",An acf and pacf that both decline geometrically (correct)SALILSPLITCHECKAn acf that declines geometrically and a pacf that is zero after p lagsSALILSPLITCHECKAn acf that declines geometrically and a pacf that is zero after q lagsSALILSPLITCHECKAn acf that is zero after p lags and a pacf that is zero after q lags, A,1.0,B,0.0, B,0.0,D,0.0,D,0.0, D,0.0,C,0.0, D,0.0, D,0.0, D,0.0, B,0.0,B,0.0, B,0.0,C,0.0, A,1.0,D,0.0,B,0.0,D,0.0, C,0.0,B,0.0,D,0.0,D,0.0, C,0.0, B,0.0, C,0.0,B,0.0,B,0.0, C,0.0, D,0.0, B,0.0,0.2537081317024625,Medium
+44,id23,A parsimonious model is one that,Includes too many variables (correct)SALILSPLITCHECKIncludes as few variables as possible to explain the dataSALILSPLITCHECKIs a well-specified modelSALILSPLITCHECKIs a mis-specified model, A,1.0,B,0.0, A,1.0,B,0.0,B,0.0, B,0.0,B,0.0, B,0.0, B,0.0, B,0.0, E,0.0,B,0.0, B,0.0,B,0.0, B,0.0,B,0.0,B,0.0,B,0.0, B,0.0,B,0.0,B,0.0,B,0.0, B,0.0, B,0.0, B,0.0,B,0.0,B,0.0, B,0.0, B,0.0, B,0.0,0.2537081317024625,Medium
+58,id37,"Which of the following is an equivalent expression for saying that the explanatory variable is ""non-stochastic""?",The explanatory variable is partly randomSALILSPLITCHECKThe explanatory variable is fixed in repeated samples (correct)SALILSPLITCHECKThe explanatory variable is correlated with the errorsSALILSPLITCHECKThe explanatory variable always has a value of one, A,0.0,D,0.0, B,1.0,B,1.0,B,1.0, B,1.0,B,1.0, B,1.0, B,1.0, B,1.0, C,0.0,B,1.0, B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,0.30512857662936443,Low
+2,id101,"Consider the following AR(2) process:
+
+yt = 1.5 yt-1 - 0.5 yt-2 + ut
+
+This is a",Stationary processSALILSPLITCHECKUnit root process (correct)SALILSPLITCHECKExplosive processSALILSPLITCHECKStationary and unit root process, A,0.0,A,0.0, B,1.0,C,0.0,A,0.0, B,1.0,A,0.0, D,0.0, C,0.0, C,0.0, C,0.0,A,0.0, A,0.0,A,0.0, C,0.0,A,0.0,A,0.0,A,0.0, D,0.0,A,0.0,A,0.0,B,1.0, A,0.0, A,0.0, D,0.0,A,0.0,A,0.0, A,0.0, A,0.0, A,0.0,0.3051285766293646,Low
+45,id24,Which of the following is NOT a feature of continuously compounded returns (i.e. log-returns)?,They can be interpreted as continuously compounded changes in the pricesSALILSPLITCHECKThey can be added over time to give returns for longer time periodsSALILSPLITCHECKThey can be added across a portfolio of assets to give portfolio returns (correct)SALILSPLITCHECKThey are usually fat-tailed, B,0.0,D,0.0, C,1.0,D,0.0,B,0.0, D,0.0,D,0.0, D,0.0, D,0.0, D,0.0, D,0.0,D,0.0, D,0.0,D,0.0, A,0.0,D,0.0,C,1.0,D,0.0, D,0.0,C,1.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,0.3051285766293646,Low
+0,id10,"Consider the following MA(3) process
+
+yt = μ + Εt + θ1Εt-1 + θ2Εt-2 + θ3Εt-3 , where σt is a zero mean white noise process with variance σ2.
+
+Which of the following statements are true?
+
+i) The process yt has zero mean
+
+ii) The autocorrelation function will have a zero value at lag 5
+
+iii) The process yt has variance σ2
+
+iv) The autocorrelation function will have a value of one at lag 0","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", C,0.0,C,0.0, A,1.0,B,0.0,B,0.0, C,0.0,B,0.0, D,0.0, D,0.0, D,0.0, C,0.0,C,0.0, B,0.0,D,0.0, C,0.0,D,0.0,D,0.0,B,0.0, D,0.0,A,1.0,C,0.0,D,0.0, B,0.0, D,0.0, D,0.0,D,0.0,A,1.0, C,0.0, C,0.0, D,0.0,0.30512857662936466,Low
+71,id5,Suppose that a test that the true value of the intercept coefficient is zero results in non-rejection. What would be the appropriate conclusion?,Drop the intercept and re-run the regressionSALILSPLITCHECKRetain the intercept (correct)SALILSPLITCHECKRe-compute the test statisticSALILSPLITCHECKThe regression line is running exactly through the origin, C,0.0,B,1.0, B,1.0,B,1.0,B,1.0, B,1.0,B,1.0, B,1.0, B,1.0, B,1.0, B,1.0,B,1.0, B,1.0,B,1.0, C,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, A,0.0, B,1.0, B,1.0,0.30512857662936466,Low
+61,id40,What will be the properties of the OLS estimator in the presence of multicollinearity?,"It will be consistent, unbiased and efficient (correct)SALILSPLITCHECKIt will be consistent and unbiased but not efficientSALILSPLITCHECKIt will be consistent but not unbiasedSALILSPLITCHECKIt will not be consistent", A,1.0,B,0.0, A,1.0,B,0.0,B,0.0, B,0.0,B,0.0, B,0.0, B,0.0, B,0.0, D,0.0,B,0.0, B,0.0,B,0.0, C,0.0,B,0.0,B,0.0,B,0.0, B,0.0,B,0.0,B,0.0,B,0.0, B,0.0, B,0.0, B,0.0,B,0.0,B,0.0, A,1.0, B,0.0, B,0.0,0.30512857662936466,Low
+22,id12,Near multicollinearity occurs when,Two or more explanatory variables are perfectly correlated with one anotherSALILSPLITCHECKThe explanatory variables are highly correlated with the error termSALILSPLITCHECKThe explanatory variables are highly correlated with the dependent variableSALILSPLITCHECKTwo or more explanatory variables are highly correlated with one another (correct), D,1.0,D,1.0, B,0.0,D,1.0,D,1.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, D,1.0,D,1.0, D,1.0,D,1.0, B,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, B,0.0, D,1.0, D,1.0,0.30512857662936466,Low
+70,id49,Including relevant lagged values of the dependent variable on the right hand side of a regression equation could lead to which one of the following?,Biased but consistent coefficient estimates (correct)SALILSPLITCHECKBiased and inconsistent coefficient estimatesSALILSPLITCHECKUnbiased but inconsistent coefficient estimatesSALILSPLITCHECKUnbiased and consistent but inefficient coefficient estimates., C,0.0,B,0.0, B,0.0,D,0.0,D,0.0, C,0.0,D,0.0, D,0.0, D,0.0, D,0.0, C,0.0,A,1.0, D,0.0,C,0.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0,D,0.0,A,1.0,D,0.0, D,0.0, D,0.0, A,1.0,D,0.0,A,1.0, D,0.0, D,0.0, D,0.0,0.3457459036417604,Low
+75,id53,"Which of the following statements are true concerning information criteria?
+
+(i) Adjusted R-squared is an information criterion
+
+(ii) If the residual sum of squares falls when an additional term is added, the value of the information criterion will fall
+
+(iii) Akaike's information criterion always leads to model orders that are at least as large as those of Schwarz's information criterion
+
+(iv) Akaike's information criterion is consistent","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", C,0.0,D,0.0, D,0.0,A,0.0,A,0.0, C,0.0,B,1.0, D,0.0, C,0.0, C,0.0, D,0.0,C,0.0, A,0.0,D,0.0, B,1.0,C,0.0,D,0.0,A,0.0, D,0.0,A,0.0,C,0.0,D,0.0, B,1.0, A,0.0, D,0.0,A,0.0,B,1.0, D,0.0, D,0.0, A,0.0,0.3457459036417604,Low
+78,id56,"If a series, y, follows a random walk with drift b, what is the optimal one-step ahead forecast of the change in y?",The current value of ySALILSPLITCHECKZeroSALILSPLITCHECKOneSALILSPLITCHECKThe average value of the change in y over the in-sample period (correct), C,0.0,B,0.0, B,0.0,B,0.0,B,0.0, D,1.0,B,0.0, D,1.0, B,0.0, B,0.0, C,0.0,B,0.0, B,0.0,B,0.0, C,0.0,B,0.0,B,0.0,B,0.0, A,0.0,B,0.0,A,0.0,D,1.0, B,0.0, B,0.0, B,0.0,B,0.0,B,0.0, D,1.0, B,0.0, B,0.0,0.3457459036417604,Low
+102,id78,Which of the following is a typical characteristic of financial asset return time-series?,Their distributions are thin-tailedSALILSPLITCHECKThey are not weakly stationarySALILSPLITCHECKThey are highly autocorrelatedSALILSPLITCHECKThey have no trend (correct), A,0.0,A,0.0, B,0.0,B,0.0,B,0.0, C,0.0,C,0.0, C,0.0, D,1.0, D,1.0, C,0.0,C,0.0, C,0.0,C,0.0, C,0.0,C,0.0,B,0.0,B,0.0, C,0.0,B,0.0,C,0.0,C,0.0, C,0.0, B,0.0, A,0.0,D,1.0,B,0.0, B,0.0, C,0.0, D,1.0,0.3457459036417604,Low
+125,id99,"Suppose that we are interested in testing the null hypothesis that a GARCH(2,2) model can be restricted to a process with a constant conditional variance using the likelihood ratio test approach. Which of the following statements are true?","The test statistic will follow a chi-squared distribution with 2 degrees of freedom under the null hypothesisSALILSPLITCHECKThe value of the log-likelihood function will almost always be bigger for the restricted model than for the unrestricted modelSALILSPLITCHECKIf the relevant values of the log-likelihood functions are -112.3 and -118.4, the value of the test statistic is 12.2 (correct)SALILSPLITCHECKThe likelihood ratio test compares the slopes of the log-likelihood function at the maximum and at the restricted parameter value.", B,0.0,A,0.0, A,0.0,A,0.0,A,0.0, D,0.0,A,0.0, A,0.0, A,0.0, A,0.0, A,0.0,A,0.0, A,0.0,A,0.0, C,1.0,A,0.0,C,1.0,A,0.0, D,0.0,A,0.0,A,0.0,A,0.0, A,0.0, C,1.0, A,0.0,C,1.0,A,0.0, B,0.0, A,0.0, A,0.0,0.3457459036417604,Low
+97,id73,"Consider the OLS estimator for the standard error of the slope coefficient. Which of the following statement(s) is (are) true?
+
+(i) The standard error will be positively related to the residual variance
+
+(ii) The standard error will be negatively related to the dispersion of the observations on the explanatory variable about their mean value
+
+(iii) The standard error will be negatively related to the sample size
+
+(iv) The standard error gives a measure of the precision of the coefficient estimate.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv) (correct)", C,0.0,D,1.0, D,1.0,D,1.0,D,1.0, C,0.0,D,1.0, D,1.0, D,1.0, D,1.0, D,1.0,D,1.0, D,1.0,D,1.0, C,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,C,0.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,0.34574590364176044,Low
+53,id32,"Which of the following statements are true concerning a comparison between ARCH(q) and GARCH(1,1) models?
+
+i) The ARCH(q) model is likely to be the more parsimonious
+
+
+ii) The ARCH(q) model is the more likely to violate non-negativity constraints
+
+
+iii) The ARCH(q) model can allow for an infinite number of previous lags of squared
+
+returns to affect the current conditional variance
+
+
+iv) The GARCH(1,1) model will usually be sufficient to capture all of the dependence
+
+in the conditional variance","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", C,0.0,D,0.0, D,0.0,A,1.0,A,1.0, C,0.0,B,0.0, D,0.0, B,0.0, B,0.0, C,0.0,C,0.0, B,0.0,D,0.0, C,0.0,B,0.0,D,0.0,A,1.0, D,0.0,B,0.0,C,0.0,D,0.0, B,0.0, B,0.0, D,0.0,B,0.0,A,1.0, D,0.0, C,0.0, C,0.0,0.34574590364176044,Low
+42,id21,Which of the following statements concerning the regression population and sample is FALSE?,"The population is the total collection of all items of interestSALILSPLITCHECKThe population can be infiniteSALILSPLITCHECKIn theory, the sample could be larger than the population (correct)SALILSPLITCHECKA random sample is one where each individual item from the population is equally likely to be drawn.", C,1.0,C,1.0, A,0.0,C,1.0,C,1.0, C,1.0,C,1.0, C,1.0, C,1.0, C,1.0, C,1.0,C,1.0, C,1.0,C,1.0, D,0.0,C,1.0,C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,D,0.0, C,1.0, C,1.0, C,1.0,C,1.0,C,1.0, B,0.0, C,1.0, C,1.0,0.34574590364176044,Low
+76,id54,"The ""within transform"" involves",Taking the average values of the variablesSALILSPLITCHECKSubtracting the mean of each entity away from each observation on that entity (correct)SALILSPLITCHECKEstimating a panel data model using least squares dummy variablesSALILSPLITCHECKUsing both time dummies and cross-sectional dummies in a fixed effects panel model, C,0.0,B,1.0, B,1.0,B,1.0,B,1.0, B,1.0,B,1.0, B,1.0, B,1.0, B,1.0, A,0.0,B,1.0, B,1.0,B,1.0, D,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, B,1.0, D,0.0, B,1.0,0.3457459036417605,Low
+64,id43,The order condition is,A necessary and sufficient condition for identificationSALILSPLITCHECKA necessary but not sufficient condition for identification (correct)SALILSPLITCHECKA sufficient but not necessary condition for identificationSALILSPLITCHECKA condition that is nether necessary nor sufficient for identification, C,0.0,B,1.0, A,0.0,B,1.0,B,1.0, B,1.0,B,1.0, D,0.0, B,1.0, B,1.0, B,1.0,B,1.0, B,1.0,B,1.0, C,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,0.3457459036417605,Low
+117,id91,Which of the following statements is TRUE concerning OLS estimation?,OLS minimises the sum of the vertical distances from the points to the lineSALILSPLITCHECKOLS minimises the sum of the squares of the vertical distances from the points to the line (correct)SALILSPLITCHECKOLS minimises the sum of the horizontal distances from the points to the lineSALILSPLITCHECKOLS minimises the sum of the squares of the horizontal distances from the points to the line., C,0.0,B,1.0, A,0.0,B,1.0,B,1.0, B,1.0,B,1.0, B,1.0, B,1.0, B,1.0, D,0.0,B,1.0, B,1.0,B,1.0, C,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, B,1.0,0.3457459036417605,Low
+38,id17,Which one of the following is the most appropriate definition of a 99% confidence interval?,"99% of the time in repeated samples, the interval would contain the true value of the parameter (correct)SALILSPLITCHECK99% of the time in repeated samples, the interval would contain the estimated value of the parameterSALILSPLITCHECK99% of the time in repeated samples, the null hypothesis will be rejectedSALILSPLITCHECK99% of the time in repeated samples, the null hypothesis will not be rejected when it was false", A,1.0,B,0.0, B,0.0,A,1.0,A,1.0, A,1.0,A,1.0, A,1.0, A,1.0, A,1.0, B,0.0,A,1.0, A,1.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, A,1.0,A,1.0,A,1.0,B,0.0, A,1.0, A,1.0, A,1.0,A,1.0,A,1.0, A,1.0, A,1.0, A,1.0,0.3457459036417605,Low
+4,id103,The residual from a standard regression model is defined as,"The difference between the actual value, y, and the mean, y-barSALILSPLITCHECKThe difference between the fitted value, y-hat, and the mean, y-barSALILSPLITCHECKThe difference between the actual value, y, and the fitted value, y-hat (correct)SALILSPLITCHECKThe square of the difference between the fitted value, y-hat, and the mean, y-bar", A,0.0,B,0.0, B,0.0,C,1.0,C,1.0, C,1.0,C,1.0, C,1.0, C,1.0, C,1.0, C,1.0,C,1.0, C,1.0,C,1.0, B,0.0,C,1.0,C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,C,1.0, C,1.0, C,1.0, C,1.0,C,1.0,C,1.0, C,1.0, C,1.0, C,1.0,0.34574590364176055,Low
+54,id33,"Which of the following statements are true concerning a triangular or recursive system?
+
+i) The parameters can be validly estimated using separate applications of OLS to
+
+each equation
+
+
+ii) The independent variables may be correlated with the error terms in other
+
+equations
+
+
+iii) An application of 2SLS would lead to unbiased but inefficient parameter estimates
+
+
+iv) The independent variables may be correlated with the error terms in the equations
+
+in which they appear as independent variables","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,C,1.0, D,0.0,B,0.0,B,0.0, C,1.0,D,0.0, D,0.0, B,0.0, B,0.0, C,1.0,C,1.0, A,0.0,D,0.0, D,0.0,A,0.0,D,0.0,B,0.0, D,0.0,B,0.0,C,1.0,D,0.0, D,0.0, B,0.0, D,0.0,D,0.0,B,0.0, D,0.0, D,0.0, B,0.0,0.3790490217894516,Low
+67,id46,Which of the following statements is true concerning the population regression function (PRF) and sample regression function (SRF)?,The PRF is the estimated modelSALILSPLITCHECKThe PRF is used to infer likely values of the SRFSALILSPLITCHECKWhether the model is good can be determined by comparing the SRF and the PRFSALILSPLITCHECKThe PRF is a description of the process thought to be generating the data. (correct), C,0.0,D,1.0, A,0.0,D,1.0,D,1.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, A,0.0,D,1.0, D,1.0,D,1.0, B,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, C,0.0, D,1.0, D,1.0,0.3790490217894516,Low
+104,id8,"An ""ex ante"" forecasting model is one which",Includes only contemporaneous values of variables on the RHSSALILSPLITCHECKIncludes only contemporaneous and previous values of variables on the RHSSALILSPLITCHECKIncludes only previous values of variables on the RHS (correct)SALILSPLITCHECKIncludes only contemporaneous values of exogenous variables on the RHS, B,0.0,B,0.0, A,0.0,B,0.0,B,0.0, B,0.0,B,0.0, B,0.0, C,1.0, C,1.0, A,0.0,A,0.0, B,0.0,B,0.0, D,0.0,A,0.0,C,1.0,B,0.0, A,0.0,C,1.0,B,0.0,B,0.0, B,0.0, B,0.0, B,0.0,D,0.0,C,1.0, B,0.0, B,0.0, A,0.0,0.3790490217894516,Low
+35,id14,"Which of the following statements are true concerning the class of ARIMA(p,d,q) models?
+
+(i) The ""I"" stands for independent
+
+(ii) An ARIMA(p,1,q) model estimated on a series of logs of prices is equivalent to an ARIMA(p,0,q) model estimated on a set of continuously compounded returns
+
+(iii) It is plausible for financial time series that the optimal value of d could be 2 or 3.
+
+(iv) The estimation of ARIMA models is incompatible with the notion of cointegration","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", C,0.0,D,0.0, D,0.0,B,0.0,C,0.0, C,0.0,B,0.0, D,0.0, B,0.0, B,0.0, A,1.0,C,0.0, C,0.0,B,0.0, C,0.0,B,0.0,B,0.0,A,1.0, B,0.0,A,1.0,C,0.0,D,0.0, B,0.0, C,0.0, D,0.0,A,1.0,A,1.0, C,0.0, D,0.0, C,0.0,0.3790490217894517,Low
+25,id122,"Consider the following sample autocorrelation estimates obtained using 250 data points:
+
+1) Lag 1 2 3
+
+2) Coefficient 0.2 -0.15 -0.1
+
+3) Assuming that the coefficients are approximately normally distributed, which of the coefficients are statistically significant at the 5% level?","1 onlySALILSPLITCHECK1 and 2 only (correct)SALILSPLITCHECK1, 2 and 3 onlySALILSPLITCHECKIt is not possible to determine the statistical significance since no standard errors have been given", D,0.0,C,0.0, B,1.0,D,0.0,D,0.0, C,0.0,D,0.0, D,0.0, D,0.0, D,0.0, D,0.0,D,0.0, D,0.0,C,0.0, D,0.0,D,0.0,D,0.0,D,0.0, A,0.0,D,0.0,B,1.0,A,0.0, D,0.0, A,0.0, C,0.0,B,1.0,D,0.0, B,1.0, D,0.0, B,1.0,0.3790490217894517,Low
+121,id95,A Hausman test would be used for,Determining whether an equation that is part of a simultaneous system is identifiedSALILSPLITCHECKDetermining whether a simultaneous framework is needed for a particular variable (correct)SALILSPLITCHECKDetermining whether 2SLS or ILS is optimalSALILSPLITCHECKDetermining whether the structural form equations can be obtained via substitution from the reduced forms, A,0.0,A,0.0, A,0.0,C,0.0,B,1.0, A,0.0,C,0.0, A,0.0, C,0.0, C,0.0, D,0.0,A,0.0, C,0.0,C,0.0, D,0.0,C,0.0,B,1.0,C,0.0, D,0.0,C,0.0,C,0.0,B,1.0, C,0.0, A,0.0, B,1.0,C,0.0,C,0.0, B,1.0, C,0.0, C,0.0,0.3790490217894517,Low
+85,id62,"Suppose that the following regression is estimated using 27 quarterly observations:
+
+$y_t = \beta_1 + \beta_2 x_2 + \beta_3 x_{3t} + u_t$
+
+What is the appropriate critical value for a 2-sided 5% size of test of $H_0: \beta_3 = 1$?",1.64SALILSPLITCHECK1.71SALILSPLITCHECK2.06 (correct)SALILSPLITCHECK1.96, B,0.0,D,0.0, B,0.0,D,0.0,D,0.0, D,0.0,D,0.0, D,0.0, B,0.0, B,0.0, B,0.0,D,0.0, D,0.0,D,0.0, C,1.0,D,0.0,C,1.0,D,0.0, D,0.0,C,1.0,D,0.0,C,1.0, D,0.0, C,1.0, D,0.0,D,0.0,D,0.0, D,0.0, D,0.0, B,0.0,0.3790490217894517,Low
+37,id16,"If a threshold autoregressive (TAR) model is termed a ""SETAR"", what must be true about it?",It must follow a Markov processSALILSPLITCHECKThe model must contain only two regimesSALILSPLITCHECKThe state-determining variable must be the variable being modelled (correct)SALILSPLITCHECKThe number of lagged variables on the RHS of the equations for each regime must be the same, C,1.0,D,0.0, B,0.0,D,0.0,B,0.0, B,0.0,B,0.0, D,0.0, C,1.0, C,1.0, A,0.0,C,1.0, B,0.0,B,0.0, A,0.0,B,0.0,D,0.0,D,0.0, D,0.0,C,1.0,A,0.0,D,0.0, B,0.0, C,1.0, B,0.0,D,0.0,B,0.0, D,0.0, D,0.0, D,0.0,0.4068381021724863,Low
+59,id38,Suppose that the Durbin Watson test is applied to a regression containing two explanatory variables plus a constant with 50 data points. The test statistic takes a value of 1.53. What is the appropriate conclusion?,Residuals appear to be positively autocorrelatedSALILSPLITCHECKResiduals appear to be negatively autocorrelatedSALILSPLITCHECKResiduals appear not to be autocorrelatedSALILSPLITCHECKThe test result is inconclusive (correct), D,1.0,C,0.0, B,0.0,D,1.0,A,0.0, C,0.0,D,1.0, C,0.0, C,0.0, C,0.0, A,0.0,C,0.0, C,0.0,C,0.0, B,0.0,C,0.0,D,1.0,D,1.0, A,0.0,A,0.0,A,0.0,A,0.0, B,0.0, C,0.0, C,0.0,D,1.0,A,0.0, B,0.0, A,0.0, C,0.0,0.4068381021724863,Low
+21,id119,Which one of the following would be the most appropriate as a 95% (two-sided) confidence interval for the intercept term of the model given in question 21?,"(-4.79,2.19)SALILSPLITCHECK(-4.16,4.16)SALILSPLITCHECK(-1.98,1.98)SALILSPLITCHECK(-5.46,2.86) (correct)", A,0.0,D,1.0, B,0.0,D,1.0,B,0.0, A,0.0,C,0.0, A,0.0, A,0.0, A,0.0, A,0.0,B,0.0, B,0.0,B,0.0, D,1.0,A,0.0,B,0.0,D,1.0, B,0.0,A,0.0,D,1.0,A,0.0, C,0.0, C,0.0, B,0.0,C,0.0,To,0.0, C,0.0, D,1.0, A,0.0,0.4068381021724863,Low
+17,id115,Which one of the following criticisms of the Dickey-Fuller/Engle-Granger approach to dealing with cointegrated variables is overcome by the Engle-Yoo (EY) procedure?,"In the context of small samples, Dickey Fuller tests are prone to conclude that there is a unit root in a series when there is notSALILSPLITCHECKThe Engle-Granger (EG) approach can only detect up to one cointegrating relationship even though there could be more than oneSALILSPLITCHECKThe variables are treated asymmetrically in the cointegrating testsSALILSPLITCHECKIt is not possible to perform tests about the cointegrating relationship (correct)", A,0.0,C,0.0, B,0.0,D,1.0,B,0.0, A,0.0,B,0.0, B,0.0, B,0.0, B,0.0, D,1.0,B,0.0, D,1.0,A,0.0, A,0.0,B,0.0,B,0.0,D,1.0, B,0.0,B,0.0,B,0.0,D,1.0, D,1.0, B,0.0, C,0.0,B,0.0,B,0.0, B,0.0, A,0.0, B,0.0,0.4068381021724863,Low
+19,id117,"Which of the following estimation techniques are available for the estimation of over-identified systems of simultaneous equations?
+
+i) OLS
+
+ii) ILS
+
+iii) 2SLS
+
+iv) IV","(iii) onlySALILSPLITCHECK(iii) and (iv) only (correct)SALILSPLITCHECK(ii), (iii), and (iv) onlySALILSPLITCHECK(i), (ii), (iii) and (iv)", D,0.0,D,0.0, D,0.0,C,0.0,B,1.0, D,0.0,B,1.0, D,0.0, C,0.0, C,0.0, D,0.0,D,0.0, D,0.0,D,0.0, C,0.0,B,1.0,B,1.0,B,1.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0, C,0.0, D,0.0,C,0.0,B,1.0, D,0.0, C,0.0, D,0.0,0.4068381021724863,Low
+26,id123,Which one of the following is examined by looking at a goodness of fit statistic?,How well the population regression function fits the dataSALILSPLITCHECKHow well the sample regression function fits the population regression functionSALILSPLITCHECKHow well the sample regression function fits the data (correct)SALILSPLITCHECKHow well the population regression function fits the sample regression function., B,0.0,C,1.0, B,0.0,C,1.0,C,1.0, C,1.0,C,1.0, C,1.0, C,1.0, C,1.0, A,0.0,A,0.0, C,1.0,C,1.0, A,0.0,C,1.0,C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,B,0.0, C,1.0, C,1.0, C,1.0,C,1.0,C,1.0, C,1.0, C,1.0, C,1.0,0.4068381021724863,Low
+108,id83,"If a Johansen ""trace"" test for a null hypothesis of 2 cointegrating vectors is applied to a system containing 4 variables is conducted, which eigenvalues would be used in the test?",All of themSALILSPLITCHECKThe largest 2SALILSPLITCHECKThe smallest 2 (correct)SALILSPLITCHECKThe second largest, D,0.0,B,0.0, B,0.0,B,0.0,B,0.0, B,0.0,B,0.0, B,0.0, C,1.0, C,1.0, C,1.0,B,0.0, B,0.0,B,0.0, A,0.0,B,0.0,B,0.0,B,0.0, A,0.0,C,1.0,B,0.0,B,0.0, B,0.0, B,0.0, B,0.0,C,1.0,C,1.0, B,0.0, B,0.0, B,0.0,0.4068381021724863,Low
+9,id108,Which of the following is a disadvantage of the random effects approach to estimating a panel model?,"The approach may not be valid if the composite error term is correlated with one or more of the explanatory variables (correct)SALILSPLITCHECKThe number of parameters to estimate may be large, resulting in a loss of degrees of freedomSALILSPLITCHECKThe random effects approach can only capture cross-sectional heterogeneity and not temporal variation in the dependent variable.SALILSPLITCHECKAll of (a) to (c) are potential disadvantages of the random effects approach.", A,1.0,D,0.0, D,0.0,A,1.0,D,0.0, D,0.0,D,0.0, D,0.0, D,0.0, D,0.0, B,0.0,D,0.0, D,0.0,D,0.0, A,1.0,B,0.0,D,0.0,A,1.0, D,0.0,A,1.0,D,0.0,D,0.0, D,0.0, D,0.0, D,0.0,D,0.0,A,1.0, B,0.0, D,0.0, D,0.0,0.4068381021724863,Low
+50,id29,Which of the following statements is true concerning forecasting in econometrics?,Forecasts can only be made for time-series dataSALILSPLITCHECKMis-specified models are certain to produce inaccurate forecastsSALILSPLITCHECKStructural forecasts are simpler to produce than those from time series modelsSALILSPLITCHECKIn-sample forecasting ability is a poor test of model adequacy (correct), A,0.0,D,1.0, A,0.0,D,1.0,D,1.0, D,1.0,B,0.0, D,1.0, D,1.0, D,1.0, D,1.0,D,1.0, D,1.0,B,0.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,B,0.0, B,0.0, D,1.0, D,1.0,0.40683810217248634,Low
+63,id42,"If a series, y, follows a random walk, what is the optimal one-step ahead forecast of y?",The current value of y (correct)SALILSPLITCHECKZeroSALILSPLITCHECKOneSALILSPLITCHECKThe average value of y over the in-sample period, B,0.0,B,0.0, B,0.0,A,1.0,A,1.0, A,1.0,A,1.0, A,1.0, A,1.0, A,1.0, A,1.0,A,1.0, A,1.0,A,1.0, B,0.0,A,1.0,A,1.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, A,1.0, A,1.0, B,0.0,A,1.0,A,1.0, C,0.0, A,1.0, A,1.0,0.40683810217248634,Low
+20,id118,Which one of the following statements best describes a Type II error?,It is the probability of incorrectly rejecting the null hypothesisSALILSPLITCHECKIt is equivalent to the power of the testSALILSPLITCHECKIt is equivalent to the size of the testSALILSPLITCHECKIt is the probability of failing to reject a null hypothesis that was wrong (correct), D,1.0,A,0.0, B,0.0,D,1.0,D,1.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, B,0.0,D,1.0, D,1.0,D,1.0, B,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, A,0.0,D,1.0,D,1.0, B,0.0, D,1.0, D,1.0,0.40683810217248634,Low
+68,id47,"Which one of the following is a disadvantage of the general to specific or ""LSE"" (""Hendry"") approach to building econometric models, relative to the specific to general approach?","Some variables may be excluded at the first stage leading to coefficient biasesSALILSPLITCHECKThe final model may lack theoretical interpretation (correct)SALILSPLITCHECKThe final model may be statistically inadequateSALILSPLITCHECKIf the initial model is mis-specified, all subsequent steps will be invalid.", D,0.0,D,0.0, B,1.0,B,1.0,D,0.0, D,0.0,D,0.0, A,0.0, D,0.0, D,0.0, B,1.0,B,1.0, D,0.0,A,0.0, B,1.0,B,1.0,D,0.0,A,0.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0, A,0.0, D,0.0,D,0.0,D,0.0, A,0.0, D,0.0, B,1.0,0.4301830671520761,Low
+43,id22,Which of the following statements is INCORRECT concerning a comparison of the Box-Pierce Q and the Ljung-Box Q* statistics for linear dependence in time series?,"Asymptotically, the values of the two test statistics will be equalSALILSPLITCHECKThe Q test has better small-sample properties than the Q* (correct)SALILSPLITCHECKThe Q test is sometimes over-sized for small samplesSALILSPLITCHECKAs the sample size tends towards infinity, both tests will show a tendency to always reject the null hypothesis of zero autocorrelation coefficients.", A,0.0,D,0.0, A,0.0,D,0.0,B,1.0, C,0.0,A,0.0, C,0.0, B,1.0, B,1.0, A,0.0,D,0.0, D,0.0,D,0.0, D,0.0,B,1.0,D,0.0,D,0.0, D,0.0,B,1.0,D,0.0,B,1.0, D,0.0, D,0.0, C,0.0,C,0.0,B,1.0, D,0.0, D,0.0, D,0.0,0.4301830671520762,Low
+86,id63,"Suppose that two researchers, using the same 3 variables and the same 250 observations on each variable, estimate a VAR. One estimates a VAR(6), while the other estimates a VAR(4). The determinants of the variance-covariance matrices of the residuals for each VAR are 0.0036 and 0.0049 respectively. What is the values of the test statistic for performing a test of whether the VAR(6) can be restricted to a VAR(4)?",77.07 (correct)SALILSPLITCHECK0.31SALILSPLITCHECK0.33SALILSPLITCHECK4.87, D,0.0,C,0.0, B,0.0,B,0.0,B,0.0, D,0.0,A,1.0, A,1.0, D,0.0, D,0.0, C,0.0,A,1.0, B,0.0,A,1.0, D,0.0,B,0.0,D,0.0,B,0.0, D,0.0,A,1.0,A,1.0,C,0.0, B,0.0, A,1.0, B,0.0,D,0.0,To,0.0, D,0.0, B,0.0, D,0.0,0.4301830671520762,Low
+65,id44,"If an estimator is said to have minimum variance, which of the following statements is NOT implied?","The probability that the estimate is a long way away from its true value is minimisedSALILSPLITCHECKThe estimator is efficientSALILSPLITCHECKSuch an estimator would be termed ""best""SALILSPLITCHECKSuch an estimator will always be unbiased (correct)", B,0.0,D,1.0, B,0.0,D,1.0,D,1.0, A,0.0,D,1.0, D,1.0, D,1.0, D,1.0, A,0.0,D,1.0, D,1.0,D,1.0, C,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,B,0.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, D,1.0, C,0.0, D,1.0,0.43018306715207627,Low
+95,id71,"If a relevant variable is omitted from a regression equation, the consequences would be that:
+
+i) The standard errors would be biased
+
+
+ii) If the excluded variable is uncorrelated with all of the included variables, all of
+
+the slope coefficients will be inconsistent.
+
+
+iii) If the excluded variable is uncorrelated with all of the included variables, the
+
+intercept coefficient will be inconsistent.
+
+
+iv) If the excluded variable is uncorrelated with all of the included variables, all of
+
+the slope and intercept coefficients will be consistent and unbiased but inefficient.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", A,0.0,C,1.0, D,0.0,B,0.0,C,1.0, D,0.0,A,0.0, D,0.0, D,0.0, D,0.0, A,0.0,C,1.0, D,0.0,D,0.0, B,0.0,B,0.0,C,1.0,B,0.0, D,0.0,B,0.0,C,1.0,D,0.0, D,0.0, C,1.0, D,0.0,C,1.0,B,0.0, D,0.0, D,0.0, A,0.0,0.43018306715207627,Low
+69,id48,"Which of the following statements are true concerning maximum likelihood (ML) estimation in the context of GARCH models?
+
+i) Maximum likelihood estimation selects the parameter values that maximise the
+
+probability that we would have actually observed the values of the series y that we
+
+actually did.
+
+
+ii) GARCH models can only be estimated by ML and not by OLS
+
+
+iii) For estimation of a standard linear model (with no GARCH), the OLS and ML
+
+estimates for the slope and intercept parameters will be identical but the estimator
+
+for the variance of the disturbances is slightly different
+
+
+iv) Most computer packages use numerical procedures to estimate GARCH models
+
+rather than a set of analytical formulae","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv) (correct)", D,1.0,C,0.0, D,1.0,B,0.0,D,1.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, D,1.0,C,0.0, D,1.0,D,1.0, C,0.0,D,1.0,D,1.0,B,0.0, D,1.0,D,1.0,C,0.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, C,0.0, D,1.0, D,1.0,0.43018306715207627,Low
+10,id109,"Which of the following could result in autocorrelated residuals?
+
+i) Slowness of response of the dependent variable to changes in the values of the independent variables
+
+ii) Over-reactions of the dependent variable to changes in the independent variables
+
+iii) Omission of relevant explanatory variables that are autocorrelated
+
+iv) Outliers in the data","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", B,0.0,C,1.0, D,0.0,B,0.0,B,0.0, D,0.0,D,0.0, D,0.0, C,1.0, C,1.0, B,0.0,D,0.0, C,1.0,D,0.0, D,0.0,B,0.0,B,0.0,B,0.0, D,0.0,D,0.0,C,1.0,D,0.0, D,0.0, B,0.0, D,0.0,D,0.0,D,0.0, C,1.0, C,1.0, D,0.0,0.43018306715207627,Low
+51,id30,The pacf is necessary for distinguishing between,An AR and an MA modelSALILSPLITCHECKAn AR and an ARMA model (correct)SALILSPLITCHECKAn MA and an ARMA modelSALILSPLITCHECKDifferent models from within the ARMA family, A,0.0,D,0.0, B,1.0,B,1.0,B,1.0, D,0.0,A,0.0, D,0.0, A,0.0, A,0.0, A,0.0,A,0.0, A,0.0,D,0.0, B,1.0,C,0.0,D,0.0,A,0.0, D,0.0,A,0.0,D,0.0,B,1.0, B,1.0, A,0.0, D,0.0,D,0.0,B,1.0, D,0.0, D,0.0, D,0.0,0.43018306715207627,Low
+109,id84,"Which of the following statements is true concerning variance decomposition analysis of VARs?
+
+i) Variance decompositions measure the impact of a unit shock to each of the variables on the VAR
+
+ii) Variance decompositions can be thought of as measuring the proportion of the forecast error variance that is attributable to each variable
+
+iii) The ordering of the variables is important for calculating impulse responses but not variance decompositions
+
+iv) It is usual that most of the forecast error variance for a given variable is attributable to shocks to that variable","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,C,0.0, A,1.0,D,0.0,A,1.0, C,0.0,A,1.0, D,0.0, C,0.0, C,0.0, B,0.0,C,0.0, D,0.0,D,0.0, A,1.0,C,0.0,D,0.0,D,0.0, D,0.0,A,1.0,C,0.0,D,0.0, D,0.0, C,0.0, D,0.0,A,1.0,D,0.0, D,0.0, D,0.0, A,1.0,0.43018306715207627,Low
+28,id125,Which one of the following statements is true concerning alternative forecast accuracy measures?,Mean squared error is usually highly correlated with trading rule profitabilitySALILSPLITCHECKMean absolute error provides a quadratic loss functionSALILSPLITCHECKMean absolute percentage error is a useful measure for evaluating asset return forecastsSALILSPLITCHECKMean squared error penalises large forecast errors disproportionately more than small forecast errors (correct), D,1.0,D,1.0, A,0.0,D,1.0,D,1.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, C,0.0,C,0.0, D,1.0,C,0.0, A,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, C,0.0, C,0.0, D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,0.43018306715207627,Low
+11,id11,A leptokurtic distribution is one which,Has fatter tails and a smaller mean than a normal distribution with the same mean and varianceSALILSPLITCHECKHas fatter tails and is more peaked at the mean than a normal distribution with the same mean and variance (correct)SALILSPLITCHECKHas thinner tails and is more peaked at the mean than a normal distribution with the same mean and varianceSALILSPLITCHECKHas thinner tails than a normal distribution and is skewed., A,0.0,B,1.0, B,1.0,B,1.0,B,1.0, A,0.0,B,1.0, B,1.0, B,1.0, B,1.0, D,0.0,B,1.0, B,1.0,B,1.0, D,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,A,0.0, B,1.0, B,1.0, A,0.0,B,1.0,B,1.0, B,1.0, A,0.0, B,1.0,0.4301830671520764,Low
+52,id31,Negative residual autocorrelation is indicated by which one of the following?,A cyclical pattern in the residualsSALILSPLITCHECKAn alternating pattern in the residuals (correct)SALILSPLITCHECKA complete randomness in the residualsSALILSPLITCHECKResiduals that are all close to zero, C,0.0,B,1.0, B,1.0,B,1.0,B,1.0, A,0.0,B,1.0, B,1.0, B,1.0, B,1.0, C,0.0,B,1.0, B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,A,0.0,B,1.0, B,1.0, B,1.0, A,0.0,B,1.0,B,1.0, A,0.0, D,0.0, B,1.0,0.4301830671520764,Low
+122,id96,"Under the matrix notation for the classical linear regression model, $y = X \beta + u$, what are the dimensions of $u$?",T x kSALILSPLITCHECKT x 1 (correct)SALILSPLITCHECKk x 1SALILSPLITCHECK1 x 1, C,0.0,B,1.0, B,1.0,B,1.0,B,1.0, D,0.0,B,1.0, D,0.0, B,1.0, B,1.0, A,0.0,B,1.0, B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0, B,1.0, C,0.0,B,1.0,B,1.0, D,0.0, C,0.0, B,1.0,0.4301830671520764,Low
+34,id130,"Which of the following statements are true concerning the autocorrelation function (acf) and partial autocorrelation function (pacf)?
+
+i) The acf and pacf will always be identical at lag one whatever the model
+
+ii) The pacf for an MA(q) model will in general be non-zero beyond lag q
+
+iii) The pacf for an AR(p) model will be zero beyond lag p
+
+iv) The acf and pacf will be the same at lag two for an MA(1) model","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", A,0.0,C,1.0, D,0.0,B,0.0,B,0.0, C,1.0,B,0.0, D,0.0, B,0.0, B,0.0, D,0.0,C,1.0, A,0.0,D,0.0, B,0.0,C,1.0,B,0.0,B,0.0, D,0.0,B,0.0,C,1.0,D,0.0, B,0.0, B,0.0, D,0.0,C,1.0,B,0.0, C,1.0, D,0.0, C,1.0,0.44977644510880355,Low
+89,id66,"Which of the following are advantages of the VAR approach to modelling the relationship between variables relative to the estimation of full structural models?
+
+i) VARs receive strong motivation from financial and economic theory
+
+
+ii) VARs in their reduced forms can be used easily to produce time-series forecasts
+
+
+iii) VAR models are typically highly parsimonious
+
+
+iv) OLS can be applied separately to each equation in a reduced form VAR","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", B,0.0,C,0.0, D,0.0,A,1.0,A,1.0, C,0.0,C,0.0, D,0.0, D,0.0, D,0.0, C,0.0,C,0.0, D,0.0,D,0.0, D,0.0,C,0.0,D,0.0,A,1.0, D,0.0,A,1.0,C,0.0,D,0.0, D,0.0, A,1.0, D,0.0,A,1.0,A,1.0, D,0.0, C,0.0, A,1.0,0.44977644510880366,Low
+87,id64,Which of the following is a DISADVANTAGE of using pure time-series models (relative to structural models)?,They are not theoretically motivated (correct)SALILSPLITCHECKThey cannot produce forecasts easilySALILSPLITCHECKThey cannot be used for very high frequency dataSALILSPLITCHECKIt is difficult to determine the appropriate explanatory variables for use in pure time-series models, A,1.0,A,1.0, A,1.0,A,1.0,A,1.0, A,1.0,D,0.0, A,1.0, A,1.0, A,1.0, D,0.0,A,1.0, A,1.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, D,0.0,A,1.0,A,1.0,D,0.0, D,0.0, D,0.0, D,0.0,A,1.0,A,1.0, B,0.0, A,1.0, A,1.0,0.44977644510880366,Low
+40,id19,"If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?",It would rise more quickly for negative disturbances than for positive ones of the same magnitude (correct)SALILSPLITCHECKIt would be symmetrical about zeroSALILSPLITCHECKIt would rise less quickly for negative disturbances than for positive ones of the same magnitudeSALILSPLITCHECKIt would be zero for all positive disturbances, A,1.0,C,0.0, B,0.0,A,1.0,A,1.0, C,0.0,A,1.0, A,1.0, A,1.0, A,1.0, A,1.0,A,1.0, C,0.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, C,0.0,A,1.0,A,1.0,B,0.0, C,0.0, A,1.0, A,1.0,A,1.0,A,1.0, C,0.0, A,1.0, A,1.0,0.4497764451088037,Low
+94,id70,What is the most important disadvantage of the diagonal VECH approach to building multivariate GARCH models that is overcome by the BEKK formulation?,The diagonal VECH model is hard to interpret intuitivelySALILSPLITCHECKThe diagonal VECH model contains too many parametersSALILSPLITCHECKThe diagonal VECH model does not ensure a positive-definite variance-covariance matrix (correct)SALILSPLITCHECKThe BEKK model reduces the dimensionality problem that arises when a number of series are modelled together., A,0.0,D,0.0, D,0.0,C,1.0,C,1.0, C,1.0,C,1.0, C,1.0, C,1.0, C,1.0, C,1.0,C,1.0, C,1.0,C,1.0, B,0.0,C,1.0,C,1.0,C,1.0, D,0.0,C,1.0,C,1.0,A,0.0, C,1.0, C,1.0, D,0.0,C,1.0,C,1.0, D,0.0, C,1.0, C,1.0,0.4497764451088037,Low
+36,id15,"If the residuals from a regression estimated using a small sample of data are not normally distributed, which one of the following consequences may arise?",The coefficient estimates will be unbiased but inconsistentSALILSPLITCHECKThe coefficient estimates will be biased but consistentSALILSPLITCHECKThe coefficient estimates will be biased and inconsistentSALILSPLITCHECKTest statistics concerning the parameters will not follow their assumed distributions. (correct), B,0.0,D,1.0, B,0.0,D,1.0,D,1.0, C,0.0,D,1.0, C,0.0, D,1.0, D,1.0, A,0.0,D,1.0, D,1.0,D,1.0, B,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,A,0.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, D,1.0, C,0.0, D,1.0,0.44977644510880377,Low
+116,id90,The fixed effects panel model is also sometimes known as,A seemingly unrelated regression modelSALILSPLITCHECKThe least squares dummy variables approach (correct)SALILSPLITCHECKThe random effects modelSALILSPLITCHECKHeteroscedasticity and autocorrelation consistent, D,0.0,C,0.0, B,1.0,B,1.0,B,1.0, C,0.0,B,1.0, A,0.0, B,1.0, B,1.0, D,0.0,A,0.0, B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,C,0.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, C,0.0, B,1.0, B,1.0,0.44977644510880377,Low
+7,id106,Suppose that we wished to evaluate the factors that affected the probability that an investor would choose an equity fund rather than a bond fund or a cash investment. Which class of model would be most appropriate?,A logit modelSALILSPLITCHECKA multinomial logit (correct)SALILSPLITCHECKA tobit modelSALILSPLITCHECKAn ordered logit model, A,0.0,D,0.0, B,1.0,B,1.0,B,1.0, A,0.0,B,1.0, D,0.0, B,1.0, B,1.0, B,1.0,B,1.0, B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, D,0.0,B,1.0,B,1.0,A,0.0, B,1.0, B,1.0, C,0.0,B,1.0,B,1.0, D,0.0, A,0.0, B,1.0,0.46609159969939895,Low
+110,id85,"Suppose that we have estimated a GARCH model for daily equity returns, and we are interested in producing a 10-day forecast of the volatility (measured by the standard deviation of returns) for use in a value at risk model. How could such a forecast most validly be calculated?","Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them upSALILSPLITCHECKProduce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root (correct)SALILSPLITCHECKProduce 1, 2, 3, ..., 10 step ahead conditional variance forecasts, take the square roots of each one and add them upSALILSPLITCHECKProduce a 1-step ahead conditional variance forecast, take its square root and multiply it by the square root of 10", D,0.0,C,0.0, B,1.0,B,1.0,B,1.0, C,0.0,D,0.0, C,0.0, D,0.0, D,0.0, A,0.0,C,0.0, A,0.0,D,0.0, D,0.0,D,0.0,B,1.0,B,1.0, C,0.0,B,1.0,B,1.0,D,0.0, D,0.0, B,1.0, C,0.0,B,1.0,A,0.0, C,0.0, C,0.0, D,0.0,0.46609159969939895,Low
+115,id9,"If a researcher uses daily data to examine a particular problem and creates a variable that assigns a numerical value of 1 to Monday observations, what term would best describe this type of number?",ContinuousSALILSPLITCHECKCardinalSALILSPLITCHECKOrdinalSALILSPLITCHECKNominal (correct), B,0.0,D,1.0, B,0.0,D,1.0,D,1.0, D,1.0,D,1.0, C,0.0, D,1.0, D,1.0, B,0.0,D,1.0, D,1.0,D,1.0, B,0.0,C,0.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,C,0.0, D,1.0, D,1.0, C,0.0,D,1.0,D,1.0, B,0.0, D,1.0, D,1.0,0.46609159969939895,Low
+6,id105,Which one of the following is NOT an example of mis-specification of functional form?,Using a linear specification when y scales as a function of the squares of xSALILSPLITCHECKUsing a linear specification when a double-logarithmic model would be more appropriateSALILSPLITCHECKModelling y as a function of x when in fact it scales as a function of 1/xSALILSPLITCHECKExcluding a relevant variable from a linear regression model (correct), C,0.0,C,0.0, B,0.0,D,1.0,D,1.0, C,0.0,D,1.0, C,0.0, D,1.0, D,1.0, D,1.0,D,1.0, D,1.0,B,0.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,B,0.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, C,0.0, C,0.0, D,1.0,0.46609159969939895,Low
+24,id121,Consider again the VAR model of equation 16. Which of the following conditions must hold for it to be said that there is bi-directional feedback?,The b and d coefficients significant and the a and c coefficients insignificantSALILSPLITCHECKThe a and c coefficients significant and the b and d coefficients insignificantSALILSPLITCHECKThe a and c coefficients significantSALILSPLITCHECKThe b and d coefficients significant (correct), D,1.0,D,1.0, B,0.0,C,0.0,D,1.0, D,1.0,A,0.0, B,0.0, C,0.0, C,0.0, C,0.0,C,0.0, C,0.0,D,1.0, D,1.0,C,0.0,C,0.0,C,0.0, B,0.0,A,0.0,C,0.0,D,1.0, B,0.0, D,1.0, C,0.0,C,0.0,The,0.0, A,0.0, D,1.0, A,0.0,0.46609159969939895,Low
+29,id126,"Which of the following criticisms of standard (""plain vanilla"") GARCH models can be overcome by EGARCH models?
+
+i) Estimated coefficient values from GARCH models may be negative
+
+ii) GARCH models cannot account for leverage effects
+
+iii) The responsiveness of future volatility to positive and negative shocks is symmetric under a GARCH formulation
+
+iv) GARCH models cannot allow for a feedback from the volatility to the returns","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", C,1.0,D,0.0, D,0.0,B,0.0,B,0.0, D,0.0,D,0.0, D,0.0, C,1.0, C,1.0, C,1.0,D,0.0, D,0.0,D,0.0, A,0.0,B,0.0,C,1.0,B,0.0, D,0.0,C,1.0,C,1.0,D,0.0, D,0.0, A,0.0, D,0.0,A,0.0,C,1.0, B,0.0, D,0.0, C,1.0,0.46609159969939895,Low
+30,id127,"Suppose that 100 separate firms were tested to determine how many of them ""beat the market"" using a Jensen-type regression, and it is found that 3 fund managers significantly do so. Does this suggest prima facie evidence for stock market inefficiency?","YesSALILSPLITCHECKNo (correct)SALILSPLITCHECKIn order to answer this question, you would need to test every fund manager trading in that marketSALILSPLITCHECKThere is insufficient information given in the question to draw a conclusion about market efficiency.", A,0.0,D,0.0, A,0.0,D,0.0,D,0.0, D,0.0,D,0.0, B,1.0, B,1.0, B,1.0, B,1.0,B,1.0, D,0.0,D,0.0, D,0.0,D,0.0,D,0.0,D,0.0, D,0.0,B,1.0,D,0.0,B,1.0, D,0.0, D,0.0, B,1.0,D,0.0,B,1.0, D,0.0, D,0.0, D,0.0,0.46609159969939895,Low
+33,id13,"Consider the following time series model applied to daily data:
+
+
+
+where rt are the returns, and D1, D2, D3 and D4 are dummy variables. D1 = 1 on Monday and zero otherwise; D2 = 1 on Tuesday and zero otherwise, ..., D4 = 1 on Thursday and zero otherwise. What is the interpretation of the parameter estimate for the intercept?",It is the average return on Friday (correct)SALILSPLITCHECKIt is the average return on MondaySALILSPLITCHECKIt is the Friday deviation from the mean return for the weekSALILSPLITCHECKIt is the Monday deviation from the mean return for the week., C,0.0,C,0.0, B,0.0,A,1.0,A,1.0, C,0.0,B,0.0, D,0.0, A,1.0, A,1.0, D,0.0,C,0.0, B,0.0,D,0.0, C,0.0,B,0.0,A,1.0,A,1.0, D,0.0,A,1.0,B,0.0,C,0.0, B,0.0, C,0.0, B,0.0,D,0.0,A,1.0, C,0.0, D,0.0, A,1.0,0.46609159969939895,Low
+57,id36,"The characteristic roots of the MA process
+
+$y_t = -3u_{t-1} + u_{t-2} + u_t$
+
+are",1 and 2SALILSPLITCHECK1 and 0.5 (correct)SALILSPLITCHECK2 and -0.5SALILSPLITCHECK1 and -3, C,0.0,B,1.0, B,1.0,D,0.0,D,0.0, C,0.0,C,0.0, D,0.0, D,0.0, D,0.0, A,0.0,A,0.0, B,1.0,D,0.0, C,0.0,B,1.0,B,1.0,D,0.0, D,0.0,B,1.0,A,0.0,B,1.0, D,0.0, B,1.0, B,1.0,D,0.0,The,0.0, A,0.0, D,0.0, D,0.0,0.466091599699399,Low
+99,id75,"If a Durbin Watson statistic takes a value close to zero, what will be the value of the first order autocorrelation coefficient?",Close to zeroSALILSPLITCHECKClose to plus oneSALILSPLITCHECKClose to minus one (correct)SALILSPLITCHECKClose to either minus one or plus one, D,0.0,D,0.0, B,0.0,B,0.0,B,0.0, D,0.0,C,1.0, D,0.0, D,0.0, D,0.0, A,0.0,D,0.0, C,1.0,C,1.0, A,0.0,D,0.0,D,0.0,B,0.0, D,0.0,C,1.0,C,1.0,A,0.0, C,1.0, C,1.0, B,0.0,B,0.0,C,1.0, D,0.0, D,0.0, C,1.0,0.466091599699399,Low
+124,id98,"A researcher tests for structural stability in the following regression model:
+
+$y_t = \beta_1 + \beta_2 x_{2t} + \beta_3 x_{3t} + u_t$
+
+The total sample of 200 observations is split exactly in half for the sub-sample regressions. Which would be the unrestricted residual sum of squares?",The RSS for the whole sampleSALILSPLITCHECKThe RSS for the first sub-sampleSALILSPLITCHECKThe RSS for the second sub-sampleSALILSPLITCHECKThe sum of the RSS for the first and second sub-samples (correct), A,0.0,D,1.0, B,0.0,A,0.0,A,0.0, D,1.0,D,1.0, D,1.0, D,1.0, D,1.0, C,0.0,D,1.0, D,1.0,D,1.0, C,0.0,A,0.0,D,1.0,A,0.0, A,0.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, A,0.0, D,1.0, D,1.0,0.479463301485384,Low
+119,id93,"If two variables, $x_t$ and $y_t$ are said to be cointegrated, which of the following statements are true?
+
+i) $x_t$ and $y_t$ must both be stationary
+
+
+ii) Only one linear combination of $x_t$ and $y_t$ will be stationary
+
+
+iii) The cointegrating equation for $x_t$ and $y_t$ describes the short-run relationship
+
+between the two series
+
+
+iv) The residuals of a regression of $y_t$ on $x_t$ must be stationary","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,C,0.0, D,0.0,A,1.0,A,1.0, C,0.0,B,0.0, D,0.0, A,1.0, A,1.0, A,1.0,C,0.0, D,0.0,D,0.0, C,0.0,C,0.0,A,1.0,A,1.0, D,0.0,A,1.0,C,0.0,D,0.0, D,0.0, C,0.0, D,0.0,D,0.0,A,1.0, B,0.0, D,0.0, A,1.0,0.4794633014853841,Low
+82,id6,"In order to determine whether to use a fixed effects or random effects model, a researcher conducts a Hausman test. Which of the following statements is false?","For random effects models, the use of OLS would result in consistent but inefficient parameter estimationSALILSPLITCHECKIf the Hausman test is not satisfied, the random effects model is more appropriate. (correct)SALILSPLITCHECKRandom effects estimation involves the construction of ""quasi-demeaned"" dataSALILSPLITCHECKRandom effects estimation will not be appropriate if the composite error term is correlated with one or more of the explanatory variables in the model", A,0.0,D,0.0, B,1.0,B,1.0,B,1.0, B,1.0,B,1.0, D,0.0, B,1.0, B,1.0, D,0.0,B,1.0, B,1.0,A,0.0, B,1.0,A,0.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,B,1.0, D,0.0, B,1.0, C,0.0,B,1.0,B,1.0, D,0.0, C,0.0, B,1.0,0.4794633014853841,Low
+5,id104,"If OLS is applied separately to each equation that is part of a simultaneous system, the resulting estimates will be",Unbiased and consistentSALILSPLITCHECKBiased but consistentSALILSPLITCHECKBiased and inconsistent (correct)SALILSPLITCHECKIt is impossible to apply OLS to equations that are part of a simultaneous system, C,1.0,C,1.0, B,0.0,C,1.0,C,1.0, C,1.0,A,0.0, C,1.0, C,1.0, C,1.0, B,0.0,C,1.0, B,0.0,C,1.0, C,1.0,C,1.0,C,1.0,C,1.0, A,0.0,C,1.0,A,0.0,A,0.0, B,0.0, C,1.0, B,0.0,C,1.0,C,1.0, A,0.0, C,1.0, C,1.0,0.4794633014853841,Low
+80,id58,"Which of the following statements are true concerning the standardised residuals (residuals divided by their respective conditional standard deviations) from an estimated GARCH model?
+
+i) They are assumed to be normally distributed
+
+
+ii) Their squares will be related to their lagged squared values if the GARCH model is
+
+appropriate
+
+
+iii) In practice, they are likely to have fat tails
+
+
+iv) If the GARCH model is adequate, the standardised residuals and the raw residuals
+
+will be identical","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,C,0.0, D,0.0,B,1.0,B,1.0, C,0.0,B,1.0, D,0.0, B,1.0, B,1.0, D,0.0,C,0.0, B,1.0,B,1.0, B,1.0,B,1.0,C,0.0,B,1.0, D,0.0,C,0.0,C,0.0,D,0.0, B,1.0, C,0.0, D,0.0,C,0.0,C,0.0, D,0.0, D,0.0, C,0.0,0.49013251785356077,Low
+46,id25,"Which of the following features of financial asset return time-series could be captured using a standard GARCH(1,1) model?
+
+i) Fat tails in the return distribution
+
+
+ii) Leverage effects
+
+
+iii) Volatility clustering
+
+
+iv) Volatility affecting returns","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,D,0.0, D,0.0,B,1.0,B,1.0, C,0.0,D,0.0, D,0.0, B,1.0, B,1.0, B,1.0,D,0.0, D,0.0,D,0.0, B,1.0,D,0.0,B,1.0,B,1.0, D,0.0,B,1.0,C,0.0,D,0.0, D,0.0, B,1.0, D,0.0,C,0.0,B,1.0, D,0.0, D,0.0, C,0.0,0.4901325178535608,Low
+41,id20,Which of the following statements is false concerning the linear probability model?,"There is nothing in the model to ensure that the estimated probabilities lie between zero and oneSALILSPLITCHECKEven if the probabilities are truncated at zero and one, there will probably be many observations for which the probability is either exactly zero or exactly oneSALILSPLITCHECKThe error terms will be heteroscedastic and not normally distributedSALILSPLITCHECKThe model is much harder to estimate than a standard regression model with a continuous dependent variable (correct)", D,1.0,A,0.0, A,0.0,D,1.0,A,0.0, B,0.0,C,0.0, C,0.0, D,1.0, D,1.0, B,0.0,D,1.0, D,1.0,D,1.0, B,0.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, B,0.0,D,1.0,D,1.0, C,0.0, B,0.0, D,1.0,0.4901325178535608,Low
+62,id41,Which one of the following would NOT be a consequence of using non-stationary data in levels form?,The regression $R^2$ may be spuriously highSALILSPLITCHECKTest statistics may not follow standard distributionsSALILSPLITCHECKStatistical inferences may be invalidSALILSPLITCHECKParameter estimates may be biased (correct), D,1.0,A,0.0, B,0.0,D,1.0,D,1.0, D,1.0,A,0.0, B,0.0, D,1.0, D,1.0, A,0.0,D,1.0, B,0.0,D,1.0, C,0.0,D,1.0,D,1.0,D,1.0, A,0.0,D,1.0,D,1.0,B,0.0, D,1.0, D,1.0, B,0.0,D,1.0,D,1.0, C,0.0, D,1.0, D,1.0,0.4901325178535608,Low
+13,id111,"Which of the following conditions are necessary for a series to be classifiable as a weakly stationary process?
+
+(i) It must have a constant mean
+
+(ii) It must have a constant variance
+
+(iii) It must have constant autocovariances for given lags
+
+(iv) It must have a constant probability distribution","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", A,0.0,C,1.0, D,0.0,B,0.0,B,0.0, C,1.0,C,1.0, D,0.0, C,1.0, C,1.0, A,0.0,C,1.0, C,1.0,D,0.0, D,0.0,C,1.0,C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,D,0.0, C,1.0, B,0.0, D,0.0,C,1.0,C,1.0, C,1.0, C,1.0, C,1.0,0.4901325178535608,Low
+92,id69,Which of the following is correct concerning logit and probit models?,"They use a different method of transforming the model so that the probabilities lie between zero and one (correct)SALILSPLITCHECKThe logit model can result in too many observations falling at exactly zero or exactly oneSALILSPLITCHECKFor the logit model, the marginal effect of a change in one of the explanatory variables is simply the estimate of the parameter attached to that variable, whereas this is not the case for the probit modelSALILSPLITCHECKThe probit model is based on a cumulative logistic function", B,0.0,D,0.0, B,0.0,A,1.0,A,1.0, A,1.0,D,0.0, D,0.0, A,1.0, A,1.0, B,0.0,C,0.0, C,0.0,D,0.0, B,0.0,A,1.0,A,1.0,A,1.0, D,0.0,A,1.0,C,0.0,C,0.0, C,0.0, C,0.0, C,0.0,C,0.0,A,1.0, A,1.0, D,0.0, C,0.0,0.4901325178535608,Low
+83,id60,Which of the following statements is INCORRECT concerning the classical hypothesis testing framework?,"If the null hypothesis is rejected, the alternative is accepted (correct)SALILSPLITCHECKThe null hypothesis is the statement being tested while the alternative encompasses the remaining outcomes of interestSALILSPLITCHECKThe test of significance and confidence interval approaches will always give the same conclusionsSALILSPLITCHECKHypothesis tests are used to make inferences about the population parameters.", A,1.0,C,0.0, A,1.0,A,1.0,A,1.0, D,0.0,C,0.0, C,0.0, A,1.0, A,1.0, A,1.0,C,0.0, C,0.0,C,0.0, A,1.0,C,0.0,C,0.0,A,1.0, C,0.0,C,0.0,C,0.0,B,0.0, C,0.0, A,1.0, C,0.0,A,1.0,C,0.0, B,0.0, C,0.0, C,0.0,0.4901325178535608,Low
+1,id100,Which one of the following is NOT a plausible remedy for near multicollinearity?,Use principal components analysisSALILSPLITCHECKDrop one of the collinear variablesSALILSPLITCHECKUse a longer run of dataSALILSPLITCHECKTake logarithms of each of the variables (correct), B,0.0,D,1.0, D,1.0,D,1.0,B,0.0, A,0.0,C,0.0, C,0.0, D,1.0, D,1.0, D,1.0,C,0.0, C,0.0,A,0.0, B,0.0,C,0.0,C,0.0,D,1.0, A,0.0,C,0.0,B,0.0,B,0.0, A,0.0, C,0.0, D,1.0,D,1.0,D,1.0, D,1.0, C,0.0, C,0.0,0.4901325178535608,Low
+66,id45,"Which of the following are disadvantages of the Dickey-Fuller / Engle-Granger approach to testing for cointegration and modelling cointegrating relationships?
+
+i) Only one cointegrating relationship can be estimated
+
+ii) Particularly for small samples. There is a high chance of the tests suggestingthat variables are not cointegrated when they are
+
+iii) It is not possible to make inferences on the cointegrating regression
+
+iv) The procedure forces the researcher to specify which is the dependent variable and which are the independent variables.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv) (correct)", D,1.0,C,0.0, D,1.0,D,1.0,D,1.0, C,0.0,C,0.0, D,1.0, D,1.0, D,1.0, A,0.0,C,0.0, A,0.0,D,1.0, C,0.0,C,0.0,D,1.0,D,1.0, D,1.0,D,1.0,C,0.0,D,1.0, D,1.0, C,0.0, D,1.0,D,1.0,D,1.0, B,0.0, D,1.0, D,1.0,0.4901325178535608,Low
+3,id102,Which of the following could be used as a test for autocorrelation up to third order?,The Durbin Watson testSALILSPLITCHECKWhite's testSALILSPLITCHECKThe RESET testSALILSPLITCHECKThe Breusch-Godfrey test (correct), A,0.0,B,0.0, A,0.0,D,1.0,D,1.0, A,0.0,D,1.0, D,1.0, D,1.0, D,1.0, B,0.0,B,0.0, D,1.0,B,0.0, D,1.0,D,1.0,D,1.0,D,1.0, A,0.0,D,1.0,A,0.0,B,0.0, D,1.0, D,1.0, D,1.0,D,1.0,D,1.0, A,0.0, D,1.0, D,1.0,0.4901325178535608,Low
+73,id51,"Which of the following are plausible approaches to dealing with residual autocorrelation?
+
+i) Take logarithms of each of the variables
+
+ii) Add lagged values of the variables to the regression equation
+
+iii) Use dummy variables to remove outlying observations
+
+iv) Try a model in first differenced form rather than in levels.","(ii) and (iv) only (correct)SALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,D,0.0, D,0.0,A,1.0,A,1.0, C,0.0,A,1.0, D,0.0, D,0.0, D,0.0, D,0.0,D,0.0, D,0.0,D,0.0, D,0.0,D,0.0,D,0.0,A,1.0, A,1.0,A,1.0,C,0.0,D,0.0, A,1.0, A,1.0, D,0.0,A,1.0,A,1.0, D,0.0, D,0.0, A,1.0,0.4901325178535609,Low
+55,id34,Which one of the following statements best describes the algebraic representation of the fitted regression line?,\hat{y}_t = \hat{\alpha} + \hat{\beta}x_t + \hat{u}_tSALILSPLITCHECK\hat{y}_t = \hat{\alpha} + \hat{\beta}x_t (correct)SALILSPLITCHECK\hat{y}_t = \hat{\alpha} + \hat{\beta}x_t + u_tSALILSPLITCHECKy_t = \hat{\alpha} + \hat{\beta}x_t + \hat{u}_t, D,0.0,D,0.0, B,1.0,B,1.0,B,1.0, D,0.0,B,1.0, A,0.0, B,1.0, B,1.0, C,0.0,B,1.0, B,1.0,A,0.0, C,0.0,B,1.0,B,1.0,B,1.0, A,0.0,B,1.0,B,1.0,C,0.0, B,1.0, B,1.0, D,0.0,B,1.0,B,1.0, B,1.0, D,0.0, A,0.0,0.4982728791224399,Low
+120,id94,A dependent variable whose values are not observable outside a certain range but where the corresponding values of the independent variables are still available would be most accurately described as what kind of variable?,Censored (correct)SALILSPLITCHECKTruncatedSALILSPLITCHECKMultinomial variableSALILSPLITCHECKDiscrete choice, B,0.0,A,1.0, B,0.0,A,1.0,B,0.0, A,1.0,B,0.0, A,1.0, A,1.0, A,1.0, A,1.0,B,0.0, B,0.0,A,1.0, B,0.0,A,1.0,B,0.0,A,1.0, A,1.0,A,1.0,A,1.0,A,1.0, A,1.0, B,0.0, A,1.0,A,1.0,A,1.0, D,0.0, B,0.0, B,0.0,0.4982728791224399,Low
+114,id89,Which one of the following would be a plausible response to a finding of residual non-normality?,Use a logarithmic functional form instead of a linear oneSALILSPLITCHECKAdd lags of the variables on the right hand side of the regression modelSALILSPLITCHECKEstimate the model in first differenced formSALILSPLITCHECKRemove any large outliers from the data. (correct), C,0.0,C,0.0, B,0.0,D,1.0,D,1.0, B,0.0,D,1.0, C,0.0, D,1.0, D,1.0, B,0.0,C,0.0, D,1.0,C,0.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0,D,1.0,D,1.0,D,1.0, D,1.0, C,0.0, C,0.0,D,1.0,D,1.0, B,0.0, C,0.0, D,1.0,0.4982728791224399,Low
+14,id112,"Consider the following equation and determine the class of model that it best represents
+
+$y_{it} = \alpha + \beta_{it} + \mu_i + \nu_{it}$",An entity fixed effects model (correct)SALILSPLITCHECKA time fixed effects modelSALILSPLITCHECKA random effects modelSALILSPLITCHECKA pure time series model, A,1.0,D,0.0, B,0.0,A,1.0,A,1.0, C,0.0,A,1.0, D,0.0, A,1.0, A,1.0, C,0.0,A,1.0, C,0.0,A,1.0, D,0.0,A,1.0,A,1.0,A,1.0, C,0.0,A,1.0,A,1.0,D,0.0, A,1.0, A,1.0, C,0.0,A,1.0,A,1.0, D,0.0, C,0.0, A,1.0,0.4982728791224399,Low
+81,id59,Which one of the following statements is true concerning VARs?,The coefficient estimates have intuitive theoretical interpretationsSALILSPLITCHECKThe coefficient estimates usually have the same sign for all of the lags of a given variable in a given equationSALILSPLITCHECKVARs often produce better forecasts than simultaneous equation structural models (correct)SALILSPLITCHECKAll of the components of a VAR must be stationary before it can be used for forecasting, A,0.0,D,0.0, A,0.0,C,1.0,C,1.0, D,0.0,C,1.0, B,0.0, C,1.0, C,1.0, B,0.0,B,0.0, C,1.0,C,1.0, B,0.0,C,1.0,C,1.0,C,1.0, B,0.0,C,1.0,C,1.0,C,1.0, C,1.0, C,1.0, A,0.0,C,1.0,C,1.0, B,0.0, B,0.0, C,1.0,0.49827287912243995,Low
+72,id50,Which one of the following factors is likely to lead to a relatively high degree of out-of-sample forecast accuracy?,A model that is based on financial theory (correct)SALILSPLITCHECKA model that contains many variablesSALILSPLITCHECKA model whose dependent variable has recently exhibited a structural changeSALILSPLITCHECKA model that is entirely statistical in nature with no room for judgmental modification of forecasts, C,0.0,D,0.0, B,0.0,D,0.0,A,1.0, D,0.0,D,0.0, D,0.0, A,1.0, A,1.0, A,1.0,D,0.0, B,0.0,A,1.0, C,0.0,D,0.0,D,0.0,D,0.0, D,0.0,A,1.0,A,1.0,D,0.0, A,1.0, A,1.0, A,1.0,A,1.0,A,1.0, D,0.0, D,0.0, D,0.0,0.49827287912243995,Low
+90,id67,Which of the following statements is TRUE concerning the standard regression model?,"y has a probability distribution (correct)SALILSPLITCHECKx has a probability distributionSALILSPLITCHECKThe disturbance term is assumed to be correlated with xSALILSPLITCHECKFor an adequate model, the residual (u-hat) will be zero for all sample data points", C,0.0,D,0.0, A,1.0,B,0.0,A,1.0, D,0.0,A,1.0, A,1.0, A,1.0, A,1.0, C,0.0,A,1.0, B,0.0,A,1.0, A,1.0,A,1.0,A,1.0,B,0.0, D,0.0,A,1.0,A,1.0,D,0.0, D,0.0, A,1.0, A,1.0,A,1.0,A,1.0, D,0.0, B,0.0, A,1.0,0.49827287912243995,Low
+18,id116,Consider a series that follows an MA(1) with zero mean and a moving average coefficient of 0.4. What is the value of the autocovariance at lag 1?,0.4SALILSPLITCHECK1SALILSPLITCHECK0.34SALILSPLITCHECKIt is not possible to determine the value of the autocovariances without knowing the disturbance variance. (correct), A,0.0,C,0.0, A,0.0,D,1.0,D,1.0, C,0.0,C,0.0, D,1.0, D,1.0, D,1.0, B,0.0,D,1.0, C,0.0,A,0.0, B,0.0,A,0.0,D,1.0,D,1.0, D,1.0,D,1.0,C,0.0,C,0.0, D,1.0, C,0.0, C,0.0,C,0.0,D,1.0, A,0.0, C,0.0, A,0.0,0.49827287912243995,Low
+39,id18,What is the main difference between the Dickey Fuller (DF) and Phillips-Perron (PP) approaches to unit root testing?,ADF is a single equation approach to unit root testing while PP is a systems approachSALILSPLITCHECKPP tests reverse the DF null and alternative hypotheses so that there is stationarity under the null hypothesis of the PP testSALILSPLITCHECKThe PP test incorporates an automatic correction for autocorrelated residuals in the test regression (correct)SALILSPLITCHECKPP tests have good power in small samples whereas DF tests do not., D,0.0,D,0.0, B,0.0,C,1.0,C,1.0, B,0.0,B,0.0, B,0.0, C,1.0, C,1.0, C,1.0,B,0.0, C,1.0,C,1.0, C,1.0,C,1.0,C,1.0,C,1.0, A,0.0,C,1.0,B,0.0,B,0.0, C,1.0, C,1.0, B,0.0,B,0.0,C,1.0, C,1.0, B,0.0, C,1.0,0.5040069329937308,Low
+93,id7,Suppose that observations are available on the monthly bond prices of 100 companies for 5 years. What type of data are these?,Cross-sectionalSALILSPLITCHECKTime-seriesSALILSPLITCHECKPanel (correct)SALILSPLITCHECKQualitative, B,0.0,B,0.0, B,0.0,C,1.0,C,1.0, B,0.0,B,0.0, B,0.0, C,1.0, C,1.0, C,1.0,C,1.0, C,1.0,C,1.0, B,0.0,C,1.0,C,1.0,C,1.0, B,0.0,C,1.0,C,1.0,B,0.0, C,1.0, C,1.0, B,0.0,C,1.0,C,1.0, B,0.0, B,0.0, B,0.0,0.5040069329937308,Low
+56,id35,What are the dimensions of $\hat{u}^t \hat{u}?,T x kSALILSPLITCHECKT x 1SALILSPLITCHECKk x 1SALILSPLITCHECK1 x 1 (correct), D,1.0,B,0.0, B,0.0,D,1.0,D,1.0, C,0.0,D,1.0, D,1.0, D,1.0, D,1.0, C,0.0,B,0.0, D,1.0,D,1.0, B,0.0,D,1.0,B,0.0,D,1.0, A,0.0,A,0.0,B,0.0,B,0.0, D,1.0, B,0.0, C,0.0,B,0.0,D,1.0, A,0.0, C,0.0, B,0.0,0.5040069329937308,Low
+27,id124,"Which of the following statements are correct concerning the use of antithetic variates as part of a Monte Carlo experiment?
+
+i) Antithetic variates work by reducing the number of replications required to cover the whole probability space
+
+ii) Antithetic variates involve employing a similar variable to that used in the simulation, but whose properties are known analytically
+
+iii) Antithetic variates involve using the negative of each of the random draws and repeating the experiment using those values as the draws
+
+iv) Antithetic variates involve taking one over each of the random draws and repeating the experiment using those values as the draws","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iv) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", A,0.0,D,0.0, D,0.0,B,1.0,B,1.0, D,0.0,B,1.0, D,0.0, B,1.0, B,1.0, D,0.0,C,0.0, B,1.0,B,1.0, C,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,C,0.0,C,0.0, B,1.0, B,1.0, D,0.0,B,1.0,B,1.0, D,0.0, D,0.0, B,1.0,0.5040069329937308,Low
+48,id27,"Under which of the following situations would bootstrapping be preferred to pure simulation?
+
+i) If it is desired that the distributional properties of the data in the experiment
+
+are the same as those of some actual data
+
+
+ii) If it is desired that the distributional properties of the data in the experiment
+
+are known exactly
+
+
+iii) If the distributional properties of the actual data are unknown
+
+
+iv) If the sample of actual data available is very small","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iv) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,D,0.0, D,0.0,B,1.0,B,1.0, C,0.0,B,1.0, D,0.0, B,1.0, B,1.0, A,0.0,D,0.0, B,1.0,D,0.0, C,0.0,C,0.0,B,1.0,B,1.0, D,0.0,B,1.0,B,1.0,D,0.0, D,0.0, B,1.0, D,0.0,A,0.0,B,1.0, C,0.0, D,0.0, B,1.0,0.5040069329937308,Low
+8,id107,"Which of the following statements will be true if the number of replications used in a Monte Carlo study is small?
+
+i) The statistic of interest may be estimated imprecisely
+
+
+ii) The results may be affected by unrepresentative combinations of random draws
+
+
+iii) The standard errors on the estimated quantities may be unacceptably large
+
+
+iv) Variance reduction techniques can be used to reduce the standard errors","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iv) onlySALILSPLITCHECK(i), (ii), (iii), and (iv) (correct)", B,0.0,D,1.0, D,1.0,B,0.0,B,0.0, C,0.0,C,0.0, D,1.0, D,1.0, D,1.0, C,0.0,D,1.0, B,0.0,B,0.0, D,1.0,B,0.0,D,1.0,B,0.0, B,0.0,D,1.0,C,0.0,D,1.0, D,1.0, B,0.0, D,1.0,D,1.0,D,1.0, D,1.0, D,1.0, D,1.0,0.5040069329937308,Low
+12,id110,"Which of the following statements are true concerning the acf and pacf?
+
+(i) The acf and pacf are often hard to interpret in practice
+
+(ii) The acf and pacf can be difficult to calculate for some data sets
+
+(iii) Information criteria represent an alternative approach to model order determination
+
+(iv) If applied correctly, the acf and pacf will always deliver unique model selections","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", A,0.0,C,1.0, D,0.0,B,0.0,B,0.0, C,1.0,B,0.0, D,0.0, C,1.0, C,1.0, D,0.0,C,1.0, C,1.0,C,1.0, D,0.0,B,0.0,C,1.0,B,0.0, C,1.0,C,1.0,C,1.0,D,0.0, B,0.0, B,0.0, D,0.0,C,1.0,B,0.0, D,0.0, D,0.0, C,1.0,0.5040069329937308,Low
+15,id113,"Note that statistical tables are not necessary to answer this question. For a sample of 1000 observations, the Dickey-Fuller test statistic values are",More negative than (i.e. bigger in absolute value than) those in the left hand tail of a normal distribution (correct)SALILSPLITCHECKLess negative than (i.e. smaller in absolute value than) those in the left hand tail of a normal distributionSALILSPLITCHECKObtained from an analytical formula for the density of the Dickey-Fuller distributionSALILSPLITCHECKMore negative (i.e. bigger in absolute value) for a 10% size of test than a 5% test., B,0.0,B,0.0, B,0.0,B,0.0,A,1.0, B,0.0,A,1.0, A,1.0, B,0.0, B,0.0, D,0.0,A,1.0, A,1.0,B,0.0, A,1.0,A,1.0,D,0.0,B,0.0, A,1.0,A,1.0,A,1.0,A,1.0, A,1.0, D,0.0, B,0.0,A,1.0,A,1.0, A,1.0, A,1.0, A,1.0,0.5040069329937308,Low
+16,id114,"Suppose that a hypothesis test is conducted using a 5% significance level. Which of the following statements are correct?
+
+(i) The significance level is equal to the size of the test
+
+(ii) The significance level is equal to the power of the test
+
+(iii) 2.5% of the total distribution will be in each tail rejection region for a 2-sided test
+
+(iv) 5% of the total distribution will be in each tail rejection region for a 2-sided test.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", C,0.0,C,0.0, B,1.0,B,1.0,B,1.0, C,0.0,B,1.0, D,0.0, B,1.0, B,1.0, C,0.0,C,0.0, B,1.0,D,0.0, A,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,C,0.0,D,0.0, D,0.0, B,1.0, D,0.0,B,1.0,B,1.0, D,0.0, D,0.0, B,1.0,0.507416263404925,Low
+118,id92,"If the standard tools for time-series analysis, such as estimation of the acf, pacf and spectral analysis, find no evidence of structure in the data, this implies that the data are which of the following?",Normally distributedSALILSPLITCHECKUncorrelated (correct)SALILSPLITCHECKIndependentSALILSPLITCHECKFat-tailed, C,0.0,D,0.0, B,1.0,B,1.0,C,0.0, D,0.0,B,1.0, C,0.0, C,0.0, C,0.0, B,1.0,B,1.0, B,1.0,B,1.0, A,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,B,1.0,D,0.0, C,0.0, C,0.0, A,0.0,C,0.0,B,1.0, B,1.0, C,0.0, B,1.0,0.507416263404925,Low
+123,id97,"How many parameters will be required to be estimated in total for all equations of a standard form, unrestricted, tri-variate VAR(4), ignoring the intercepts?",12SALILSPLITCHECK4SALILSPLITCHECK3SALILSPLITCHECK36 (correct), A,0.0,C,0.0, B,0.0,D,1.0,A,0.0, D,1.0,D,1.0, B,0.0, D,1.0, D,1.0, C,0.0,D,1.0, D,1.0,D,1.0, B,0.0,A,0.0,D,1.0,D,1.0, A,0.0,D,1.0,A,0.0,A,0.0, D,1.0, D,1.0, B,0.0,A,0.0,D,1.0, C,0.0, C,0.0, A,0.0,0.507416263404925,Low
+79,id57,"Which of the following are plausible approaches to dealing with a model that exhibits heteroscedasticity?
+
+i) Take logarithms of each of the variables
+
+ii) Use suitably modified standard errors
+
+iii) Use a generalised least squares procedure
+
+iv) Add lagged values of the variables to the regression equation.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", D,0.0,D,0.0, D,0.0,B,0.0,B,0.0, C,1.0,C,1.0, D,0.0, C,1.0, C,1.0, C,1.0,D,0.0, D,0.0,C,1.0, A,0.0,C,1.0,D,0.0,B,0.0, D,0.0,C,1.0,C,1.0,D,0.0, D,0.0, C,1.0, D,0.0,C,1.0,C,1.0, A,0.0, C,1.0, C,1.0,0.507416263404925,Low
+77,id55,"The purpose of ""augmenting"" the Dickey-Fuller test regression is to",Ensure that there is no heteroscedasticity in the test regression residuals.SALILSPLITCHECKEnsure that the test regression residuals are normally distributedSALILSPLITCHECKEnsure that there is no autocorrelation in the test regression residuals (correct)SALILSPLITCHECKEnsure that all of the non-stationarity is taken into account., C,1.0,D,0.0, D,0.0,C,1.0,D,0.0, D,0.0,D,0.0, D,0.0, C,1.0, C,1.0, D,0.0,C,1.0, D,0.0,D,0.0, C,1.0,C,1.0,D,0.0,C,1.0, C,1.0,C,1.0,C,1.0,D,0.0, C,1.0, D,0.0, D,0.0,C,1.0,C,1.0, D,0.0, C,1.0, C,1.0,0.507416263404925,Low
+88,id65,"Which of the following are alternative names for the dependent variable (usually denoted by y) in linear regression analysis?
+
+(i) The regressand
+
+(ii) The regressor
+
+(iii) The explained variable
+
+(iv) The explanatory variable","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", B,1.0,D,0.0, D,0.0,B,1.0,B,1.0, C,0.0,B,1.0, D,0.0, B,1.0, B,1.0, C,0.0,D,0.0, B,1.0,D,0.0, D,0.0,B,1.0,B,1.0,B,1.0, B,1.0,B,1.0,C,0.0,C,0.0, D,0.0, B,1.0, D,0.0,B,1.0,B,1.0, D,0.0, D,0.0, B,1.0,0.507416263404925,Low
+47,id26,"Consider the estimation of a GARCH-M model. If the data employed were a time-series of daily corporate bond percentage returns, which of the following would you expect the value of the GARCH-in-mean parameter estimate to be?",Less than -1SALILSPLITCHECKBetween -1 and 0SALILSPLITCHECKBetween 0 and 1 (correct)SALILSPLITCHECKBigger than 1, C,1.0,C,1.0, B,0.0,B,0.0,C,1.0, B,0.0,B,0.0, B,0.0, C,1.0, C,1.0, B,0.0,B,0.0, B,0.0,B,0.0, C,1.0,C,1.0,C,1.0,B,0.0, C,1.0,B,0.0,C,1.0,B,0.0, B,0.0, B,0.0, C,1.0,C,1.0,B,0.0, C,1.0, B,0.0, C,1.0,0.507416263404925,Low
+105,id80,Which of the following is a disadvantage of the fixed effects approach to estimating a panel model?,"The model is likely to be technical to estimateSALILSPLITCHECKThe approach may not be valid if the composite error term is correlated with one or more of the explanatory variablesSALILSPLITCHECKThe number of parameters to estimate may be large, resulting in a loss of degrees of freedom (correct)SALILSPLITCHECKThe fixed effects approach can only capture cross-sectional heterogeneity and not temporal variation in the dependent variable.", A,0.0,D,0.0, B,0.0,C,1.0,C,1.0, B,0.0,C,1.0, B,0.0, C,1.0, C,1.0, A,0.0,B,0.0, D,0.0,B,0.0, C,1.0,C,1.0,C,1.0,C,1.0, D,0.0,C,1.0,C,1.0,D,0.0, C,1.0, B,0.0, D,0.0,C,1.0,C,1.0, C,1.0, B,0.0, C,1.0,0.507416263404925,Low
+23,id120,"Which of the following are characteristics of a stationary process?
+
+i) It crosses its mean value frequently
+
+
+ii) It has constant mean and variance
+
+
+iii) It contains no trend component
+
+
+iv) It will be stationary in first difference form","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv) (correct)", B,0.0,D,1.0, D,1.0,C,0.0,C,0.0, D,1.0,B,0.0, D,1.0, C,0.0, C,0.0, C,0.0,D,1.0, D,1.0,D,1.0, D,1.0,B,0.0,C,0.0,C,0.0, A,0.0,C,0.0,D,1.0,D,1.0, D,1.0, A,0.0, D,1.0,A,0.0,C,0.0, D,1.0, D,1.0, C,0.0,0.507416263404925,Low
+91,id68,"Consider the following model for $y_t$:
+
+$y_t = \mu + \lambda t + u_t$
+
+Which one of the following most accurately describes the process for $y_t$?",A unit root processSALILSPLITCHECKA stationary processSALILSPLITCHECKA deterministic trend process (correct)SALILSPLITCHECKA random walk with drift, B,0.0,B,0.0, A,0.0,C,1.0,C,1.0, A,0.0,C,1.0, B,0.0, C,1.0, C,1.0, B,0.0,B,0.0, C,1.0,D,0.0, A,0.0,C,1.0,C,1.0,C,1.0, D,0.0,C,1.0,D,0.0,A,0.0, D,0.0, D,0.0, C,1.0,C,1.0,C,1.0, B,0.0, D,0.0, C,1.0,0.507416263404925,Low
+96,id72,"Which of the following are alternative names for the independent variable (usually denoted by x) in linear regression analysis?
+
+(i) The regressor
+
+(ii) The regressand
+
+(iii) The causal variable
+
+(iv) The effect variable","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) only (correct)SALILSPLITCHECK(i), (ii), and (iii) onlySALILSPLITCHECK(i), (ii), (iii), and (iv)", B,1.0,D,0.0, D,0.0,B,1.0,B,1.0, C,0.0,B,1.0, D,0.0, B,1.0, B,1.0, D,0.0,D,0.0, B,1.0,D,0.0, C,0.0,A,0.0,B,1.0,B,1.0, D,0.0,B,1.0,C,0.0,C,0.0, B,1.0, B,1.0, D,0.0,C,0.0,B,1.0, D,0.0, C,0.0, B,1.0,0.507416263404925,Low
+100,id76,"Under the null hypothesis of a Bera-Jarque test, the distribution has",Zero skewness and zero kurtosisSALILSPLITCHECKZero skewness and a kurtosis of three (correct)SALILSPLITCHECKSkewness of one and zero kurtosisSALILSPLITCHECKSkewness of one and kurtosis of three., D,0.0,D,0.0, B,1.0,B,1.0,B,1.0, C,0.0,B,1.0, A,0.0, B,1.0, B,1.0, A,0.0,B,1.0, B,1.0,A,0.0, C,0.0,B,1.0,B,1.0,B,1.0, A,0.0,B,1.0,A,0.0,C,0.0, B,1.0, B,1.0, A,0.0,A,0.0,B,1.0, C,0.0, C,0.0, B,1.0,0.507416263404925,Low
+107,id82,The price of a house is best described as what type of number?,DiscreteSALILSPLITCHECKCardinal (correct)SALILSPLITCHECKOrdinalSALILSPLITCHECKNominal, A,0.0,D,0.0, B,1.0,B,1.0,D,0.0, D,0.0,D,0.0, D,0.0, B,1.0, B,1.0, B,1.0,D,0.0, D,0.0,D,0.0, B,1.0,A,0.0,D,0.0,B,1.0, D,0.0,B,1.0,D,0.0,C,0.0, B,1.0, B,1.0, B,1.0,B,1.0,B,1.0, B,1.0, D,0.0, B,1.0,0.5085476277156078,Low
+103,id79,"Which of the following assumptions are required to show the consistency, unbiasedness and efficiency of the OLS estimator?
+
+i) $E(u_t) = 0$
+
+
+ii) $\text{Var}(u_t) = \sigma^2$
+
+
+iii) $\text{Cov}(u_t, u_{t-j}) = 0 \forall j$
+
+
+iv) $u_t \sim N(0, \sigma^2)$","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", B,0.0,C,1.0, D,0.0,B,0.0,C,1.0, C,1.0,C,1.0, D,0.0, C,1.0, C,1.0, B,0.0,C,1.0, D,0.0,D,0.0, A,0.0,D,0.0,C,1.0,B,0.0, D,0.0,C,1.0,C,1.0,D,0.0, D,0.0, C,1.0, D,0.0,C,1.0,C,1.0, C,1.0, D,0.0, C,1.0,0.5085476277156078,Low
+111,id86,"Suppose that the value of $R^2$ for an estimated regression model is exactly zero. Which of the following are true?
+
+i) All coefficient estimates on the slopes will be zero
+
+ii) The fitted line will be horizontal with respect to all of the explanatory variables
+
+iii) The regression line has not explained any of the variability of y about its mean value
+
+iv) The intercept coefficient estimate must be zero.","(ii) and (iv) onlySALILSPLITCHECK(i) and (iii) onlySALILSPLITCHECK(i), (ii), and (iii) only (correct)SALILSPLITCHECK(i), (ii), (iii), and (iv)", C,1.0,C,1.0, D,0.0,B,0.0,B,0.0, C,1.0,C,1.0, D,0.0, C,1.0, C,1.0, C,1.0,C,1.0, C,1.0,D,0.0, C,1.0,B,0.0,C,1.0,B,0.0, D,0.0,B,0.0,C,1.0,D,0.0, D,0.0, C,1.0, D,0.0,C,1.0,B,0.0, C,1.0, D,0.0, B,0.0,0.5085476277156078,Low

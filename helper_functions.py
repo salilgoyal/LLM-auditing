@@ -35,11 +35,35 @@ def read_helm_list(runs='/nlp/scr4/nlp/crfm/yifanmai/helm-release/benchmark_outp
         with open(path + file + '.json') as json_file:
             full_dict = json.load(json_file)
         
-        only_relevant_keys = [{key: record[key] for key in relevant_files[file]} for record in full_dict]
-
-        df_temp = pd.json_normalize(only_relevant_keys)
-        if file=='instances':
+        if file == 'instances':
+            # Process instances file differently to handle references
+            processed_records = []
+            for record in full_dict:
+                # Start with the basic record info
+                processed_record = {
+                    'id': record['id'],
+                    'input': record['input']
+                }
+                
+                # Process references by combining text and tags
+                reference_texts = []
+                for ref in record['references']:
+                    text = ref['output']['text']
+                    tags = ref['tags']
+                    if tags:  # Only add tags if they exist
+                        text = f"{text} ({', '.join(tags)})"
+                    reference_texts.append(text)
+                
+                # Join all references with newlines
+                processed_record['references'] = 'SALILSPLITCHECK'.join(reference_texts)
+                processed_records.append(processed_record)
+                
+            df_temp = pd.json_normalize(processed_records)
             df_temp = df_temp.rename(columns={'id': 'instance_id'})
+        else:
+            only_relevant_keys = [{key: record[key] for key in relevant_files[file]} for record in full_dict]
+            df_temp = pd.json_normalize(only_relevant_keys)
+            
         df_list.append(df_temp)
         
     df = reduce(
@@ -67,13 +91,14 @@ def rank_questions(dfs, metric_name='stats.exact_match'):
 
     for i, df in enumerate(dfs):
         if i == 0:
-            df_subset = df[['instance_id', 'input.text', 'predicted_text', metric_name]].copy()
+            # Include references in the first dataframe
+            df_subset = df[['instance_id', 'input.text', 'references', 'predicted_text', metric_name]].copy()
         else:
             df_subset = df[['instance_id', 'predicted_text', metric_name]].copy()
+            
         df_subset = df_subset.rename(columns={
             'predicted_text': f'predicted_text_{i}',
             metric_name: metric_name + f'_{i}',
-            # desired_stat_name: desired_stat_name + f'_{i}'
         })
         processed_dfs.append(df_subset)
         
@@ -177,9 +202,13 @@ def visualize_response_trends(benchmark_df, metric_name, benchmark_dir, n_groups
     """
     Create visual analysis of response trends with plots and formatted tables
     """
-    # Create agreement groups based on std
-    benchmark_df['agreement_level'] = pd.qcut(benchmark_df['std'], n_groups, 
-                                            labels=['High', 'Medium', 'Low'])
+    # Create agreement groups based on fixed std ranges
+    std_ranges = [0, 0.15, 0.30, float('inf')]
+    benchmark_df['agreement_level'] = pd.cut(benchmark_df['std'], 
+                                           bins=std_ranges,
+                                           labels=['High', 'Medium', 'Low'])
+    
+
     
     pred_cols = [col for col in benchmark_df.columns if col.startswith('predicted_text_')]
     metric_cols = [col for col in benchmark_df.columns if col.startswith(metric_name + '_')]
@@ -223,10 +252,13 @@ def visualize_response_trends(benchmark_df, metric_name, benchmark_dir, n_groups
         level_df = benchmark_df[benchmark_df['agreement_level'] == level]
         scores = level_df[metric_cols].mean(axis=1)
         
-        plt.hist(scores, bins=bins, alpha=0.5, label=f"{level} (n={len(scores)})")
+        # plt.hist(scores, bins=bins, alpha=0.5, label=f"{level} (n={len(scores)})")
+        std_range = (level_df['std'].min(), level_df['std'].max())
+        plt.hist(scores, bins=bins, alpha=0.5, label=f"{level} (std={std_range[0]:.3f}-{std_range[1]:.3f}, n={len(scores)})")
+    
     
     plt.title(f'{metric_name}\nDistribution by Agreement Level', fontsize=12, pad=20)
-    plt.xlabel('Score', fontsize=10)
+    plt.xlabel('Average Score (1 data point = 1 question)', fontsize=10)
     plt.ylabel('Count', fontsize=10)
     plt.legend()
     
@@ -325,7 +357,7 @@ def visualize_response_trends(benchmark_df, metric_name, benchmark_dir, n_groups
             ])
         
         f.write(tabulate(summary_data, 
-                        headers=['Agreement', 'N Questions', 'Avg Length', f'Avg {metric_name}', 'Std Range'],
+                        headers=['Agreement', 'N Questions', 'Avg Response Length', f'Avg {metric_name}', 'Std Range'],
                         tablefmt='grid'))
         
         # Sample responses table with improved formatting
@@ -333,23 +365,40 @@ def visualize_response_trends(benchmark_df, metric_name, benchmark_dir, n_groups
         sample_data = []
         for level in ['High', 'Medium', 'Low']:
             level_df = benchmark_df[benchmark_df['agreement_level'] == level]
-            # Get the row with median std for more representative samples
-            median_idx = level_df['std'].abs().sort_values().index[len(level_df)//2]
-            sample_row = level_df.loc[median_idx]
-            
-            responses = [sample_row[col] for col in pred_cols[:3]]
-            response_text = '\n'.join(str(r) for r in responses)
-            
-            sample_data.append([
-                level,
-                sample_row['input.text'][:100] + '...' if len(sample_row['input.text']) > 100 else sample_row['input.text'],
-                response_text
-            ])
+            if len(level_df) > 0:  # Only process if we have examples for this level
+                # Get the row with median std for more representative samples
+                median_idx = level_df['std'].abs().sort_values().index[len(level_df)//2]
+                sample_row = level_df.loc[median_idx]
+                
+                responses = [sample_row[col] for col in pred_cols[:3]]
+                metric_values = [sample_row[col] for col in metric_cols[:3]]
+                # Format responses with line breaks and indentation, including metric values
+                response_text = '\n'.join(f"Sample response {i+1} ({metric_name}={metric_val:.3f}): {str(r)}" 
+                                        for i, (r, metric_val) in enumerate(zip(responses, metric_values)))
+                
+                # Split references using the unique delimiter and format each reference
+                references = sample_row['references'].split('SALILSPLITCHECK')
+                formatted_references = '\n'.join(f"Reference {i+1}: {ref}" for i, ref in enumerate(references))
+                
+                sample_data.append([
+                    level,
+                    sample_row['input.text'],
+                    formatted_references,
+                    response_text
+                ])
+            else:
+                # Add a placeholder row for empty groups
+                sample_data.append([
+                    level,
+                    "No examples in this category",
+                    "N/A",
+                    "N/A"
+                ])
         
         f.write(tabulate(sample_data,
-                        headers=['Agreement', 'Question', 'Model Responses (first 3)'],
+                        headers=['Agreement', 'Question', 'References', 'Model Responses (first 3)'],
                         tablefmt='grid',
-                        maxcolwidths=[10, 50, 100]))
+                        maxcolwidths=[10, 50, None, None]))
     
     # Save the full analysis data to CSV
     benchmark_df.to_csv(os.path.join(benchmark_dir, 'full_analysis_data.csv'))

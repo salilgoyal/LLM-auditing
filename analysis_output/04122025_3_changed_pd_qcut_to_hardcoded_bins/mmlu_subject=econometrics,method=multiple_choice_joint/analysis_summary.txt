@@ -1,0 +1,64 @@
+Benchmark 7/28: mmlu:subject=econometrics,method=multiple_choice_joint
+================================================================================
+
+Models analyzed:
+1. AlephAlpha_luminous-base
+2. meta_llama-2-13b
+3. tiiuae_falcon-7b
+4. anthropic_claude-2.0
+5. anthropic_claude-v1.3
+6. ai21_j2-grande
+7. openai_gpt-3.5-turbo-0613
+8. tiiuae_falcon-40b
+9. writer_palmyra-x-v3
+10. google_text-unicorn@001
+11. AlephAlpha_luminous-extended
+12. meta_llama-65b
+13. openai_text-davinci-003
+14. meta_llama-2-70b
+15. AlephAlpha_luminous-supreme
+16. google_text-bison@001
+17. anthropic_claude-instant-1.2
+18. anthropic_claude-2.1
+19. 01-ai_yi-6b
+20. openai_gpt-4-0613
+21. mistralai_mistral-7b-v0.1
+22. meta_llama-2-7b
+23. openai_text-davinci-002
+24. writer_palmyra-x-v2
+25. ai21_j2-jumbo
+26. mistralai_mixtral-8x7b-32kseqlen
+27. openai_gpt-4-1106-preview
+28. cohere_command-light
+29. cohere_command
+30. 01-ai_yi-34b
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
++=============+===============+=======================+=========================+===============+
+| High        |             0 |                   nan |                 nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Medium      |             9 |                     1 |                   0.448 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+| Low         |           114 |                     1 |                   0.48  | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+-------------------------------------------------+
+| Agreement   | Question                                           | Model Responses (first 3)                       |
++=============+====================================================+=================================================+
+| High        | No examples in this category                       | N/A                                             |
++-------------+----------------------------------------------------+-------------------------------------------------+
+| Medium      | If the Engle-Granger test is applied to the        | Sample response 1 (stats.exact_match=1.000):  B |
+|             | residuals of a potentially cointegrating           | Sample response 2 (stats.exact_match=1.000): B  |
+|             | regression, what would be the interpretation of    | Sample response 3 (stats.exact_match=1.000):  B |
+|             | the null hypothesis?                               |                                                 |
++-------------+----------------------------------------------------+-------------------------------------------------+
+| Low         | If the residuals from a regression estimated using | Sample response 1 (stats.exact_match=0.000):  B |
+|             | a small sample of data are not normally            | Sample response 2 (stats.exact_match=1.000): D  |
+|             | distributed, which one of the following            | Sample response 3 (stats.exact_match=0.000):  B |
+|             | consequences may arise?                            |                                                 |
++-------------+----------------------------------------------------+-------------------------------------------------+

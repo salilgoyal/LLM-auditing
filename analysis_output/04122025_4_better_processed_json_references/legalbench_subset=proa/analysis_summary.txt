@@ -1,0 +1,72 @@
+Benchmark 17/28: legalbench:subset=proa
+================================================================================
+
+Models analyzed:
+1. AlephAlpha_luminous-supreme
+2. anthropic_claude-2.1
+3. meta_llama-2-70b
+4. writer_palmyra-x-v3
+5. 01-ai_yi-6b
+6. AlephAlpha_luminous-base
+7. openai_gpt-4-0613
+8. google_text-bison@001
+9. cohere_command
+10. mistralai_mixtral-8x7b-32kseqlen
+11. google_text-unicorn@001
+12. cohere_command-light
+13. openai_text-davinci-003
+14. meta_llama-2-13b
+15. openai_gpt-3.5-turbo-0613
+16. tiiuae_falcon-7b
+17. 01-ai_yi-34b
+18. anthropic_claude-instant-1.2
+19. mistralai_mistral-7b-v0.1
+20. AlephAlpha_luminous-extended
+21. ai21_j2-jumbo
+22. ai21_j2-grande
+23. meta_llama-2-7b
+24. writer_palmyra-x-v2
+25. openai_gpt-4-1106-preview
+26. anthropic_claude-v1.3
+27. anthropic_claude-2.0
+28. tiiuae_falcon-40b
+29. openai_text-davinci-002
+30. meta_llama-65b
+
+=== Summary Statistics ===
+
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
++=============+===============+=======================+===============================+===============+
+| High        |             0 |                   nan |                       nan     | nan - nan     |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Medium      |            26 |                     1 |                         0.949 | 0.183 - 0.254 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+| Low         |            60 |                     1 |                         0.765 | 0.305 - 0.509 |
++-------------+---------------+-----------------------+-------------------------------+---------------+
+
+=== Sample Questions and Responses ===
+
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
+| Agreement   | Question                                           | References                 | Model Responses (first 3)                               |
++=============+====================================================+============================+=========================================================+
+| High        | No examples in this category                       | N/A                        | N/A                                                     |
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
+| Medium      | Statute: A produce wholesaler who violates any     | Reference 1: Yes (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  Yes |
+|             | provision of this subsection shall be liable to    |                            | Sample response 2 (stats.quasi_exact_match=1.000): Yes  |
+|             | any person injured thereby for the amount of       |                            | Sample response 3 (stats.quasi_exact_match=1.000): Yes  |
+|             | damages sustained in consequence of such violation |                            |                                                         |
+|             | and such liability may be enforced by suit in any  |                            |                                                         |
+|             | court of competent jurisdiction.                   |                            |                                                         |
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
+| Low         | Statute: Any advertising structure erected or      | Reference 1: No (correct)  | Sample response 1 (stats.quasi_exact_match=1.000):  No  |
+|             | maintained adjacent to the right-of-way of the     |                            | Sample response 2 (stats.quasi_exact_match=1.000): No   |
+|             | interstate or primary highway system after the     |                            | Sample response 3 (stats.quasi_exact_match=1.000): No   |
+|             | effective date of this act as determined by        |                            |                                                         |
+|             | through,and amendments thereto, in violation of    |                            |                                                         |
+|             | the provisions of this section or rules and        |                            |                                                         |
+|             | regulations adopted by the secretary, or           |                            |                                                         |
+|             | maintained without a permit for construction and a |                            |                                                         |
+|             | current license shall be considered illegal and    |                            |                                                         |
+|             | shall be subject to removal.                       |                            |                                                         |
++-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
