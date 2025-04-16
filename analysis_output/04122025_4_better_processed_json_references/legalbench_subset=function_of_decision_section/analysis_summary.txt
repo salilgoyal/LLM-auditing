@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
 +=============+===============+=======================+===============================+===============+
-| High        |             0 |                 nan   |                       nan     | nan - nan     |
+| High        |            54 |                   1.3 |                         0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Medium      |            67 |                   1.2 |                         0.061 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
@@ -50,7 +50,11 @@ Models analyzed:
 +-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
 | Agreement   | Question                                           | References                                | Model Responses (first 3)                                    |
 +=============+====================================================+===========================================+==============================================================+
-| High        | No examples in this category                       | N/A                                       | N/A                                                          |
+| High        | Text: Appellants argue that the District Court     | Reference 1: Decree (correct)             | Sample response 1 (stats.quasi_exact_match=0.000):  Rule     |
+|             | misapplied American Pipe, and that class members   |                                           | Sample response 2 (stats.quasi_exact_match=0.000):  Issue    |
+|             | should not be forced to wait until after a         |                                           | Sample response 3 (stats.quasi_exact_match=0.000):  Issue    |
+|             | certification decision to benefit from the         |                                           |                                                              |
+|             | doctrine.                                          |                                           |                                                              |
 +-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
 | Medium      | Text: We have previously stated that Donna         | Reference 1: Procedural History (correct) | Sample response 1 (stats.quasi_exact_match=0.000):  Facts    |
 |             | “assisted her husband [Stephen] in most aspects of |                                           | Sample response 2 (stats.quasi_exact_match=0.000):  Facts    |

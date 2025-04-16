@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
 +=============+===============+=======================+===============================+===============+
-| High        |             0 |                 nan   |                       nan     | nan - nan     |
+| High        |            29 |                   1.6 |                         0.448 | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Medium      |            80 |                   1.7 |                         0.506 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
@@ -50,7 +50,9 @@ Models analyzed:
 +-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
 | Agreement   | Question                                           | References                 | Model Responses (first 3)                               |
 +=============+====================================================+============================+=========================================================+
-| High        | No examples in this category                       | N/A                        | N/A                                                     |
+| High        | Question: Consider the country of Cyprus. Does the | Reference 1: Yes (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  Yes |
+|             | country provide for period of residence in a       |                            | Sample response 2 (stats.quasi_exact_match=1.000): Yes  |
+|             | residence-based acquisition?                       |                            | Sample response 3 (stats.quasi_exact_match=1.000):  Yes |
 +-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
 | Medium      | Question: Consider the country of South Korea.     | Reference 1: Yes (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  Yes |
 |             | Does the country permit a parent to confer his or  |                            | Sample response 2 (stats.quasi_exact_match=1.000): Yes  |

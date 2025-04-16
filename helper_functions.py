@@ -106,7 +106,7 @@ def rank_questions(dfs, metric_name='stats.exact_match'):
     
     # Compute standard deviation across the metric columns for each question.
     metric_cols = [col for col in merged_df.columns if col.startswith(metric_name)]
-    merged_df['std'] = merged_df[metric_cols].std(axis=1)
+    merged_df['std'] = merged_df[metric_cols].std(axis=1) # add argument ddof=0 for population std (i.e. to divide by N instead of N-1)
     
     ranked_questions = merged_df.sort_values(by='std')
     
@@ -206,7 +206,8 @@ def visualize_response_trends(benchmark_df, metric_name, benchmark_dir, n_groups
     std_ranges = [0, 0.15, 0.30, float('inf')]
     benchmark_df['agreement_level'] = pd.cut(benchmark_df['std'], 
                                            bins=std_ranges,
-                                           labels=['High', 'Medium', 'Low'])
+                                           labels=['High', 'Medium', 'Low'],
+                                           include_lowest=True)  # This ensures 0 is included in the first bin
     
 
     
@@ -258,26 +259,9 @@ def visualize_response_trends(benchmark_df, metric_name, benchmark_dir, n_groups
     
     
     plt.title(f'{metric_name}\nDistribution by Agreement Level', fontsize=12, pad=20)
-    plt.xlabel('Average Score (1 data point = 1 question)', fontsize=10)
+    plt.xlabel(f'Score, averaged across {len(model_names)} models (1 data point = 1 question)', fontsize=10)
     plt.ylabel('Count', fontsize=10)
     plt.legend()
-    
-    # metric_cols = [col for col in benchmark_df.columns if col.startswith(metric_name + '_')]
-
-    # hist_bin_values = []
-    # bin_edges = []
-
-    # for level in ['High', 'Medium', 'Low']:
-    #     level_df = benchmark_df[benchmark_df['agreement_level'] == level]
-    #     scores = level_df[metric_cols].mean(axis=1)
-    #     n, bins, _ = plt.hist(scores, alpha=0.5, label=level, bins=20)
-    #     hist_bin_values.append(n)
-    #     bin_edges.append(bins)
-
-    # plt.title(f'{metric_name}\nDistribution by Agreement Level', fontsize=12, pad=20)
-    # plt.xlabel('Score', fontsize=10)
-    # plt.ylabel('Count', fontsize=10)
-    # plt.legend()
     
     # 3. Question Length vs Agreement
     plt.subplot(3, 2, 3)
@@ -418,7 +402,9 @@ def load_or_calculate_results(metrics, runs, versions, RANKED_RESULTS_FILE, BENC
             ranked_results = pickle.load(f)
         with open(BENCHMARK_MODEL_FILE, 'rb') as f:
             benchmark_to_model = pickle.load(f)
+        print("Finished loading cached results")
     else:
         print("Calculating results because nothing cached found...")
         ranked_results, benchmark_to_model = calculate_ranked_results(metrics, runs, versions, RANKED_RESULTS_FILE, BENCHMARK_MODEL_FILE)
+        print("Finished calculating results")
     return ranked_results, benchmark_to_model

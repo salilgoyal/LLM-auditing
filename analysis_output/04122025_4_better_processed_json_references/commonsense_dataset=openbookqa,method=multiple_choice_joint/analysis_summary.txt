@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
 +=============+===============+=======================+=========================+===============+
-| High        |             0 |                   nan |                 nan     | nan - nan     |
+| High        |             1 |                     1 |                   0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Medium      |            35 |                     1 |                   0.863 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
@@ -50,7 +50,10 @@ Models analyzed:
 +-------------+----------------------------------------------------+------------------------------------------------+-------------------------------------------------+
 | Agreement   | Question                                           | References                                     | Model Responses (first 3)                       |
 +=============+====================================================+================================================+=================================================+
-| High        | No examples in this category                       | N/A                                            | N/A                                             |
+| High        | Cold-blooded animals are often                     | Reference 1: fast                              | Sample response 1 (stats.exact_match=0.000):  D |
+|             |                                                    | Reference 2: large                             | Sample response 2 (stats.exact_match=0.000):  D |
+|             |                                                    | Reference 3: hairless (correct)                | Sample response 3 (stats.exact_match=0.000): D  |
+|             |                                                    | Reference 4: slow                              |                                                 |
 +-------------+----------------------------------------------------+------------------------------------------------+-------------------------------------------------+
 | Medium      | A pot of pasta is boiling on the stove, and the    | Reference 1: cold air                          | Sample response 1 (stats.exact_match=1.000):  B |
 |             | lid on top of the pot is shaking as the water      | Reference 2: water vapor (correct)             | Sample response 2 (stats.exact_match=1.000):  B |

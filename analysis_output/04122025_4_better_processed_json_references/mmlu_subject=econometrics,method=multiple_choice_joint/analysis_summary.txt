@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
 +=============+===============+=======================+=========================+===============+
-| High        |             0 |                   nan |                 nan     | nan - nan     |
+| High        |             3 |                     1 |                   0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Medium      |             9 |                     1 |                   0.448 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
@@ -50,7 +50,20 @@ Models analyzed:
 +-------------+----------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
 | Agreement   | Question                                           | References                                                                                                    | Model Responses (first 3)                       |
 +=============+====================================================+===============================================================================================================+=================================================+
-| High        | No examples in this category                       | N/A                                                                                                           | N/A                                             |
+| High        | Which of the following statements are true         | Reference 1: (ii) and (iv) only (correct)                                                                     | Sample response 1 (stats.exact_match=0.000):  B |
+|             | concerning the Box-Jenkins approach to diagnostic  | Reference 2: (i) and (iii) only                                                                               | Sample response 2 (stats.exact_match=0.000): C  |
+|             | testing for ARMA models?  (i) The tests will show  | Reference 3: (i), (ii), and (iii) only                                                                        | Sample response 3 (stats.exact_match=0.000):  D |
+|             | whether the identified model is either too large   | Reference 4: (i), (ii), (iii), and (iv)                                                                       |                                                 |
+|             | or too small  (ii) The tests involve checking the  |                                                                                                               |                                                 |
+|             | model residuals for autocorrelation,               |                                                                                                               |                                                 |
+|             | heteroscedasticity, and non-normality  (iii) If    |                                                                                                               |                                                 |
+|             | the model suggested at the identification stage is |                                                                                                               |                                                 |
+|             | appropriate, the acf and pacf for the residuals    |                                                                                                               |                                                 |
+|             | should show no additional structure  (iv) If the   |                                                                                                               |                                                 |
+|             | model suggested at the identification stage is     |                                                                                                               |                                                 |
+|             | appropriate, the coefficients on the additional    |                                                                                                               |                                                 |
+|             | variables under the overfitting approach will be   |                                                                                                               |                                                 |
+|             | statistically insignificant                        |                                                                                                               |                                                 |
 +-------------+----------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------------------------------------------+
 | Medium      | If the Engle-Granger test is applied to the        | Reference 1: The variables are cointegrated                                                                   | Sample response 1 (stats.exact_match=1.000):  B |
 |             | residuals of a potentially cointegrating           | Reference 2: The variables are not cointegrated (correct)                                                     | Sample response 2 (stats.exact_match=1.000): B  |

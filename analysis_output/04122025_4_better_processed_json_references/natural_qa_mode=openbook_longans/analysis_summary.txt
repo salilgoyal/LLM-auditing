@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+----------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.f1_score | Std Range     |
 +=============+===============+=======================+======================+===============+
-| High        |           128 |                   3.9 |                0.75  | 0.000 - 0.150 |
+| High        |           300 |                   2.7 |                0.863 | 0.000 - 0.150 |
 +-------------+---------------+-----------------------+----------------------+---------------+
 | Medium      |           361 |                   6.4 |                0.665 | 0.151 - 0.300 |
 +-------------+---------------+-----------------------+----------------------+---------------+
@@ -47,63 +47,63 @@ Models analyzed:
 
 === Sample Questions and Responses ===
 
-+-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
-| Agreement   | Question                                           | References                                | Model Responses (first 3)                                    |
-+=============+====================================================+===========================================+==============================================================+
-| High        | Passage: Carolyn Sue Jones[3] (April 28, 1930 –    | Reference 1: Carolyn Sue Jones (correct)  | Sample response 1 (stats.f1_score=1.000):  Carolyn Sue Jones |
-|             | August 3, 1983)[1] was an American actress of      |                                           | Sample response 2 (stats.f1_score=0.800):  Carolyn jones     |
-|             | television and film. Jones began her film career   |                                           | Sample response 3 (stats.f1_score=1.000):  Carolyn Sue Jones |
-|             | in the early 1950s, and by the end of the decade   |                                           |                                                              |
-|             | had achieved recognition with a nomination for an  |                                           |                                                              |
-|             | Academy Award for Best Supporting Actress for The  |                                           |                                                              |
-|             | Bachelor Party (1957) and a Golden Globe Award as  |                                           |                                                              |
-|             | one of the most promising actresses of 1959. Her   |                                           |                                                              |
-|             | film career continued for another 20 years. In     |                                           |                                                              |
-|             | 1964, she began playing the role of Morticia       |                                           |                                                              |
-|             | Addams (as well as her sister Ophelia and the      |                                           |                                                              |
-|             | feminine counterpart of Thing, Lady Fingers), in   |                                           |                                                              |
-|             | the original black and white television series The |                                           |                                                              |
-|             | Addams Family.  Question: Who played morticia in   |                                           |                                                              |
-|             | the addams family tv show?                         |                                           |                                                              |
-+-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
-| Medium      | Passage:   Battle of Britain   Part of the Second  | Reference 1: Britain (correct)            | Sample response 1 (stats.f1_score=1.000):  United Kingdom    |
-|             | World War    An Observer Corps spotter scans the   | Reference 2: British (correct)            | Sample response 2 (stats.f1_score=1.000):  Britain           |
-|             | skies of London.      Date 10 July – 31 October    | Reference 3: the United Kingdom (correct) | Sample response 3 (stats.f1_score=0.667):  British victory   |
-|             | 1940[nb 3] (3 months and 3 weeks)   Location       |                                           |                                                              |
-|             | British airspace   Result British victory[3][nb 4] |                                           |                                                              |
-|             | Belligerents    United Kingdom  Canada[nb 1][nb 2] |                                           |                                                              |
-|             | Germany  Italy   Commanders and leaders    Hugh    |                                           |                                                              |
-|             | Dowding  Keith Park  T. Leigh-Mallory  Quintin     |                                           |                                                              |
-|             | Brand  Richard Saul  L. Samuel Breadner  Zdzisław  |                                           |                                                              |
-|             | Krasnodębski  Hermann Göring  Albert Kesselring    |                                           |                                                              |
-|             | Hugo Sperrle  Hans-Jürgen Stumpff  R. C.           |                                           |                                                              |
-|             | Fougier[5]   Units involved    Royal Air Force     |                                           |                                                              |
-|             | Royal Canadian Air Force  Foreign pilots           |                                           |                                                              |
-|             | from[show]   Poland  New Zealand  Czechoslovakia   |                                           |                                                              |
-|             | Belgium  Australia  South Africa  France  Ireland  |                                           |                                                              |
-|             | United States  Southern Rhodesia  Jamaica          |                                           |                                                              |
-|             | Barbados  Newfoundland  Northern Rhodesia          |                                           |                                                              |
-|             | Luftwaffe  Corpo Aereo Italiano   Strength   1,963 |                                           |                                                              |
-|             | serviceable aircraft [nb 5]  2,550 serviceable     |                                           |                                                              |
-|             | aircraft. [nb 6] [nb 7]   Casualties and losses    |                                           |                                                              |
-|             | 1,542 aircrew killed[11] 422 aircrew wounded[12]   |                                           |                                                              |
-|             | 1,744 aircraft destroyed[nb 8] 2,585 aircrew       |                                           |                                                              |
-|             | killed and missing, 925 captured, 735 wounded[14]  |                                           |                                                              |
-|             | 1,977 aircraft destroyed, 1,634 in combat and 343  |                                           |                                                              |
-|             | non-combat[15]   Around 90,000 civilian            |                                           |                                                              |
-|             | casualties, 40,000 of them fatal.[16]    Question: |                                           |                                                              |
-|             | Who won the battle of britain in ww2?              |                                           |                                                              |
-+-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
-| Low         | Passage: The silk floss tree is cultivated mostly  | Reference 1: silk floss tree (correct)    | Sample response 1 (stats.f1_score=1.000):  Silk floss tree   |
-|             | for ornamental purposes. Outside of private        |                                           | Sample response 2 (stats.f1_score=0.000):  Ceiba speciosa    |
-|             | gardens around the world, it is often planted      |                                           | Sample response 3 (stats.f1_score=1.000):  silk floss tree   |
-|             | along urban streets in subtropical areas such as   |                                           |                                                              |
-|             | in Spain, South Africa, Australia, northern New    |                                           |                                                              |
-|             | Zealand and the southern USA, although its         |                                           |                                                              |
-|             | prickled trunks and limbs require safety buffer    |                                           |                                                              |
-|             | zones, especially around the trunks, in order to   |                                           |                                                              |
-|             | protect people and domesticated animals from its   |                                           |                                                              |
-|             | prickles. Ceiba speciosa is added to some versions |                                           |                                                              |
-|             | of the hallucinogenic drink Ayahuasca.  Question:  |                                           |                                                              |
-|             | South african tree with thorns on the trunk?       |                                           |                                                              |
-+-------------+----------------------------------------------------+-------------------------------------------+--------------------------------------------------------------+
++-------------+----------------------------------------------------+-------------------------------------------+-------------------------------------------------------------+
+| Agreement   | Question                                           | References                                | Model Responses (first 3)                                   |
++=============+====================================================+===========================================+=============================================================+
+| High        | Passage: Thomas Jefferson (April 13 [O.S. April 2] | Reference 1: Thomas Jefferson (correct)   | Sample response 1 (stats.f1_score=1.000):  Thomas Jefferson |
+|             | 1743 – July 4, 1826) was an American Founding      |                                           | Sample response 2 (stats.f1_score=1.000):  Thomas Jefferson |
+|             | Father who was the principal author of the         |                                           | Sample response 3 (stats.f1_score=1.000):  Thomas Jefferson |
+|             | Declaration of Independence and later served as    |                                           |                                                             |
+|             | the third President of the United States from 1801 |                                           |                                                             |
+|             | to 1809. Previously, he was elected the second     |                                           |                                                             |
+|             | Vice President of the United States, serving under |                                           |                                                             |
+|             | John Adams from 1797 to 1801. A proponent of       |                                           |                                                             |
+|             | democracy, republicanism, and individual rights    |                                           |                                                             |
+|             | motivating American colonists to break from Great  |                                           |                                                             |
+|             | Britain and form a new nation, he produced         |                                           |                                                             |
+|             | formative documents and decisions at both the      |                                           |                                                             |
+|             | state and national level. He was a land owner and  |                                           |                                                             |
+|             | farmer.  Question: Third president of the united   |                                           |                                                             |
+|             | states of america?                                 |                                           |                                                             |
++-------------+----------------------------------------------------+-------------------------------------------+-------------------------------------------------------------+
+| Medium      | Passage:   Battle of Britain   Part of the Second  | Reference 1: Britain (correct)            | Sample response 1 (stats.f1_score=1.000):  United Kingdom   |
+|             | World War    An Observer Corps spotter scans the   | Reference 2: British (correct)            | Sample response 2 (stats.f1_score=1.000):  Britain          |
+|             | skies of London.      Date 10 July – 31 October    | Reference 3: the United Kingdom (correct) | Sample response 3 (stats.f1_score=0.667):  British victory  |
+|             | 1940[nb 3] (3 months and 3 weeks)   Location       |                                           |                                                             |
+|             | British airspace   Result British victory[3][nb 4] |                                           |                                                             |
+|             | Belligerents    United Kingdom  Canada[nb 1][nb 2] |                                           |                                                             |
+|             | Germany  Italy   Commanders and leaders    Hugh    |                                           |                                                             |
+|             | Dowding  Keith Park  T. Leigh-Mallory  Quintin     |                                           |                                                             |
+|             | Brand  Richard Saul  L. Samuel Breadner  Zdzisław  |                                           |                                                             |
+|             | Krasnodębski  Hermann Göring  Albert Kesselring    |                                           |                                                             |
+|             | Hugo Sperrle  Hans-Jürgen Stumpff  R. C.           |                                           |                                                             |
+|             | Fougier[5]   Units involved    Royal Air Force     |                                           |                                                             |
+|             | Royal Canadian Air Force  Foreign pilots           |                                           |                                                             |
+|             | from[show]   Poland  New Zealand  Czechoslovakia   |                                           |                                                             |
+|             | Belgium  Australia  South Africa  France  Ireland  |                                           |                                                             |
+|             | United States  Southern Rhodesia  Jamaica          |                                           |                                                             |
+|             | Barbados  Newfoundland  Northern Rhodesia          |                                           |                                                             |
+|             | Luftwaffe  Corpo Aereo Italiano   Strength   1,963 |                                           |                                                             |
+|             | serviceable aircraft [nb 5]  2,550 serviceable     |                                           |                                                             |
+|             | aircraft. [nb 6] [nb 7]   Casualties and losses    |                                           |                                                             |
+|             | 1,542 aircrew killed[11] 422 aircrew wounded[12]   |                                           |                                                             |
+|             | 1,744 aircraft destroyed[nb 8] 2,585 aircrew       |                                           |                                                             |
+|             | killed and missing, 925 captured, 735 wounded[14]  |                                           |                                                             |
+|             | 1,977 aircraft destroyed, 1,634 in combat and 343  |                                           |                                                             |
+|             | non-combat[15]   Around 90,000 civilian            |                                           |                                                             |
+|             | casualties, 40,000 of them fatal.[16]    Question: |                                           |                                                             |
+|             | Who won the battle of britain in ww2?              |                                           |                                                             |
++-------------+----------------------------------------------------+-------------------------------------------+-------------------------------------------------------------+
+| Low         | Passage: The silk floss tree is cultivated mostly  | Reference 1: silk floss tree (correct)    | Sample response 1 (stats.f1_score=1.000):  Silk floss tree  |
+|             | for ornamental purposes. Outside of private        |                                           | Sample response 2 (stats.f1_score=0.000):  Ceiba speciosa   |
+|             | gardens around the world, it is often planted      |                                           | Sample response 3 (stats.f1_score=1.000):  silk floss tree  |
+|             | along urban streets in subtropical areas such as   |                                           |                                                             |
+|             | in Spain, South Africa, Australia, northern New    |                                           |                                                             |
+|             | Zealand and the southern USA, although its         |                                           |                                                             |
+|             | prickled trunks and limbs require safety buffer    |                                           |                                                             |
+|             | zones, especially around the trunks, in order to   |                                           |                                                             |
+|             | protect people and domesticated animals from its   |                                           |                                                             |
+|             | prickles. Ceiba speciosa is added to some versions |                                           |                                                             |
+|             | of the hallucinogenic drink Ayahuasca.  Question:  |                                           |                                                             |
+|             | South african tree with thorns on the trunk?       |                                           |                                                             |
++-------------+----------------------------------------------------+-------------------------------------------+-------------------------------------------------------------+

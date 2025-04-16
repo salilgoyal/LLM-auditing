@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
 +=============+===============+=======================+=========================+===============+
-| High        |             0 |                   nan |                 nan     | nan - nan     |
+| High        |             1 |                     1 |                   0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Medium      |            13 |                     1 |                   0.813 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
@@ -50,7 +50,10 @@ Models analyzed:
 +-------------+----------------------------------------------------+------------------------------------------+------------------------------------------------+
 | Agreement   | Question                                           | References                               | Model Responses (first 3)                      |
 +=============+====================================================+==========================================+================================================+
-| High        | No examples in this category                       | N/A                                      | N/A                                            |
+| High        | Three of the following are classic security        | Reference 1: Confidentiality             | Sample response 1 (stats.exact_match=0.000): C |
+|             | properties; which one is not?                      | Reference 2: Availability (correct)      | Sample response 2 (stats.exact_match=0.000): C |
+|             |                                                    | Reference 3: Correctness                 | Sample response 3 (stats.exact_match=0.000): C |
+|             |                                                    | Reference 4: Integrity                   |                                                |
 +-------------+----------------------------------------------------+------------------------------------------+------------------------------------------------+
 | Medium      | Suppose Unix did not provide a way of passing file | Reference 1: True, True                  | Sample response 1 (stats.exact_match=0.000): A |
 |             | descriptors between processes, but still allowed   | Reference 2: False, False (correct)      | Sample response 2 (stats.exact_match=0.000): A |

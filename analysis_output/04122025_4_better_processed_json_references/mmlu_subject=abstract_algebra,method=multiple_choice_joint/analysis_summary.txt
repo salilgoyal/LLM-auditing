@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
 +=============+===============+=======================+=========================+===============+
-| High        |             0 |                   nan |                 nan     | nan - nan     |
+| High        |             1 |                     1 |                   0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Medium      |             3 |                     1 |                   0.056 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
@@ -50,7 +50,11 @@ Models analyzed:
 +-------------+----------------------------------------------------+------------------------------------+-------------------------------------------------+
 | Agreement   | Question                                           | References                         | Model Responses (first 3)                       |
 +=============+====================================================+====================================+=================================================+
-| High        | No examples in this category                       | N/A                                | N/A                                             |
+| High        | Statement 1 | If a group has an element of order   | Reference 1: True, True (correct)  | Sample response 1 (stats.exact_match=0.000): C  |
+|             | 15 it must have at least 8 elements of order 15.   | Reference 2: False, False          | Sample response 2 (stats.exact_match=0.000):  B |
+|             | Statement 2 | If a group has more than 8 elements  | Reference 3: True, False           | Sample response 3 (stats.exact_match=0.000):  B |
+|             | of order 15, it must have at least 16 elements of  | Reference 4: False, True           |                                                 |
+|             | order 15.                                          |                                    |                                                 |
 +-------------+----------------------------------------------------+------------------------------------+-------------------------------------------------+
 | Medium      | Statement 1 | If H is a subgroup of G and a        | Reference 1: True, True            | Sample response 1 (stats.exact_match=0.000): A  |
 |             | belongs to G then aH is a subgroup of G if and     | Reference 2: False, False          | Sample response 2 (stats.exact_match=0.000):  B |

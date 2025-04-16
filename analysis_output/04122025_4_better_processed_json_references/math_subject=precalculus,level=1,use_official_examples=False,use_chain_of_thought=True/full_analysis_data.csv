@@ -147,7 +147,7 @@ label(""r"",(1.41,0),SE);
 label(""$\theta$"",(0,1.41),NW);
 [/asy]. The answer is (B) Circle",0.0," The curve is a circle, so (B) is correct.
 ",0.0," The graph of $r = \cos \theta + \sin \theta$ is a circle of radius $1$ centered at the origin.
-",0.0,0.0,
+",0.0,0.0,High
 37,id80,"Triangle $DEF$ is shown.  What is $\cos{E}$?
 
 [asy]
@@ -380,7 +380,7 @@ $$\cos E = \frac{7}{\sqrt{7^2 + 24^2}} = \frac{7}{\sqrt{625}} = \frac{7}{25} = \
 \end{align*}Therefore, $\boxed{\cos E = -\frac{1}{2} \sqrt{3}}.$. The answer is -\frac{1}{2}\sqrt{3}",0.0," Since $\cos E = \frac{a}{b},$
 \[\cos E = \frac{7}{24} = \boxed{\frac{1}{4}}.\]
 ",0.0," Since $\cos{E} = \frac{7}{24},$ $\cos{E} = \boxed{0.35.$
-",0.0,0.0,
+",0.0,0.0,High
 44,id87,"A triangle with vertices $A(0, 2)$, $B(-3, 2)$, and $C(-3, 0)$ is reflected about the $x$-axis, then the image triangle $A'B'C'$ is rotated counterclockwise about the origin by $90^{\circ}$ to produce triangle $A''B''C''$. Which of the following transformations will return triangle $A''B''C''$ to triangle $ABC$?
 
 (A) counterclockwise rotation about the origin by $90^{\circ}$.
@@ -573,7 +573,7 @@ The triangle $ABC$ is shown below:
 The triangle $A''B''C''$ is shown below:
 
 The triangle $A''B''C''$ is the reflection of $ABC$ about the line $y = x,$ so the correct answer is (D).
-",0.0,0.0,
+",0.0,0.0,High
 47,id90,"In right triangle $FGH$ with $\angle H = 90^\circ$, we have $FG = 17$ and $HG = 15$.  Find $\sin G$.","The triangle is shown below:
 
 [asy]
@@ -661,7 +661,7 @@ $$\sin G = \frac{FH}{FG} = \frac{15}{17}.$$",0.0,"Since $\sin G = \frac{FG}{HG},
 ",0.0," We have $\sin G = \frac{HG}{FG} = \frac{15}{17},$ so $\sin G = \boxed{\frac{15}{17}}.$. The answer is \frac{15}{17}",0.0," Since $\sin G = \frac{HG}{FG} = \frac{15}{17},$ $\sin G = \boxed{\frac{15}{17}}.$
 ",0.0," Since $\sin G = \frac{FG}{HG},$
 \[\sin G = \frac{17}{15} = \boxed{1.2}.\]
-",0.0,0.0,
+",0.0,0.0,High
 9,id109,"In triangle $LMN$, we have $\angle M = 90^\circ$, $MN = 2$, and $LM = \sqrt{21}$. What is $\sin L$?","[asy]
 pair L,M,N;
 N = (0,0);

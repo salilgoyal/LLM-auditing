@@ -18,3 +18,5 @@ all analyses are only done for version v1.0.0
 - changed the format of the `analysis_summary.txt` files so that for all questions they also display the correct answer
     (or all the mutiple-choice answers along with which one is the correct one)
 - in the top right histogram also added the standard dev ranges for each of 3 categories (which are still hardcoded)
+- note: the standard deviation of a list of numbers between 0 and 1 should be upper bounded by 0.5, but pandas calculates sample std (divides by N-1 instead of N)
+    so occasionally the std values may go a tad bit above 0.5

@@ -150,7 +150,7 @@ Here is the synthetic division for $1$:
    | 1 6 15 13 0
 ```
 
-Here is the synthetic division for $2$",0.0,0.0,
+Here is the synthetic division for $2$",0.0,0.0,High
 6,id106,"Find the product of the first $20$ terms of the sequence below. Express your answer as a common fraction.
 
 $\frac23, \frac34, \frac45, \frac56, \dots$","When the fractions are multiplied, many of the factors in the numerator and denominator will cancel, as it is a telescoping product:
@@ -221,7 +221,7 @@ We can see that each numerator from the second term onward cancels with the deno
 \[\frac{2}{3} \cdot \frac{3}{4} \cdot \frac{4}{5} \cdot \ldots \cdot \frac{20}{21} = \frac{2}{21}.\]
 
 So the product of the first $20$ terms of the sequence is $\boxed{\frac{2}{21}}$.",0.0," The product of the first $20$ terms of the sequence is
-\[\frac{2}{3} \cdot \frac{3}{4} \cdot \frac{4}{5} \cdot \frac{5}{6} \cdots \frac{20}{21} = \frac{2 \cdot 3 \cdot 4 \cdot 5 \cdots 20}{3 \cdot 4 \cdot 5 \cdot 6 \cdots 21} = \frac{2}{21} = \boxed{\frac{2}{21}}.\]",0.0,0.0,
+\[\frac{2}{3} \cdot \frac{3}{4} \cdot \frac{4}{5} \cdot \frac{5}{6} \cdots \frac{20}{21} = \frac{2 \cdot 3 \cdot 4 \cdot 5 \cdots 20}{3 \cdot 4 \cdot 5 \cdot 6 \cdots 21} = \frac{2}{21} = \boxed{\frac{2}{21}}.\]",0.0,0.0,High
 11,id59,"Find the polynomial $p(x)$ if
 $$(x^2-3x+5)p(x) = x^4-3x^3+15x-25.$$","Since multiplying $p(x)$ with a quadratic (degree 2) polynomial gives us a quartic (degree 4) polynomial, $p(x)$ is also a quadratic of the form $ax^2+bx+c$ where $a$, $b$, and $c$ are constants. So we have
 $$(x^2-3x+5)(ax^2+bx+c) = x^4-3x^3+15x-25.$$Expanding the left hand side gives us
@@ -394,7 +394,7 @@ x^2-3x+5 & x^4 & -3x^3 & +0x^2 & +15x & -25 \\\
 \end{array}$$
 
 Therefore,
-$$p(x) = x^2 + 5.$$",0.0,0.0,
+$$p(x) = x^2 + 5.$$",0.0,0.0,High
 49,id97,Find the product $10 \cdot \frac{4}{3} \cdot \frac{6}{4} \cdot \frac{8}{5} \cdot \frac{10}{6} \cdot \frac{12}{7} \cdot \frac{14}{8} \cdot \frac{16}{9} \cdot \frac{18}{10}$.,"The product of the numerators is
 \begin{align*}
 &(2 \cdot 2) \cdot (2 \cdot 3) \cdot (2 \cdot 4) \cdot (2 \cdot 5) \cdot (2 \cdot 6) \cdot (2 \cdot 7) \cdot (2 \cdot 8) \cdot (2 \cdot 9) \\

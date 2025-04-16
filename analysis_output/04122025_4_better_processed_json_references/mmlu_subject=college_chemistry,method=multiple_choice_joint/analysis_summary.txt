@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.exact_match | Std Range     |
 +=============+===============+=======================+=========================+===============+
-| High        |             0 |                   nan |                 nan     | nan - nan     |
+| High        |             2 |                     1 |                   0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
 | Medium      |            21 |                     1 |                   0.221 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------+---------------+
@@ -50,7 +50,10 @@ Models analyzed:
 +-------------+----------------------------------------------------+-----------------------------+-------------------------------------------------+
 | Agreement   | Question                                           | References                  | Model Responses (first 3)                       |
 +=============+====================================================+=============================+=================================================+
-| High        | No examples in this category                       | N/A                         | N/A                                             |
+| High        | Which of the following metal ions cannot be used   | Reference 1: Ti3+           | Sample response 1 (stats.exact_match=0.000): D  |
+|             | as a paramagnetic quencher?                        | Reference 2: Cr3+ (correct) | Sample response 2 (stats.exact_match=0.000): D  |
+|             |                                                    | Reference 3: Fe3+           | Sample response 3 (stats.exact_match=0.000): D  |
+|             |                                                    | Reference 4: Zn2+           |                                                 |
 +-------------+----------------------------------------------------+-----------------------------+-------------------------------------------------+
 | Medium      | Which nuclide has an NMR frequency of 115.5 MHz in | Reference 1: 17O (correct)  | Sample response 1 (stats.exact_match=0.000): To |
 |             | a 20.0 T magnetic field?                           | Reference 2: 19F            | Sample response 2 (stats.exact_match=0.000): C  |

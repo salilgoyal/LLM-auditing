@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
 +=============+===============+=======================+===============================+===============+
-| High        |             0 |                   nan |                       nan     | nan - nan     |
+| High        |             9 |                     1 |                         1     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Medium      |            26 |                     1 |                         0.949 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
@@ -50,7 +50,13 @@ Models analyzed:
 +-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
 | Agreement   | Question                                           | References                 | Model Responses (first 3)                               |
 +=============+====================================================+============================+=========================================================+
-| High        | No examples in this category                       | N/A                        | N/A                                                     |
+| High        | Statute: A person to whom warranties are made      | Reference 1: Yes (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  Yes |
+|             | under this Section and who took the item in good   |                            | Sample response 2 (stats.quasi_exact_match=1.000): Yes  |
+|             | faith may recover from the warrantor as damages    |                            | Sample response 3 (stats.quasi_exact_match=1.000): Yes  |
+|             | for breach of warranty an amount equal to the loss |                            |                                                         |
+|             | suffered as a result of the breach, plus expenses  |                            |                                                         |
+|             | and loss of interest incurred as a result of the   |                            |                                                         |
+|             | breach.                                            |                            |                                                         |
 +-------------+----------------------------------------------------+----------------------------+---------------------------------------------------------+
 | Medium      | Statute: A produce wholesaler who violates any     | Reference 1: Yes (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  Yes |
 |             | provision of this subsection shall be liable to    |                            | Sample response 2 (stats.quasi_exact_match=1.000): Yes  |

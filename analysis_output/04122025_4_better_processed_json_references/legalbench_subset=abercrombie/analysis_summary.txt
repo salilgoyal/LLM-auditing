@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
 +=============+===============+=======================+===============================+===============+
-| High        |             0 |                   nan |                       nan     | nan - nan     |
+| High        |             1 |                     1 |                         0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Medium      |             3 |                     1 |                         0.333 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
@@ -47,16 +47,18 @@ Models analyzed:
 
 === Sample Questions and Responses ===
 
-+-------------+---------------------------------------------+------------------------------------+-----------------------------------------------------------------+
-| Agreement   | Question                                    | References                         | Model Responses (first 3)                                       |
-+=============+=============================================+====================================+=================================================================+
-| High        | No examples in this category                | N/A                                | N/A                                                             |
-+-------------+---------------------------------------------+------------------------------------+-----------------------------------------------------------------+
-| Medium      | Description: The mark "Microsoft" for small | Reference 1: suggestive (correct)  | Sample response 1 (stats.quasi_exact_match=0.000):  arbitrary   |
-|             | computers.                                  |                                    | Sample response 2 (stats.quasi_exact_match=0.000): arbitrary    |
-|             |                                             |                                    | Sample response 3 (stats.quasi_exact_match=0.000): fanciful     |
-+-------------+---------------------------------------------+------------------------------------+-----------------------------------------------------------------+
-| Low         | Description: The mark "Coastal Winery" for  | Reference 1: descriptive (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  descriptive |
-|             | varietal wines.                             |                                    | Sample response 2 (stats.quasi_exact_match=1.000): descriptive  |
-|             |                                             |                                    | Sample response 3 (stats.quasi_exact_match=1.000): descriptive  |
-+-------------+---------------------------------------------+------------------------------------+-----------------------------------------------------------------+
++-------------+-----------------------------------------------+------------------------------------+-----------------------------------------------------------------+
+| Agreement   | Question                                      | References                         | Model Responses (first 3)                                       |
++=============+===============================================+====================================+=================================================================+
+| High        | Description: The mark "Netflix" for an online | Reference 1: suggestive (correct)  | Sample response 1 (stats.quasi_exact_match=0.000):  fanciful    |
+|             | streaming service.                            |                                    | Sample response 2 (stats.quasi_exact_match=0.000): fanciful     |
+|             |                                               |                                    | Sample response 3 (stats.quasi_exact_match=0.000): arbitrary    |
++-------------+-----------------------------------------------+------------------------------------+-----------------------------------------------------------------+
+| Medium      | Description: The mark "Microsoft" for small   | Reference 1: suggestive (correct)  | Sample response 1 (stats.quasi_exact_match=0.000):  arbitrary   |
+|             | computers.                                    |                                    | Sample response 2 (stats.quasi_exact_match=0.000): arbitrary    |
+|             |                                               |                                    | Sample response 3 (stats.quasi_exact_match=0.000): fanciful     |
++-------------+-----------------------------------------------+------------------------------------+-----------------------------------------------------------------+
+| Low         | Description: The mark "Coastal Winery" for    | Reference 1: descriptive (correct) | Sample response 1 (stats.quasi_exact_match=1.000):  descriptive |
+|             | varietal wines.                               |                                    | Sample response 2 (stats.quasi_exact_match=1.000): descriptive  |
+|             |                                               |                                    | Sample response 3 (stats.quasi_exact_match=1.000): descriptive  |
++-------------+-----------------------------------------------+------------------------------------+-----------------------------------------------------------------+

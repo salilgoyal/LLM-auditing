@@ -125,7 +125,7 @@ $$m\angle AXC = m\angle ABC + m\angle ACB$$
 $$m\angle AXC = 30^\circ + 30^\circ$$
 $$m\angle AXC = 60^\circ$$
 
-So the number of degrees in the measure of angle $AXC$ is $\boxed{60}$ degrees.",0.0,0.0,
+So the number of degrees in the measure of angle $AXC$ is $\boxed{60}$ degrees.",0.0,0.0,High
 10,id51,"A rectangular pool is $6\text{ m}$ wide, $12\text{ m}$ long and $4\text{ m}$ deep. If the pool is half full of water, what is the volume of water in the pool?","Since the pool has dimensions $6\text{ m}$ by $12\text{ m}$ by $4\text{ m},$ then its total volume is $6 \times 12 \times 4 = 288 \mbox{ m}^3.$
 
 Since the pool is only half full of water, then the volume of water in the pool is $\frac{1}{2} \times 288 \mbox{ m}^3$ or $\boxed{144 \mbox{ m}^3}.$ (correct)"," The pool is half full, so the water in the pool is in the shape of a rectangular prism whose dimensions are $6\text{ m}$ by $12\text{ m}$ by $2\text{ m}$.  The volume of such a rectangular prism is $(6\text{ m})(12\text{ m})(2\text{ m})=\boxed{144}$ cubic meters.",0.0,"The volume of water in the pool is $\frac{1}{2}(6\text{ m})(12\text{ m})(4\text{ m})=\boxed{144}$ cubic meters.
@@ -169,7 +169,7 @@ The volume of water is:
 So the volume is (6 m)(12 m)(2 m) = \boxed{144} $\text{m}^3$.",0.0,"The volume of water in the pool is the volume of the rectangular prism that is half full of water.  The dimensions of this rectangular prism are $6\text{ m}$, $12\text{ m}$, and $2\text{ m}$.  The volume of such a rectangular prism is $(6\text{ m})(12\text{ m})(2\text{ m})=\boxed{144}$ cubic meters.
 ",0.0," The pool is in the shape of a rectangular prism with dimensions $6\text{ m}$ by $12\text{ m}$ by $4\text{ m}$.  The volume of such a rectangular prism is $(6\text{ m})(12\text{ m})(4\text{ m})=\boxed{288}$ cubic meters.
 ",0.0," The volume of water in the pool is $\frac{1}{2}(6\text{ m})(12\text{ m})(4\text{ m})=\boxed{576}$ cubic meters.
-",0.0,"The volume of the pool when it is half full is half the volume of the entire pool. The volume of the entire pool is the product of its length, width, and depth: $6\text{ m} \times 12\text{ m} \times 4\text{ m} = 288\text{ m}^3$. Therefore, when the pool is half full, the volume of water in the pool is $\frac{1}{2} \times 288\text{ m}^3 = \boxed{144\text{ m}^3}$.",0.0,0.0,
+",0.0,"The volume of the pool when it is half full is half the volume of the entire pool. The volume of the entire pool is the product of its length, width, and depth: $6\text{ m} \times 12\text{ m} \times 4\text{ m} = 288\text{ m}^3$. Therefore, when the pool is half full, the volume of water in the pool is $\frac{1}{2} \times 288\text{ m}^3 = \boxed{144\text{ m}^3}$.",0.0,0.0,High
 13,id54,"In the diagram, $PRT$ and $QRS$ are straight lines. What is the value of $x$? [asy]
 import olympiad;
 import math;

@@ -38,7 +38,7 @@ Models analyzed:
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Agreement   |   N Questions |   Avg Response Length |   Avg stats.quasi_exact_match | Std Range     |
 +=============+===============+=======================+===============================+===============+
-| High        |             0 |                   nan |                       nan     | nan - nan     |
+| High        |             9 |                     1 |                         0     | 0.000 - 0.000 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
 | Medium      |            46 |                     1 |                         0.247 | 0.183 - 0.254 |
 +-------------+---------------+-----------------------+-------------------------------+---------------+
@@ -50,7 +50,19 @@ Models analyzed:
 +-------------+----------------------------------------------------+--------------------------------------------------------------------------+-------------------------------------------------------+
 | Agreement   | Question                                           | References                                                               | Model Responses (first 3)                             |
 +=============+====================================================+==========================================================================+=======================================================+
-| High        | No examples in this category                       | N/A                                                                      | N/A                                                   |
+| High        | A 23-year-old man comes to the physician because   | Reference 1: Upregulated expression of exogenously synthesized antigens  | Sample response 1 (stats.quasi_exact_match=0.000): A  |
+|             | of a 1-week history of anorexia, nausea, upper     | Reference 2: Enhanced macrophage phagocytic function                     | Sample response 2 (stats.quasi_exact_match=0.000):  C |
+|             | abdominal pain, and dark-colored urine. He         | Reference 3: Activation of eukaryotic initiation factor 2                | Sample response 3 (stats.quasi_exact_match=0.000): B  |
+|             | recently returned from a trip to Belize. His       | Reference 4: Increased breakdown of intracellular RNA (correct)          |                                                       |
+|             | temperature is 38.3°C (100.9°F). Physical          |                                                                          |                                                       |
+|             | examination shows scleral icterus and tender       |                                                                          |                                                       |
+|             | hepatomegaly. Serum studies show markedly elevated |                                                                          |                                                       |
+|             | transaminases and anti-hepatitis A virus           |                                                                          |                                                       |
+|             | antibodies. In this patient, infected cells        |                                                                          |                                                       |
+|             | express more MHC class I molecules on their        |                                                                          |                                                       |
+|             | surfaces. This cellular event is primarily induced |                                                                          |                                                       |
+|             | by a molecule that is also responsible for which   |                                                                          |                                                       |
+|             | of the following changes?                          |                                                                          |                                                       |
 +-------------+----------------------------------------------------+--------------------------------------------------------------------------+-------------------------------------------------------+
 | Medium      | A 25-year-old woman presents to her physician with | Reference 1: pH = 7.5, Pco2 = 50 mm Hg, HCO32- = 38 mEq/L (correct)      | Sample response 1 (stats.quasi_exact_match=0.000): B  |
 |             | complaints of cyclic vomiting for 3 days. The      | Reference 2: pH = 7.2, Pco2 = 25 mm Hg, HCO32- = 30 mEq/L                | Sample response 2 (stats.quasi_exact_match=0.000):  B |

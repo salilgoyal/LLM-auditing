@@ -17,7 +17,7 @@
 This can also be achieved by multiplying the two expressions together term by term. The first term is $2^3 = 8$, and the second term is $5^5 = 3125$. 
 
 Thus, the answer is $32$. ",0.0," Since $2^3$ is $8$ and $5^5$ is $125$, we have $(2^3)(5^5) = 8 \times 125 = \boxed{1000}$.
-",0.0,0.0,
+",0.0,0.0,High
 69,id195,"In the diagram, what is the value of $y$? [asy]
 draw((5,0)--(0,0)--(0,5));
 draw((.5,0)--(.5,.5)--(0,.5));
@@ -123,7 +123,7 @@ label(""$y^\circ$"",(-1,-1),SW);
 label(""$x^\circ$"",(5,0),SE);
 label(""$z^\circ$"",(0,0),NE);
 [/asy]
-",0.0,0.0,
+",0.0,0.0,High
 31,id157,"A figure skater is facing north when she begins to spin to her right. She spins 2250 degrees. Which direction (north, south, east or west) is she facing when she finishes her spin?","Each full circle is 360 degrees.  Dividing 360 into 2250 gives a quotient of 6 with a remainder of 90.  So, she spins 90 degrees to her right past north, which leaves her facing $\boxed{\text{east}}$. (correct)"," The skater spins 2250 degrees, which is 6 full rotations (6 * 360 = 2160) plus 90 degrees. So she is facing 90 degrees to the right of north, which is $\boxed{\text{east}}$.",1.0,A figure skater spinning 2250 degrees to her right would end up facing \boxed{west}.,0.0,"Since she spins 2250 degrees, she spins $2250-360=1890$ degrees more than a full turn. So she spins $1890-360=1530$ degrees clockwise. Since she is facing north when she begins, she is facing $\boxed{west}$ when she finishes.
 ",0.0,"Since the skater spun 2250 degrees to her right, she spun $\frac{2250}{360}=6$ full rotations plus an additional 90 degrees. Starting facing north, after 6 full rotations she would be facing north again. The additional 90 degree rotation to the right takes her from facing north to facing east. Therefore, the skater is facing $\boxed{east}$ when she finishes her spin.",0.0,"The skater is facing north when she begins to spin. She spins 2250 degrees, which is 2250 degrees clockwise. So she is facing north when she finishes her spin.
 ",0.0," Since she is facing north when she begins to spin, she is facing north when she finishes her spin.
